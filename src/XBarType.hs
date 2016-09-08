@@ -39,7 +39,7 @@ data Noun = Noun String deriving (Show, Read)
 
 --Verb phrase
 data VerbP = VerbP VerbBar deriving (Show, Read)
-data VerbBar = VerbBar1 AdvP VerbBar | VerbBar2 VerbBar PrepP | VerbBar3 VerbBar AdvP | VerbBar4 Verb CompP | VerbBar5 Verb NounP deriving (Show, Read)
+data VerbBar = VerbBar1 AdvP VerbBar | VerbBar2 VerbBar PrepP | VerbBar3 VerbBar AdvP | VerbBar4 Verb CompP | VerbBar5 Verb DetP deriving (Show, Read)
 data Verb = Verb String deriving (Show, Read)
 
 --Adjective phrase

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-08 00:22:39.948719 UTC
+2016-09-08 02:34:53.80862 UTC
 
 interface parse_Iaj1kxNSeaZ4PQxYHNqcNV:XBarType 7103
-  interface hash: 42258dba4855eb278f89d36f0f7b02ee
-  ABI hash: f2420abe35160feeec7d06e9f040ff7b
+  interface hash: f1f25f25d8bb799c0d4df23f79940bb7
+  ABI hash: 2b495b8df540868f2aed6f3c79e77ea3
   export-list hash: cdfa8791cd1b5c57acf699a4767e732e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 962af636f8e927040c7daa9c21457292
@@ -110,7 +110,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
 11ba7cfba6acd23bc6a1642c617141e0
   $fReadAdj4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Adj"#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar :: GHC.Read.Read XBarType.AdjBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -120,7 +120,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                   XBarType.$fReadAdjBar_$sreadListDefault
                   XBarType.$fReadAdjBar_$creadPrec
                   XBarType.$fReadAdjBar_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -139,7 +139,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                              <XBarType.AdjBar>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.AdjBar
@@ -154,7 +154,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                                        <XBarType.AdjBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.AdjBar>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -166,7 +166,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                    @ b
                    w1 :: XBarType.AdjBar -> Text.ParserCombinators.ReadP.P b ->
                  case w of ww { GHC.Types.I# ww1 -> XBarType.$wa1 ww1 @ b w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.AdjBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -179,7 +179,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                                     <[XBarType.AdjBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.AdjBar]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.AdjBar
   {- Arity: 1,
@@ -188,7 +188,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.AdjBar>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.AdjBar
   {- Arity: 1, Strictness: <L,U>,
@@ -212,7 +212,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                       @ XBarType.AdjBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.AdjBar))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.AdjBar]
   {- Arity: 1,
@@ -229,7 +229,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                       @ [XBarType.AdjBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.AdjBar]))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP :: GHC.Read.Read XBarType.AdjP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -239,7 +239,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                   XBarType.$fReadAdjP_$creadList
                   XBarType.$fReadAdjP_$creadPrec
                   XBarType.$fReadAdjP_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -258,7 +258,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                              <XBarType.AdjP>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.AdjP
@@ -273,7 +273,7 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
                                        <XBarType.AdjP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.AdjP>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -291,7 +291,7 @@ bfb365fb8529029f6655e28dfe692b5a
 6d1d7fd2f9fd60320629f558080f9e97
   $fReadAdjP5 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP6 :: Text.ParserCombinators.ReadP.P [XBarType.AdjP]
   {- Unfolding: (GHC.Read.$wa
                    @ XBarType.AdjP
@@ -302,14 +302,14 @@ bfb365fb8529029f6655e28dfe692b5a
                    @ [XBarType.AdjP]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                       @ [XBarType.AdjP])) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.AdjP]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [XBarType.AdjP]
                    XBarType.$fReadAdjP6) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.AdjP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -322,7 +322,7 @@ bfb365fb8529029f6655e28dfe692b5a
                                     <[XBarType.AdjP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.AdjP]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.AdjP
   {- Arity: 1,
@@ -331,7 +331,7 @@ bfb365fb8529029f6655e28dfe692b5a
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.AdjP>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdjP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.AdjP
   {- Arity: 1, Strictness: <L,U>,
@@ -571,7 +571,7 @@ e7f2c774fab4159596abc70c9fc479a6
                       @ [XBarType.AdvBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.AdvBar]))) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP :: GHC.Read.Read XBarType.AdvP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -581,7 +581,7 @@ e7f2c774fab4159596abc70c9fc479a6
                   XBarType.$fReadAdvP_$creadList
                   XBarType.$fReadAdvP_$creadPrec
                   XBarType.$fReadAdvP_$creadListPrec -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -593,16 +593,16 @@ e7f2c774fab4159596abc70c9fc479a6
                    @ b
                    w1 :: [XBarType.AdvP] -> Text.ParserCombinators.ReadP.P b ->
                  XBarType.$wa5 @ b w1) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.AdvP
   {- Arity: 1 -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.AdvP]
   {- Arity: 1 -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.AdvP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -615,7 +615,7 @@ e7f2c774fab4159596abc70c9fc479a6
                                     <[XBarType.AdvP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.AdvP]>_R))) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.AdvP
   {- Arity: 1,
@@ -624,7 +624,7 @@ e7f2c774fab4159596abc70c9fc479a6
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.AdvP>_R)) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fReadAdvP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.AdvP
   {- Arity: 1, Strictness: <L,U> -}
@@ -736,7 +736,7 @@ bea2d20556a8dd0cb79e972c0036a427
 28be9d82ceaca0a52cf1e128ba919c80
   $fReadComp4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Comp"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar :: GHC.Read.Read XBarType.CompBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -746,7 +746,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadCompBar_$sreadListDefault
                   XBarType.$fReadCompBar_$creadPrec
                   XBarType.$fReadCompBar_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -765,82 +765,7 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.CompBar>_R))
                    @ b
                    eta1) -}
-ec7a5874141eea1ba26254fcfb03a68f
-  $fReadCompBar10 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "VerbP"#) -}
-f03d435ec2815854b9543cc49e4f904e
-  $fReadCompBar11 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa11 ww1 @ b w1 }) -}
-7c356c671eb8a60eb0712b04868ae12c
-  $fReadCompBar12 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.Tense -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.Tense -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa12 ww1 @ b w1 }) -}
-35a577a0f1ab6d231b93f5776d09eb71
-  $fReadCompBar13 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "Tense"#) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $fReadCompBar14 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.DetP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.DetP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa13 ww1 @ b w1 }) -}
-5b000b6aeea1d25f9d5de077ecb0c5b0
-  $fReadCompBar15 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "DetP"#) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $fReadCompBar16 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.DetBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.DetBar -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa14 ww1 @ b w1 }) -}
-83a4d8fb587a3db78561653046ede5f7
-  $fReadCompBar17 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "DetBar"#) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $fReadCompBar18 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.NounP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.NounP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa15 ww1 @ b w1 }) -}
-bb6f79cd94da14c8aca6afba79afe733
-  $fReadCompBar19 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "NounP"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.CompBar
@@ -855,129 +780,7 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.CompBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.CompBar>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $fReadCompBar20 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.NounBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.NounBar -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa16 ww1 @ b w1 }) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
-  $fReadCompBar21 ::
-    GHC.Read.Read a =>
-    Text.ParserCombinators.ReadPrec.Prec
-    -> Text.ParserCombinators.ReadP.ReadP (XBarType.Optional a)
-  {- Arity: 2, Strictness: <L,1*U(A,A,1*U,A)><L,U>,
-     Unfolding: (\ @ a11
-                   $dRead :: GHC.Read.Read a11
-                   eta :: Text.ParserCombinators.ReadPrec.Prec ->
-                 GHC.Read.$fReadDouble10
-                   @ (XBarType.Optional a11)
-                   (let {
-                      ds :: Text.ParserCombinators.ReadPrec.ReadPrec a11
-                      = GHC.Read.readPrec @ a11 $dRead
-                    } in
-                    (\ n :: Text.ParserCombinators.ReadPrec.Prec
-                       @ b
-                       eta1 :: XBarType.Optional a11
-                               -> Text.ParserCombinators.ReadP.P b ->
-                     let {
-                       lvl78 :: Text.ParserCombinators.ReadP.P b
-                       = let {
-                           lvl79 :: Text.ParserCombinators.ReadP.P b
-                           = eta1 (XBarType.NoOpt @ a11)
-                         } in
-                         Text.Read.Lex.expect2
-                           @ b
-                           (\ a98 :: Text.Read.Lex.Lexeme ->
-                            case a98 of wild {
-                              DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                              Text.Read.Lex.Ident a12
-                              -> case GHC.Base.eqString a12 XBarType.$fReadCompBar23 of wild1 {
-                                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                   GHC.Types.True -> lvl79 } })
-                     } in
-                     let {
-                       k :: () -> Text.ParserCombinators.ReadP.P b
-                         {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                            Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                       = \ w2 :: () -> lvl78
-                     } in
-                     Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
-                       @ b
-                       (Text.ParserCombinators.ReadP.Look
-                          @ b
-                          (\ a98 :: GHC.Base.String ->
-                           (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                             `cast`
-                           (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                             @ b
-                             k))
-                       (case n of wild { GHC.Types.I# x ->
-                        case GHC.Prim.tagToEnum#
-                               @ GHC.Types.Bool
-                               (GHC.Prim.<=# x 10) of wild2 {
-                          GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                          GHC.Types.True
-                          -> let {
-                               lvl53 :: Text.ParserCombinators.ReadP.P b
-                               = let {
-                                   lvl79 :: Text.ParserCombinators.ReadP.P b
-                                   = (ds
-                                        `cast`
-                                      (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0] <a11>_R)
-                                        XBarType.$fReadAdjP5)
-                                       `cast`
-                                     (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <a11>_R)
-                                       @ b
-                                       (\ a12 :: a11 -> eta1 (XBarType.YesOpt @ a11 a12))
-                                 } in
-                                 Text.Read.Lex.expect2
-                                   @ b
-                                   (\ a98 :: Text.Read.Lex.Lexeme ->
-                                    case a98 of wild1 {
-                                      DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                                      Text.Read.Lex.Ident a12
-                                      -> case GHC.Base.eqString
-                                                a12
-                                                XBarType.$fReadCompBar22 of wild3 {
-                                           GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                           GHC.Types.True -> lvl79 } })
-                             } in
-                             let {
-                               k1 :: () -> Text.ParserCombinators.ReadP.P b
-                                 {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                                    Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl53) -}
-                               = \ w2 :: () -> lvl53
-                             } in
-                             Text.ParserCombinators.ReadP.Look
-                               @ b
-                               (\ a98 :: GHC.Base.String ->
-                                (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                                  `cast`
-                                (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                                  @ b
-                                  k1) } }))
-                      `cast`
-                    (Trans
-                         (<Text.ParserCombinators.ReadPrec.Prec>_R
-                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                        <XBarType.Optional a11>_R))
-                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                   <XBarType.Optional a11>_R))))
-                   eta) -}
-e591afd3928956326bae6740ecbeab89
-  $fReadCompBar22 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "YesOpt"#) -}
-62e381370db59f3a669ed9cb0c87bb0a
-  $fReadCompBar23 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "NoOpt"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -992,7 +795,7 @@ f03d435ec2815854b9543cc49e4f904e
 fc07c6570210c2ab8d9eddcb089902b9
   $fReadCompBar4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "CompBar"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar5 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1004,37 +807,7 @@ f03d435ec2815854b9543cc49e4f904e
                    @ b
                    w1 :: XBarType.TenseP -> Text.ParserCombinators.ReadP.P b ->
                  case w of ww { GHC.Types.I# ww1 -> XBarType.$wa8 ww1 @ b w1 }) -}
-944bf7f3e76f262f90370491b96c11d9
-  $fReadCompBar6 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "TenseP"#) -}
-f03d435ec2815854b9543cc49e4f904e
-  $fReadCompBar7 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa9 ww1 @ b w1 }) -}
-dc5f5a4943a1a5a8aafeb7d01e223498
-  $fReadCompBar8 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "TenseBar"#) -}
-f03d435ec2815854b9543cc49e4f904e
-  $fReadCompBar9 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.VerbP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.VerbP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa10 ww1 @ b w1 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.CompBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1047,7 +820,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.CompBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.CompBar]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.CompBar
   {- Arity: 1,
@@ -1056,7 +829,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.CompBar>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS XBarType.CompBar
@@ -1081,7 +854,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ XBarType.CompBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.CompBar))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.CompBar]
   {- Arity: 1,
@@ -1098,7 +871,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ [XBarType.CompBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.CompBar]))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP :: GHC.Read.Read XBarType.CompP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1108,7 +881,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadCompP_$sreadListDefault
                   XBarType.$fReadCompP_$creadPrec
                   XBarType.$fReadCompP_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1127,7 +900,7 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.CompP>_R))
                    @ b
                    eta1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.CompP
@@ -1142,7 +915,7 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.CompP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.CompP>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1153,11 +926,11 @@ f03d435ec2815854b9543cc49e4f904e
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.CompP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa18 ww1 @ b w1 }) -}
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa9 ww1 @ b w1 }) -}
 f9eb1b41cc9e881cd9fe5de03ba96fba
   $fReadCompP4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "CompP"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.CompP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1170,7 +943,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.CompP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.CompP]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.CompP
   {- Arity: 1,
@@ -1179,7 +952,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.CompP>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.CompP
   {- Arity: 1, Strictness: <L,U>,
@@ -1203,7 +976,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ XBarType.CompP
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.CompP))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadCompP_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.CompP]
   {- Arity: 1,
@@ -1269,7 +1042,7 @@ bea2d20556a8dd0cb79e972c0036a427
                       @ [XBarType.Comp]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.Comp]))) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet :: GHC.Read.Read XBarType.Det
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1279,7 +1052,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fReadDet_$sreadListDefault
                   XBarType.$fReadDet_$creadPrec
                   XBarType.$fReadDet_$creadListPrec -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1298,7 +1071,7 @@ a2df5da8581f4264e89bd095eb23cf16
                              <XBarType.Det>_R))
                    @ b
                    eta1) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.Det
@@ -1313,7 +1086,7 @@ a2df5da8581f4264e89bd095eb23cf16
                                        <XBarType.Det>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.Det>_R)))) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1324,11 +1097,11 @@ a2df5da8581f4264e89bd095eb23cf16
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.Det -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa17 ww1 @ b w1 }) -}
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa10 ww1 @ b w1 }) -}
 706f5a3328d5f9b6971a67eac890099e
   $fReadDet4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Det"#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar :: GHC.Read.Read XBarType.DetBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1338,7 +1111,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fReadDetBar_$sreadListDefault
                   XBarType.$fReadDetBar_$creadPrec
                   XBarType.$fReadDetBar_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1357,14 +1130,17 @@ a2df5da8581f4264e89bd095eb23cf16
                              <XBarType.DetBar>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+72db5055d6d5c9386401342f856b6d5d
+  $fReadDetBar10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NoOpt"#) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.DetBar
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.DetBar
-                   XBarType.$fReadCompBar16
+                   XBarType.$fReadDetBar3
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1372,7 +1148,156 @@ a2df5da8581f4264e89bd095eb23cf16
                                        <XBarType.DetBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.DetBar>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
+  $fReadDetBar3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.DetBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.DetBar -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa11 ww1 @ b w1 }) -}
+e885feadda8fa0ea8c6b58ea19ced1ed
+  $fReadDetBar4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DetBar"#) -}
+02124ea1683e70a8b818aacb204bc09d
+  $fReadDetBar5 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.NounP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.NounP -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa12 ww1 @ b w1 }) -}
+9bb93940b5552505335667cd12de994f
+  $fReadDetBar6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "NounP"#) -}
+02124ea1683e70a8b818aacb204bc09d
+  $fReadDetBar7 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.NounBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.NounBar -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa13 ww1 @ b w1 }) -}
+02124ea1683e70a8b818aacb204bc09d
+  $fReadDetBar8 ::
+    GHC.Read.Read a =>
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP (XBarType.Optional a)
+  {- Arity: 2, Strictness: <L,1*U(A,A,1*U,A)><L,U>,
+     Unfolding: (\ @ a11
+                   $dRead :: GHC.Read.Read a11
+                   eta :: Text.ParserCombinators.ReadPrec.Prec ->
+                 GHC.Read.$fReadDouble10
+                   @ (XBarType.Optional a11)
+                   (let {
+                      ds :: Text.ParserCombinators.ReadPrec.ReadPrec a11
+                      = GHC.Read.readPrec @ a11 $dRead
+                    } in
+                    (\ n :: Text.ParserCombinators.ReadPrec.Prec
+                       @ b
+                       eta1 :: XBarType.Optional a11
+                               -> Text.ParserCombinators.ReadP.P b ->
+                     let {
+                       lvl78 :: Text.ParserCombinators.ReadP.P b
+                       = let {
+                           lvl79 :: Text.ParserCombinators.ReadP.P b
+                           = eta1 (XBarType.NoOpt @ a11)
+                         } in
+                         Text.Read.Lex.expect2
+                           @ b
+                           (\ a98 :: Text.Read.Lex.Lexeme ->
+                            case a98 of wild {
+                              DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                              Text.Read.Lex.Ident a12
+                              -> case GHC.Base.eqString a12 XBarType.$fReadDetBar10 of wild1 {
+                                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                   GHC.Types.True -> lvl79 } })
+                     } in
+                     let {
+                       k :: () -> Text.ParserCombinators.ReadP.P b
+                         {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                            Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                       = \ w2 :: () -> lvl78
+                     } in
+                     Text.ParserCombinators.ReadP.$fAlternativeP_$c<|>
+                       @ b
+                       (Text.ParserCombinators.ReadP.Look
+                          @ b
+                          (\ a98 :: GHC.Base.String ->
+                           (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                             `cast`
+                           (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                             @ b
+                             k))
+                       (case n of wild { GHC.Types.I# x ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.<=# x 10) of wild2 {
+                          GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                          GHC.Types.True
+                          -> let {
+                               lvl53 :: Text.ParserCombinators.ReadP.P b
+                               = let {
+                                   lvl79 :: Text.ParserCombinators.ReadP.P b
+                                   = (ds
+                                        `cast`
+                                      (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0] <a11>_R)
+                                        XBarType.$fReadAdjP5)
+                                       `cast`
+                                     (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <a11>_R)
+                                       @ b
+                                       (\ a12 :: a11 -> eta1 (XBarType.YesOpt @ a11 a12))
+                                 } in
+                                 Text.Read.Lex.expect2
+                                   @ b
+                                   (\ a98 :: Text.Read.Lex.Lexeme ->
+                                    case a98 of wild1 {
+                                      DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                                      Text.Read.Lex.Ident a12
+                                      -> case GHC.Base.eqString
+                                                a12
+                                                XBarType.$fReadDetBar9 of wild3 {
+                                           GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                           GHC.Types.True -> lvl79 } })
+                             } in
+                             let {
+                               k1 :: () -> Text.ParserCombinators.ReadP.P b
+                                 {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                                    Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl53) -}
+                               = \ w2 :: () -> lvl53
+                             } in
+                             Text.ParserCombinators.ReadP.Look
+                               @ b
+                               (\ a98 :: GHC.Base.String ->
+                                (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                                  `cast`
+                                (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                                  @ b
+                                  k1) } }))
+                      `cast`
+                    (Trans
+                         (<Text.ParserCombinators.ReadPrec.Prec>_R
+                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                        <XBarType.Optional a11>_R))
+                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                   <XBarType.Optional a11>_R))))
+                   eta) -}
+c9027e152ffa1fa7e8ecd7d3e52fe9e0
+  $fReadDetBar9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "YesOpt"#) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.DetBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1385,7 +1310,7 @@ a2df5da8581f4264e89bd095eb23cf16
                                     <[XBarType.DetBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.DetBar]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.DetBar
   {- Arity: 1,
@@ -1394,7 +1319,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.DetBar>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.DetBar
   {- Arity: 1, Strictness: <L,U>,
@@ -1404,7 +1329,7 @@ a2df5da8581f4264e89bd095eb23cf16
                    @ XBarType.DetBar
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.DetBar
-                       XBarType.$fReadCompBar16
+                       XBarType.$fReadDetBar3
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1418,7 +1343,7 @@ a2df5da8581f4264e89bd095eb23cf16
                       @ XBarType.DetBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.DetBar))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.DetBar]
   {- Arity: 1,
@@ -1435,7 +1360,7 @@ a2df5da8581f4264e89bd095eb23cf16
                       @ [XBarType.DetBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.DetBar]))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP :: GHC.Read.Read XBarType.DetP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1445,7 +1370,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fReadDetP_$sreadListDefault
                   XBarType.$fReadDetP_$creadPrec
                   XBarType.$fReadDetP_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1464,14 +1389,14 @@ a2df5da8581f4264e89bd095eb23cf16
                              <XBarType.DetP>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.DetP
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.DetP
-                   XBarType.$fReadCompBar14
+                   XBarType.$fReadDetP3
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1479,7 +1404,22 @@ a2df5da8581f4264e89bd095eb23cf16
                                        <XBarType.DetP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.DetP>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
+  $fReadDetP3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.DetP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.DetP -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa14 ww1 @ b w1 }) -}
+dec9a7235536720fe3b0a071df7139f3
+  $fReadDetP4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "DetP"#) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.DetP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1492,7 +1432,7 @@ a2df5da8581f4264e89bd095eb23cf16
                                     <[XBarType.DetP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.DetP]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.DetP
   {- Arity: 1,
@@ -1501,7 +1441,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.DetP>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.DetP
   {- Arity: 1, Strictness: <L,U>,
@@ -1511,7 +1451,7 @@ a2df5da8581f4264e89bd095eb23cf16
                    @ XBarType.DetP
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.DetP
-                       XBarType.$fReadCompBar14
+                       XBarType.$fReadDetP3
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1525,7 +1465,7 @@ a2df5da8581f4264e89bd095eb23cf16
                       @ XBarType.DetP
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.DetP))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadDetP_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.DetP]
   {- Arity: 1,
@@ -1542,7 +1482,7 @@ a2df5da8581f4264e89bd095eb23cf16
                       @ [XBarType.DetP]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.DetP]))) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.Det]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1555,7 +1495,7 @@ a2df5da8581f4264e89bd095eb23cf16
                                     <[XBarType.Det]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.Det]>_R))) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.Det
   {- Arity: 1,
@@ -1564,7 +1504,7 @@ a2df5da8581f4264e89bd095eb23cf16
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.Det>_R)) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet_$s$dmreadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.Det
   {- Arity: 1, Strictness: <L,U>,
@@ -1574,7 +1514,7 @@ a2df5da8581f4264e89bd095eb23cf16
                    @ XBarType.Det
                    XBarType.$fReadDet_$creadPrec
                    eta) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fReadDet_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.Det]
   {- Arity: 1,
@@ -1591,7 +1531,7 @@ a2df5da8581f4264e89bd095eb23cf16
                       @ [XBarType.Det]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.Det]))) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun :: GHC.Read.Read XBarType.Noun
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1601,7 +1541,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   XBarType.$fReadNoun_$sreadListDefault
                   XBarType.$fReadNoun_$creadPrec
                   XBarType.$fReadNoun_$creadListPrec -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1620,7 +1560,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                              <XBarType.Noun>_R))
                    @ b
                    eta1) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.Noun
@@ -1635,7 +1575,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                        <XBarType.Noun>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.Noun>_R)))) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1646,11 +1586,11 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.Noun -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa19 ww1 @ b w1 }) -}
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa15 ww1 @ b w1 }) -}
 6e0a5a4618153e38259a73706a13e317
   $fReadNoun4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Noun"#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar :: GHC.Read.Read XBarType.NounBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1660,7 +1600,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   XBarType.$fReadNounBar_$sreadListDefault
                   XBarType.$fReadNounBar_$creadPrec
                   XBarType.$fReadNounBar_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1679,14 +1619,14 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                              <XBarType.NounBar>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.NounBar
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.NounBar
-                   XBarType.$fReadCompBar20
+                   XBarType.$fReadDetBar7
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1694,7 +1634,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                        <XBarType.NounBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.NounBar>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.NounBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1707,7 +1647,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                     <[XBarType.NounBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.NounBar]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.NounBar
   {- Arity: 1,
@@ -1716,7 +1656,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.NounBar>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS XBarType.NounBar
@@ -1727,7 +1667,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                    @ XBarType.NounBar
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.NounBar
-                       XBarType.$fReadCompBar20
+                       XBarType.$fReadDetBar7
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1741,7 +1681,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                       @ XBarType.NounBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.NounBar))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.NounBar]
   {- Arity: 1,
@@ -1758,7 +1698,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                       @ [XBarType.NounBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.NounBar]))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP :: GHC.Read.Read XBarType.NounP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1768,7 +1708,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   XBarType.$fReadNounP_$sreadListDefault
                   XBarType.$fReadNounP_$creadPrec
                   XBarType.$fReadNounP_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1787,14 +1727,14 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                              <XBarType.NounP>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.NounP
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.NounP
-                   XBarType.$fReadCompBar18
+                   XBarType.$fReadDetBar5
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1802,7 +1742,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                        <XBarType.NounP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.NounP>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.NounP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1815,7 +1755,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                     <[XBarType.NounP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.NounP]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.NounP
   {- Arity: 1,
@@ -1824,7 +1764,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.NounP>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.NounP
   {- Arity: 1, Strictness: <L,U>,
@@ -1834,7 +1774,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                    @ XBarType.NounP
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.NounP
-                       XBarType.$fReadCompBar18
+                       XBarType.$fReadDetBar5
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -1848,7 +1788,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                       @ XBarType.NounP
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.NounP))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadNounP_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.NounP]
   {- Arity: 1,
@@ -1865,7 +1805,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                       @ [XBarType.NounP]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.NounP]))) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.Noun]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -1878,7 +1818,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                                     <[XBarType.Noun]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.Noun]>_R))) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.Noun
   {- Arity: 1,
@@ -1887,7 +1827,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.Noun>_R)) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun_$s$dmreadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.Noun
   {- Arity: 1, Strictness: <L,U>,
@@ -1897,7 +1837,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                    @ XBarType.Noun
                    XBarType.$fReadNoun_$creadPrec
                    eta) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fReadNoun_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.Noun]
   {- Arity: 1,
@@ -1914,7 +1854,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                       @ [XBarType.Noun]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.Noun]))) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional ::
     GHC.Read.Read a => GHC.Read.Read (XBarType.Optional a)
   DFunId[0]
@@ -1925,7 +1865,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   (XBarType.$fReadOptional_$creadList @ a11 $dRead)
                   (XBarType.$fReadOptional_$creadPrec @ a11 $dRead)
                   (XBarType.$fReadOptional_$creadListPrec @ a11 $dRead) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional1 ::
     GHC.Read.Read a =>
     Text.ParserCombinators.ReadPrec.Prec
@@ -1942,13 +1882,25 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                            -> Text.ParserCombinators.ReadP.P b ->
                  GHC.Read.$wa
                    @ (XBarType.Optional a11)
-                   (XBarType.$fReadCompBar21 @ a11 $dRead)
+                   (XBarType.$fReadDetBar8 @ a11 $dRead)
                      `cast`
                    (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                              <XBarType.Optional a11>_R))
                    @ b
                    eta1) -}
-3b15556bfbbbe8a42a652a6bf1bd364c
+c71f9dde72ea7ebbafb349e1adbf85dd
+  $fReadOptional11 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.PrepP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.PrepP -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa17 ww1 @ b w1 }) -}
+f356270901d4b0aaafdea7116ff3613b
   $fReadOptional6 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -1959,20 +1911,8 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.AdvP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa20 ww1 @ b w1 }) -}
-afd93f64fe090af4fd7f9367c98b147b
-  $fReadOptional9 ::
-    Text.ParserCombinators.ReadPrec.Prec
-    -> forall b.
-       (XBarType.PrepP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
-     Unfolding: InlineRule (2, True, False)
-                (\ w :: Text.ParserCombinators.ReadPrec.Prec
-                   @ b
-                   w1 :: XBarType.PrepP -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa21 ww1 @ b w1 }) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa16 ww1 @ b w1 }) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional_$creadList ::
     GHC.Read.Read a =>
     Text.ParserCombinators.ReadP.ReadS [XBarType.Optional a]
@@ -1983,14 +1923,14 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                    @ [XBarType.Optional a11]
                    (GHC.Read.$wa
                       @ (XBarType.Optional a11)
-                      (XBarType.$fReadCompBar21 @ a11 $dRead)
+                      (XBarType.$fReadDetBar8 @ a11 $dRead)
                         `cast`
                       (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                 <XBarType.Optional a11>_R))
                       @ [XBarType.Optional a11]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.Optional a11]))) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional_$creadListPrec ::
     GHC.Read.Read a =>
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.Optional a]
@@ -2006,19 +1946,19 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                                          <[XBarType.Optional a11]>_R))
                           (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                     <[XBarType.Optional a11]>_R))) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional_$creadPrec ::
     GHC.Read.Read a =>
     Text.ParserCombinators.ReadPrec.ReadPrec (XBarType.Optional a)
   {- Arity: 2, Strictness: <L,1*U(A,A,1*U,A)><L,U>,
      Unfolding: InlineRule (0, True, True)
-                XBarType.$fReadCompBar21
+                XBarType.$fReadDetBar8
                   `cast`
                 (forall a11.
                  <GHC.Read.Read a11>_R
                  ->_R Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <XBarType.Optional a11>_R)) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fReadOptional_$creadsPrec ::
     GHC.Read.Read a =>
     GHC.Types.Int
@@ -2028,14 +1968,14 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                 (\ @ a11 $dRead :: GHC.Read.Read a11 eta :: GHC.Types.Int ->
                  Text.ParserCombinators.ReadP.run
                    @ (XBarType.Optional a11)
-                   ((XBarType.$fReadCompBar21 @ a11 $dRead eta)
+                   ((XBarType.$fReadDetBar8 @ a11 $dRead eta)
                       `cast`
                     (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
                          <XBarType.Optional a11>_R)
                       @ (XBarType.Optional a11)
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ (XBarType.Optional a11)))) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep :: GHC.Read.Read XBarType.Prep
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2045,7 +1985,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   XBarType.$fReadPrep_$sreadListDefault
                   XBarType.$fReadPrep_$creadPrec
                   XBarType.$fReadPrep_$creadListPrec -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2064,7 +2004,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                              <XBarType.Prep>_R))
                    @ b
                    eta1) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.Prep
@@ -2079,7 +2019,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                                        <XBarType.Prep>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.Prep>_R)))) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2090,11 +2030,11 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.Prep -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa22 ww1 @ b w1 }) -}
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa18 ww1 @ b w1 }) -}
 f9b2558a9112522307bb4c1965130359
   $fReadPrep4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Prep"#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar :: GHC.Read.Read XBarType.PrepBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2104,7 +2044,7 @@ f9b2558a9112522307bb4c1965130359
                   XBarType.$fReadPrepBar_$sreadListDefault
                   XBarType.$fReadPrepBar_$creadPrec
                   XBarType.$fReadPrepBar_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2123,7 +2063,7 @@ f9b2558a9112522307bb4c1965130359
                              <XBarType.PrepBar>_R))
                    @ b
                    eta1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.PrepBar
@@ -2138,7 +2078,7 @@ f9b2558a9112522307bb4c1965130359
                                        <XBarType.PrepBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.PrepBar>_R)))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar3 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2149,8 +2089,8 @@ f9b2558a9112522307bb4c1965130359
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: XBarType.PrepBar -> Text.ParserCombinators.ReadP.P b ->
-                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa23 ww1 @ b w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa19 ww1 @ b w1 }) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.PrepBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2163,7 +2103,7 @@ f9b2558a9112522307bb4c1965130359
                                     <[XBarType.PrepBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.PrepBar]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.PrepBar
   {- Arity: 1,
@@ -2172,7 +2112,7 @@ f9b2558a9112522307bb4c1965130359
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.PrepBar>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS XBarType.PrepBar
@@ -2197,7 +2137,7 @@ f9b2558a9112522307bb4c1965130359
                       @ XBarType.PrepBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.PrepBar))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.PrepBar]
   {- Arity: 1,
@@ -2214,7 +2154,7 @@ f9b2558a9112522307bb4c1965130359
                       @ [XBarType.PrepBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.PrepBar]))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP :: GHC.Read.Read XBarType.PrepP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2224,7 +2164,7 @@ f9b2558a9112522307bb4c1965130359
                   XBarType.$fReadPrepP_$creadList
                   XBarType.$fReadPrepP_$creadPrec
                   XBarType.$fReadPrepP_$creadListPrec -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2235,17 +2175,17 @@ f9b2558a9112522307bb4c1965130359
                 (\ w :: Text.ParserCombinators.ReadPrec.Prec
                    @ b
                    w1 :: [XBarType.PrepP] -> Text.ParserCombinators.ReadP.P b ->
-                 XBarType.$wa24 @ b w1) -}
-9c36599f599b1f15a98473bd1aeb6160
+                 XBarType.$wa20 @ b w1) -}
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.PrepP
   {- Arity: 1 -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.PrepP]
   {- Arity: 1 -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.PrepP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2258,7 +2198,7 @@ f9b2558a9112522307bb4c1965130359
                                     <[XBarType.PrepP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.PrepP]>_R))) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.PrepP
   {- Arity: 1,
@@ -2267,11 +2207,11 @@ f9b2558a9112522307bb4c1965130359
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.PrepP>_R)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fReadPrepP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.PrepP
   {- Arity: 1, Strictness: <L,U> -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.Prep]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2284,7 +2224,7 @@ f9b2558a9112522307bb4c1965130359
                                     <[XBarType.Prep]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.Prep]>_R))) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.Prep
   {- Arity: 1,
@@ -2293,7 +2233,7 @@ f9b2558a9112522307bb4c1965130359
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.Prep>_R)) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep_$s$dmreadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.Prep
   {- Arity: 1, Strictness: <L,U>,
@@ -2303,7 +2243,7 @@ f9b2558a9112522307bb4c1965130359
                    @ XBarType.Prep
                    XBarType.$fReadPrep_$creadPrec
                    eta) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fReadPrep_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.Prep]
   {- Arity: 1,
@@ -2320,7 +2260,7 @@ f9b2558a9112522307bb4c1965130359
                       @ [XBarType.Prep]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.Prep]))) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense :: GHC.Read.Read XBarType.Tense
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2330,7 +2270,7 @@ f9b2558a9112522307bb4c1965130359
                   XBarType.$fReadTense_$sreadListDefault
                   XBarType.$fReadTense_$creadPrec
                   XBarType.$fReadTense_$creadListPrec -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2349,14 +2289,14 @@ f9b2558a9112522307bb4c1965130359
                              <XBarType.Tense>_R))
                    @ b
                    eta1) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.Tense
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.Tense
-                   XBarType.$fReadCompBar12
+                   XBarType.$fReadTense3
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2364,7 +2304,22 @@ f9b2558a9112522307bb4c1965130359
                                        <XBarType.Tense>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.Tense>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+1269e92afa0f761c0ceaf60b2b8908d7
+  $fReadTense3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.Tense -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.Tense -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa21 ww1 @ b w1 }) -}
+6e7e08f9085fbd5b5d9e360bd8742ee5
+  $fReadTense4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Tense"#) -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar :: GHC.Read.Read XBarType.TenseBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2374,7 +2329,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadTenseBar_$sreadListDefault
                   XBarType.$fReadTenseBar_$creadPrec
                   XBarType.$fReadTenseBar_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2393,14 +2348,14 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.TenseBar>_R))
                    @ b
                    eta1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.TenseBar
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.TenseBar
-                   XBarType.$fReadCompBar7
+                   XBarType.$fReadTenseBar3
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2408,7 +2363,49 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.TenseBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.TenseBar>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
+  $fReadTenseBar3 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa22 ww1 @ b w1 }) -}
+5e9c0ae667894716110d64c79d74da79
+  $fReadTenseBar4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "TenseBar"#) -}
+fb038bbed18be6b64f9e6f9cf00f0502
+  $fReadTenseBar5 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.VerbP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.VerbP -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa23 ww1 @ b w1 }) -}
+4f8d494545a68ea0585913bf2c4f1a34
+  $fReadTenseBar6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "VerbP"#) -}
+fb038bbed18be6b64f9e6f9cf00f0502
+  $fReadTenseBar7 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <S,1*U(U)><L,C(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: Text.ParserCombinators.ReadPrec.Prec
+                   @ b
+                   w1 :: XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b ->
+                 case w of ww { GHC.Types.I# ww1 -> XBarType.$wa24 ww1 @ b w1 }) -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.TenseBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2421,7 +2418,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.TenseBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.TenseBar]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.TenseBar
   {- Arity: 1,
@@ -2430,7 +2427,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.TenseBar>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS XBarType.TenseBar
@@ -2441,7 +2438,7 @@ f03d435ec2815854b9543cc49e4f904e
                    @ XBarType.TenseBar
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.TenseBar
-                       XBarType.$fReadCompBar7
+                       XBarType.$fReadTenseBar3
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2455,7 +2452,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ XBarType.TenseBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.TenseBar))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.TenseBar]
   {- Arity: 1,
@@ -2473,7 +2470,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ [XBarType.TenseBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.TenseBar]))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP :: GHC.Read.Read XBarType.TenseP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2483,7 +2480,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadTenseP_$sreadListDefault
                   XBarType.$fReadTenseP_$creadPrec
                   XBarType.$fReadTenseP_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2502,7 +2499,7 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.TenseP>_R))
                    @ b
                    eta1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.TenseP
@@ -2517,7 +2514,7 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.TenseP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.TenseP>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.TenseP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2530,7 +2527,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.TenseP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.TenseP]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.TenseP
   {- Arity: 1,
@@ -2539,7 +2536,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.TenseP>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.TenseP
   {- Arity: 1, Strictness: <L,U>,
@@ -2563,7 +2560,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ XBarType.TenseP
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.TenseP))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadTenseP_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.TenseP]
   {- Arity: 1,
@@ -2580,7 +2577,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ [XBarType.TenseP]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.TenseP]))) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.Tense]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2593,7 +2590,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.Tense]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.Tense]>_R))) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.Tense
   {- Arity: 1,
@@ -2602,7 +2599,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.Tense>_R)) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense_$s$dmreadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.Tense
   {- Arity: 1, Strictness: <L,U>,
@@ -2612,7 +2609,7 @@ f03d435ec2815854b9543cc49e4f904e
                    @ XBarType.Tense
                    XBarType.$fReadTense_$creadPrec
                    eta) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fReadTense_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.Tense]
   {- Arity: 1,
@@ -2688,7 +2685,7 @@ f03d435ec2815854b9543cc49e4f904e
 fcc613ca433face331f06bcb66eacb92
   $fReadVerb4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Verb"#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar :: GHC.Read.Read XBarType.VerbBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2698,7 +2695,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadVerbBar_$sreadListDefault
                   XBarType.$fReadVerbBar_$creadPrec
                   XBarType.$fReadVerbBar_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2717,14 +2714,14 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.VerbBar>_R))
                    @ b
                    eta1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.VerbBar
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.VerbBar
-                   XBarType.$fReadCompBar11
+                   XBarType.$fReadTenseBar7
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2732,7 +2729,7 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.VerbBar>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.VerbBar>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.VerbBar]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2745,7 +2742,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.VerbBar]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.VerbBar]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.VerbBar
   {- Arity: 1,
@@ -2754,7 +2751,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.VerbBar>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS XBarType.VerbBar
@@ -2763,23 +2760,13 @@ f03d435ec2815854b9543cc49e4f904e
                 (\ eta :: GHC.Types.Int ->
                  Text.ParserCombinators.ReadP.run
                    @ XBarType.VerbBar
-                   ((GHC.Read.$fReadDouble10
-                       @ XBarType.VerbBar
-                       XBarType.$fReadCompBar11
-                         `cast`
-                       (Trans
-                            (<Text.ParserCombinators.ReadPrec.Prec>_R
-                             ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                           <XBarType.VerbBar>_R))
-                            (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                      <XBarType.VerbBar>_R)))
-                       eta)
+                   ((XBarType.$fReadVerbBar2 eta)
                       `cast`
                     (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.VerbBar>_R)
                       @ XBarType.VerbBar
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.VerbBar))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbBar_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.VerbBar]
   {- Arity: 1,
@@ -2796,7 +2783,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ [XBarType.VerbBar]
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ [XBarType.VerbBar]))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP :: GHC.Read.Read XBarType.VerbP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2806,7 +2793,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fReadVerbP_$sreadListDefault
                   XBarType.$fReadVerbP_$creadPrec
                   XBarType.$fReadVerbP_$creadListPrec -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -2825,14 +2812,14 @@ f03d435ec2815854b9543cc49e4f904e
                              <XBarType.VerbP>_R))
                    @ b
                    eta1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> Text.ParserCombinators.ReadP.ReadP XBarType.VerbP
   {- Arity: 1,
      Unfolding: (GHC.Read.$fReadDouble10
                    @ XBarType.VerbP
-                   XBarType.$fReadCompBar9
+                   XBarType.$fReadTenseBar5
                      `cast`
                    (Trans
                         (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2840,7 +2827,7 @@ f03d435ec2815854b9543cc49e4f904e
                                        <XBarType.VerbP>_R))
                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                   <XBarType.VerbP>_R)))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [XBarType.VerbP]
   {- Arity: 2, Strictness: <L,A><L,C(U)>,
@@ -2853,7 +2840,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     <[XBarType.VerbP]>_R))
                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                                <[XBarType.VerbP]>_R))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP_$creadPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec XBarType.VerbP
   {- Arity: 1,
@@ -2862,7 +2849,7 @@ f03d435ec2815854b9543cc49e4f904e
                   `cast`
                 (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
                           <XBarType.VerbP>_R)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP_$creadsPrec ::
     GHC.Types.Int -> Text.ParserCombinators.ReadP.ReadS XBarType.VerbP
   {- Arity: 1, Strictness: <L,U>,
@@ -2872,7 +2859,7 @@ f03d435ec2815854b9543cc49e4f904e
                    @ XBarType.VerbP
                    ((GHC.Read.$fReadDouble10
                        @ XBarType.VerbP
-                       XBarType.$fReadCompBar9
+                       XBarType.$fReadTenseBar5
                          `cast`
                        (Trans
                             (<Text.ParserCombinators.ReadPrec.Prec>_R
@@ -2886,7 +2873,7 @@ f03d435ec2815854b9543cc49e4f904e
                       @ XBarType.VerbP
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$creturn
                          @ XBarType.VerbP))) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fReadVerbP_$sreadListDefault ::
     Text.ParserCombinators.ReadP.ReadS [XBarType.VerbP]
   {- Arity: 1,
@@ -2970,7 +2957,7 @@ f03d435ec2815854b9543cc49e4f904e
 6bd86c18fe087ce3ad8499c6e75cfe8a
   $fShowAdj2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Adj "#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjBar :: GHC.Show.Show XBarType.AdjBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -2979,12 +2966,12 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowAdjBar_$cshowsPrec
                   XBarType.$fShowAdjBar_$cshow
                   XBarType.$fShowAdjBar_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjBar1 :: XBarType.AdjBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.AdjBar ->
                  XBarType.$w$cshowsPrec1 0 w) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjBar_$cshow :: XBarType.AdjBar -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -2993,13 +2980,13 @@ f03d435ec2815854b9543cc49e4f904e
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjBar_$cshowList :: [XBarType.AdjBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.AdjBar
                    XBarType.$fShowAdjBar1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.AdjBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
@@ -3007,7 +2994,7 @@ f03d435ec2815854b9543cc49e4f904e
                 (\ w :: GHC.Types.Int w1 :: XBarType.AdjBar ->
                  case w of ww { GHC.Types.I# ww1 ->
                  XBarType.$w$cshowsPrec1 ww1 w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjP :: GHC.Show.Show XBarType.AdjP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3016,7 +3003,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowAdjP_$cshowsPrec
                   XBarType.$fShowAdjP_$cshow
                   XBarType.$fShowAdjP_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjP1 :: XBarType.AdjP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.AdjP ->
@@ -3025,7 +3012,7 @@ f03d435ec2815854b9543cc49e4f904e
 9a6701e1bde1ef8c9066ebc2f1f0cf56
   $fShowAdjP2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "AdjP "#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjP_$cshow :: XBarType.AdjP -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3039,13 +3026,13 @@ f03d435ec2815854b9543cc49e4f904e
                       XBarType.$fReadAdjP5
                       b1
                       (GHC.Types.[] @ GHC.Types.Char)) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjP_$cshowList :: [XBarType.AdjP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.AdjP
                    XBarType.$fShowAdjP1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdjP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.AdjP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U)>, Inline: INLINE[0],
@@ -3142,7 +3129,7 @@ b72222db291d1c6e6ce626dab08b3d54
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.AdvBar ww3 ->
                  XBarType.$w$cshowsPrec4 ww1 ww3 w2 } }) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP :: GHC.Show.Show XBarType.AdvP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3151,7 +3138,7 @@ b72222db291d1c6e6ce626dab08b3d54
                   XBarType.$fShowAdvP_$cshowsPrec
                   XBarType.$fShowAdvP_$cshow
                   XBarType.$fShowAdvP_$cshowList -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP1 :: XBarType.AdvP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.AdvP ->
@@ -3160,7 +3147,7 @@ b72222db291d1c6e6ce626dab08b3d54
 7323f3437abbec30023db9cf37a5ce8d
   $fShowAdvP2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "AdvP "#) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP_$cshow :: XBarType.AdvP -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,U(U(U)))>,
      Unfolding: InlineRule (1, True, False)
@@ -3169,13 +3156,13 @@ b72222db291d1c6e6ce626dab08b3d54
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP_$cshowList :: [XBarType.AdvP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.AdvP
                    XBarType.$fShowAdvP1) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.AdvP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U,U(U(U)))>,
@@ -3185,7 +3172,7 @@ b72222db291d1c6e6ce626dab08b3d54
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.AdvP ww3 ww4 ->
                  XBarType.$w$cshowsPrec5 ww1 ww3 ww4 } }) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $fShowAdvP_$s$cshowsPrec ::
     GHC.Types.Int -> XBarType.Optional XBarType.AdvP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
@@ -3232,7 +3219,7 @@ bea2d20556a8dd0cb79e972c0036a427
 41b7f83760288127cee9f6a3c36d4375
   $fShowComp2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Comp "#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompBar :: GHC.Show.Show XBarType.CompBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3241,7 +3228,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowCompBar_$cshowsPrec
                   XBarType.$fShowCompBar_$cshow
                   XBarType.$fShowCompBar_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompBar1 :: XBarType.CompBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.CompBar ->
@@ -3277,7 +3264,7 @@ b1c8597623073ddd55f941e55d36a230
 9ef160c0ab65f027a09d0ff57c3a4cb8
   $fShowCompBar9 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "YesOpt "#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompBar_$cshow :: XBarType.CompBar -> GHC.Base.String
   {- Arity: 1,
      Strictness: <S,1*U(1*U(1*U),1*U(1*U(1*U(U,1*U(1*U))),1*U(U(U),1*U(1*U))))>,
@@ -3286,13 +3273,13 @@ f03d435ec2815854b9543cc49e4f904e
                 (\ w :: XBarType.CompBar ->
                  case w of ww { XBarType.CompBar ww1 ww2 ->
                  XBarType.$w$cshow ww1 ww2 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompBar_$cshowList :: [XBarType.CompBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.CompBar
                    XBarType.$fShowCompBar1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.CompBar -> GHC.Show.ShowS
   {- Arity: 2,
@@ -3303,7 +3290,7 @@ f03d435ec2815854b9543cc49e4f904e
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.CompBar ww3 ww4 ->
                  XBarType.$w$cshowsPrec7 ww1 ww3 ww4 } }) -}
-b456960a02ea900804ee89b30d2e943d
+02124ea1683e70a8b818aacb204bc09d
   $fShowCompBar_$s$cshowsPrec ::
     GHC.Types.Int -> XBarType.Optional XBarType.Det -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U>,
@@ -3335,8 +3322,8 @@ b456960a02ea900804ee89b30d2e943d
                                    ww1
                                    (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 eta) })) } }
                    XBarType.NoOpt
-                   -> GHC.Base.++ @ GHC.Types.Char XBarType.$fReadCompBar23 eta }) -}
-f03d435ec2815854b9543cc49e4f904e
+                   -> GHC.Base.++ @ GHC.Types.Char XBarType.$fReadDetBar10 eta }) -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompP :: GHC.Show.Show XBarType.CompP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3345,7 +3332,7 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowCompP_$cshowsPrec
                   XBarType.$fShowCompP_$cshow
                   XBarType.$fShowCompP_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompP1 :: XBarType.CompP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.CompP ->
@@ -3361,7 +3348,7 @@ fb8d2dfca52d25efd18315842a45e8b0
                    @ GHC.Types.Char
                    GHC.Show.shows8
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompP_$cshow :: XBarType.CompP -> GHC.Base.String
   {- Arity: 1,
      Strictness: <S,1*U(1*U(1*U(1*U),1*U(1*U(1*U(U,1*U(1*U))),1*U(U(U),1*U(1*U)))))>,
@@ -3369,13 +3356,13 @@ f03d435ec2815854b9543cc49e4f904e
      Unfolding: InlineRule (1, True, False)
                 (\ w :: XBarType.CompP ->
                  case w of ww { XBarType.CompP ww1 -> XBarType.$w$cshow1 ww1 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompP_$cshowList :: [XBarType.CompP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.CompP
                    XBarType.$fShowCompP1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowCompP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.CompP -> GHC.Show.ShowS
   {- Arity: 2,
@@ -3411,7 +3398,7 @@ bea2d20556a8dd0cb79e972c0036a427
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.Comp ww3 ->
                  XBarType.$w$cshowsPrec6 ww1 ww3 w2 } }) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fShowDet :: GHC.Show.Show XBarType.Det
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3420,13 +3407,13 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fShowDet_$cshowsPrec
                   XBarType.$fShowDet_$cshow
                   XBarType.$fShowDet_$cshowList -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fShowDet1 :: XBarType.Det -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: XBarType.Det w1 :: GHC.Base.String ->
                  case w of ww { XBarType.Det ww1 ->
                  XBarType.$w$cshowsPrec15 0 ww1 w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetBar :: GHC.Show.Show XBarType.DetBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3435,28 +3422,26 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fShowDetBar_$cshowsPrec
                   XBarType.$fShowDetBar_$cshow
                   XBarType.$fShowDetBar_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetBar1 :: XBarType.DetBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.DetBar ->
                  case w of ww { XBarType.DetBar ww1 ww2 ->
                  XBarType.$w$cshowsPrec14 0 ww1 ww2 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetBar_$cshow :: XBarType.DetBar -> GHC.Base.String
-  {- Arity: 1, Strictness: <S,1*U(U,1*U(1*U))>,
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(1*U))>, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
-                (\ x :: XBarType.DetBar ->
-                 XBarType.$fShowDetBar_$cshowsPrec
-                   GHC.Show.shows18
-                   x
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-9c36599f599b1f15a98473bd1aeb6160
+                (\ w :: XBarType.DetBar ->
+                 case w of ww { XBarType.DetBar ww1 ww2 ->
+                 XBarType.$w$cshow2 ww1 ww2 }) -}
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetBar_$cshowList :: [XBarType.DetBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.DetBar
                    XBarType.$fShowDetBar1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.DetBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(U,1*U(1*U))>,
@@ -3466,7 +3451,7 @@ a2df5da8581f4264e89bd095eb23cf16
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.DetBar ww3 ww4 ->
                  XBarType.$w$cshowsPrec14 ww1 ww3 ww4 } }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetP :: GHC.Show.Show XBarType.DetP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3475,33 +3460,33 @@ a2df5da8581f4264e89bd095eb23cf16
                   XBarType.$fShowDetP_$cshowsPrec
                   XBarType.$fShowDetP_$cshow
                   XBarType.$fShowDetP_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetP1 :: XBarType.DetP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.DetP ->
                  case w of ww { XBarType.DetP ww1 ->
                  XBarType.$w$cshowsPrec13 0 ww1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $fShowDetP_$cshow :: XBarType.DetP -> GHC.Base.String
-  {- Arity: 1, Strictness: <S,1*U(1*U(U,1*U(1*U)))>,
-     Unfolding: InlineRule (1, True, False)
-                (\ x :: XBarType.DetP ->
-                 case x of wild { XBarType.DetP b1 ->
-                 GHC.Base.augment
+6d556272ee9ef32d28c14dee2185ef85
+  $fShowDetP2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
-                   (\ @ b c :: GHC.Types.Char -> b -> b[OneShot] n :: b[OneShot] ->
-                    GHC.Base.foldr @ GHC.Types.Char @ b c n XBarType.$fShowCompBar7)
-                   (XBarType.$fShowDetBar_$cshowsPrec
-                      XBarType.$fReadAdjP5
-                      b1
-                      (GHC.Types.[] @ GHC.Types.Char)) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+                   GHC.Show.shows8
+                   XBarType.$fShowCompP3) -}
+02124ea1683e70a8b818aacb204bc09d
+  $fShowDetP_$cshow :: XBarType.DetP -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U(1*U,1*U(1*U)))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: XBarType.DetP ->
+                 case w of ww { XBarType.DetP ww1 -> XBarType.$w$cshow3 ww1 }) -}
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetP_$cshowList :: [XBarType.DetP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.DetP
                    XBarType.$fShowDetP1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowDetP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.DetP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U(U,1*U(1*U)))>,
@@ -3511,7 +3496,7 @@ a2df5da8581f4264e89bd095eb23cf16
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.DetP ww3 ->
                  XBarType.$w$cshowsPrec13 ww1 ww3 } }) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fShowDet_$cshow :: XBarType.Det -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3520,13 +3505,13 @@ a2df5da8581f4264e89bd095eb23cf16
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fShowDet_$cshowList :: [XBarType.Det] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.Det
                    XBarType.$fShowDet1) -}
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   $fShowDet_$cshowsPrec ::
     GHC.Types.Int -> XBarType.Det -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U)><L,U>,
@@ -3536,7 +3521,7 @@ a2df5da8581f4264e89bd095eb23cf16
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.Det ww3 ->
                  XBarType.$w$cshowsPrec15 ww1 ww3 w2 } }) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fShowNoun :: GHC.Show.Show XBarType.Noun
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3545,7 +3530,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                   XBarType.$fShowNoun_$cshowsPrec
                   XBarType.$fShowNoun_$cshow
                   XBarType.$fShowNoun_$cshowList -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fShowNoun1 :: XBarType.Noun -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: XBarType.Noun w1 :: GHC.Base.String ->
@@ -3554,7 +3539,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
 b48d31e29dddc01cff75409a8cd674ae
   $fShowNoun2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Noun "#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounBar :: GHC.Show.Show XBarType.NounBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3563,12 +3548,12 @@ b48d31e29dddc01cff75409a8cd674ae
                   XBarType.$fShowNounBar_$cshowsPrec
                   XBarType.$fShowNounBar_$cshow
                   XBarType.$fShowNounBar_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounBar1 :: XBarType.NounBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.NounBar ->
                  XBarType.$w$cshowsPrec17 0 w) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounBar_$cshow :: XBarType.NounBar -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -3577,13 +3562,13 @@ b48d31e29dddc01cff75409a8cd674ae
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounBar_$cshowList :: [XBarType.NounBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.NounBar
                    XBarType.$fShowNounBar1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.NounBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
@@ -3591,7 +3576,7 @@ b48d31e29dddc01cff75409a8cd674ae
                 (\ w :: GHC.Types.Int w1 :: XBarType.NounBar ->
                  case w of ww { GHC.Types.I# ww1 ->
                  XBarType.$w$cshowsPrec17 ww1 w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounP :: GHC.Show.Show XBarType.NounP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3600,13 +3585,13 @@ b48d31e29dddc01cff75409a8cd674ae
                   XBarType.$fShowNounP_$cshowsPrec
                   XBarType.$fShowNounP_$cshow
                   XBarType.$fShowNounP_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounP1 :: XBarType.NounP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.NounP ->
                  case w of ww { XBarType.NounP ww1 ->
                  XBarType.$w$cshowsPrec16 0 ww1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounP_$cshow :: XBarType.NounP -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3620,13 +3605,13 @@ b48d31e29dddc01cff75409a8cd674ae
                       XBarType.$fReadAdjP5
                       b1
                       (GHC.Types.[] @ GHC.Types.Char)) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounP_$cshowList :: [XBarType.NounP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.NounP
                    XBarType.$fShowNounP1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowNounP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.NounP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U)>, Inline: INLINE[0],
@@ -3635,7 +3620,7 @@ b48d31e29dddc01cff75409a8cd674ae
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.NounP ww3 ->
                  XBarType.$w$cshowsPrec16 ww1 ww3 } }) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fShowNoun_$cshow :: XBarType.Noun -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3644,13 +3629,13 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fShowNoun_$cshowList :: [XBarType.Noun] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.Noun
                    XBarType.$fShowNoun1) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   $fShowNoun_$cshowsPrec ::
     GHC.Types.Int -> XBarType.Noun -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U)><L,U>,
@@ -3660,7 +3645,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.Noun ww3 ->
                  XBarType.$w$cshowsPrec19 ww1 ww3 w2 } }) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional ::
     GHC.Show.Show a => GHC.Show.Show (XBarType.Optional a)
   DFunId[0]
@@ -3674,13 +3659,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
 2f0ebd8036a3c069ed2f8cd63213c8aa
   $fShowOptional1 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
-5920f41524805083f113bbe0c7b06657
+923f8732c241d74e21680bcbfefd978d
   $fShowOptional2 :: GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Base.++
                    @ GHC.Types.Char
-                   XBarType.$fReadCompBar23) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+                   XBarType.$fReadDetBar10) -}
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional_$cshow ::
     GHC.Show.Show a => XBarType.Optional a -> GHC.Base.String
   {- Arity: 2, Strictness: <L,1*U(1*C1(C1(C1(U))),A,A)><S,1*U>,
@@ -3698,8 +3683,8 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                            XBarType.$fReadAdjP5
                            b1
                            (GHC.Types.[] @ GHC.Types.Char))
-                   XBarType.NoOpt -> XBarType.$fReadCompBar23 }) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+                   XBarType.NoOpt -> XBarType.$fReadDetBar10 }) -}
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional_$cshowList ::
     GHC.Show.Show a => [XBarType.Optional a] -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,U(C(C1(U)),A,A)><S,1*U><L,U>,
@@ -3716,7 +3701,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                       XBarType.$fShowOptional1)
                    eta
                    eta1) -}
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional_$cshowsPrec ::
     GHC.Show.Show a =>
     GHC.Types.Int -> XBarType.Optional a -> GHC.Show.ShowS
@@ -3748,7 +3733,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                                 XBarType.$fShowCompBar9
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1))) } }
                    XBarType.NoOpt -> XBarType.$fShowOptional2 }) -}
-836513437eed398c59ae8ec82b3ecb8c
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional_$s$cshowsPrec ::
     GHC.Types.Int -> XBarType.Optional XBarType.AdjP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,1*U(U)><S,1*U>,
@@ -3778,11 +3763,11 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                                 XBarType.$fShowCompBar9
                                 (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x1))) } }
                    XBarType.NoOpt -> XBarType.$fShowOptional2 }) -}
-5330d7c9ce1031f60b686feffc1e0d3c
+02124ea1683e70a8b818aacb204bc09d
   $fShowOptional_$s$cshowsPrec1 ::
     GHC.Types.Int -> XBarType.Optional XBarType.PrepP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fShowPrep :: GHC.Show.Show XBarType.Prep
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3791,7 +3776,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   XBarType.$fShowPrep_$cshowsPrec
                   XBarType.$fShowPrep_$cshow
                   XBarType.$fShowPrep_$cshowList -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fShowPrep1 :: XBarType.Prep -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: XBarType.Prep w1 :: GHC.Base.String ->
@@ -3800,7 +3785,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
 948f104e143f3b39ffea1553bc80d9b1
   $fShowPrep2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Prep "#) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepBar :: GHC.Show.Show XBarType.PrepBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3809,12 +3794,12 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   XBarType.$fShowPrepBar_$cshowsPrec
                   XBarType.$fShowPrepBar_$cshow
                   XBarType.$fShowPrepBar_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepBar1 :: XBarType.PrepBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.PrepBar ->
                  XBarType.$w$cshowsPrec21 0 w) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepBar_$cshow :: XBarType.PrepBar -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -3823,13 +3808,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepBar_$cshowList :: [XBarType.PrepBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.PrepBar
                    XBarType.$fShowPrepBar1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.PrepBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
@@ -3837,7 +3822,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                 (\ w :: GHC.Types.Int w1 :: XBarType.PrepBar ->
                  case w of ww { GHC.Types.I# ww1 ->
                  XBarType.$w$cshowsPrec21 ww1 w1 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepP :: GHC.Show.Show XBarType.PrepP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3846,13 +3831,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   XBarType.$fShowPrepP_$cshowsPrec
                   XBarType.$fShowPrepP_$cshow
                   XBarType.$fShowPrepP_$cshowList -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepP1 :: XBarType.PrepP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.PrepP ->
                  case w of ww { XBarType.PrepP ww1 ww2 ->
                  XBarType.$w$cshowsPrec22 0 ww1 ww2 }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepP_$cshow :: XBarType.PrepP -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3861,13 +3846,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepP_$cshowList :: [XBarType.PrepP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.PrepP
                    XBarType.$fShowPrepP1) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $fShowPrepP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.PrepP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U,1*U)>,
@@ -3877,7 +3862,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.PrepP ww3 ww4 ->
                  XBarType.$w$cshowsPrec22 ww1 ww3 ww4 } }) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fShowPrep_$cshow :: XBarType.Prep -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -3886,13 +3871,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fShowPrep_$cshowList :: [XBarType.Prep] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.Prep
                    XBarType.$fShowPrep1) -}
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   $fShowPrep_$cshowsPrec ::
     GHC.Types.Int -> XBarType.Prep -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U)><L,U>,
@@ -3902,7 +3887,7 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.Prep ww3 ->
                  XBarType.$w$cshowsPrec20 ww1 ww3 w2 } }) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fShowTense :: GHC.Show.Show XBarType.Tense
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3911,13 +3896,13 @@ f3dc4601f91d8797a18eb5a49e8e6c6b
                   XBarType.$fShowTense_$cshowsPrec
                   XBarType.$fShowTense_$cshow
                   XBarType.$fShowTense_$cshowList -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fShowTense1 :: XBarType.Tense -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: XBarType.Tense w1 :: GHC.Base.String ->
                  case w of ww { XBarType.Tense ww1 ->
                  XBarType.$w$cshowsPrec10 0 ww1 w1 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseBar :: GHC.Show.Show XBarType.TenseBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3926,27 +3911,27 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowTenseBar_$cshowsPrec
                   XBarType.$fShowTenseBar_$cshow
                   XBarType.$fShowTenseBar_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseBar1 :: XBarType.TenseBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.TenseBar ->
                  case w of ww { XBarType.TenseBar ww1 ww2 ->
                  XBarType.$w$cshowsPrec9 0 ww1 ww2 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseBar_$cshow :: XBarType.TenseBar -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U(1*U),1*U(1*U))>,
      Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
                 (\ w :: XBarType.TenseBar ->
                  case w of ww { XBarType.TenseBar ww1 ww2 ->
-                 XBarType.$w$cshow2 ww1 ww2 }) -}
-f03d435ec2815854b9543cc49e4f904e
+                 XBarType.$w$cshow4 ww1 ww2 }) -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseBar_$cshowList :: [XBarType.TenseBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.TenseBar
                    XBarType.$fShowTenseBar1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.TenseBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(U(U),1*U(1*U))>,
@@ -3956,7 +3941,7 @@ f03d435ec2815854b9543cc49e4f904e
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.TenseBar ww3 ww4 ->
                  XBarType.$w$cshowsPrec9 ww1 ww3 ww4 } }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseP :: GHC.Show.Show XBarType.TenseP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -3965,13 +3950,13 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowTenseP_$cshowsPrec
                   XBarType.$fShowTenseP_$cshow
                   XBarType.$fShowTenseP_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseP1 :: XBarType.TenseP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.TenseP ->
                  case w of ww { XBarType.TenseP ww1 ww2 ->
                  XBarType.$w$cshowsPrec8 0 ww1 ww2 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseP_$cshow :: XBarType.TenseP -> GHC.Base.String
   {- Arity: 1,
      Strictness: <S,1*U(1*U(1*U(U,1*U(1*U))),1*U(U(U),1*U(1*U)))>,
@@ -3981,13 +3966,13 @@ f03d435ec2815854b9543cc49e4f904e
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseP_$cshowList :: [XBarType.TenseP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.TenseP
                    XBarType.$fShowTenseP1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowTenseP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.TenseP -> GHC.Show.ShowS
   {- Arity: 2,
@@ -3998,7 +3983,7 @@ f03d435ec2815854b9543cc49e4f904e
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.TenseP ww3 ww4 ->
                  XBarType.$w$cshowsPrec8 ww1 ww3 ww4 } }) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fShowTense_$cshow :: XBarType.Tense -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -4007,13 +3992,13 @@ f03d435ec2815854b9543cc49e4f904e
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fShowTense_$cshowList :: [XBarType.Tense] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.Tense
                    XBarType.$fShowTense1) -}
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   $fShowTense_$cshowsPrec ::
     GHC.Types.Int -> XBarType.Tense -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U)><L,U>,
@@ -4041,7 +4026,7 @@ f03d435ec2815854b9543cc49e4f904e
 1f07128659e59e13c917ac814c419f76
   $fShowVerb2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Verb "#) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbBar :: GHC.Show.Show XBarType.VerbBar
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -4050,12 +4035,12 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowVerbBar_$cshowsPrec
                   XBarType.$fShowVerbBar_$cshow
                   XBarType.$fShowVerbBar_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbBar1 :: XBarType.VerbBar -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.VerbBar ->
                  XBarType.$w$cshowsPrec12 0 w) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbBar_$cshow :: XBarType.VerbBar -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -4064,13 +4049,13 @@ f03d435ec2815854b9543cc49e4f904e
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbBar_$cshowList :: [XBarType.VerbBar] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.VerbBar
                    XBarType.$fShowVerbBar1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbBar_$cshowsPrec ::
     GHC.Types.Int -> XBarType.VerbBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
@@ -4078,7 +4063,7 @@ f03d435ec2815854b9543cc49e4f904e
                 (\ w :: GHC.Types.Int w1 :: XBarType.VerbBar ->
                  case w of ww { GHC.Types.I# ww1 ->
                  XBarType.$w$cshowsPrec12 ww1 w1 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbP :: GHC.Show.Show XBarType.VerbP
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -4087,13 +4072,13 @@ f03d435ec2815854b9543cc49e4f904e
                   XBarType.$fShowVerbP_$cshowsPrec
                   XBarType.$fShowVerbP_$cshow
                   XBarType.$fShowVerbP_$cshowList -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbP1 :: XBarType.VerbP -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (\ w :: XBarType.VerbP ->
                  case w of ww { XBarType.VerbP ww1 ->
                  XBarType.$w$cshowsPrec11 0 ww1 }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbP_$cshow :: XBarType.VerbP -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -4107,13 +4092,13 @@ f03d435ec2815854b9543cc49e4f904e
                       XBarType.$fReadAdjP5
                       b1
                       (GHC.Types.[] @ GHC.Types.Char)) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbP_$cshowList :: [XBarType.VerbP] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ XBarType.VerbP
                    XBarType.$fShowVerbP1) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $fShowVerbP_$cshowsPrec ::
     GHC.Types.Int -> XBarType.VerbP -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U)>, Inline: INLINE[0],
@@ -4147,7 +4132,7 @@ f03d435ec2815854b9543cc49e4f904e
                  case w of ww { GHC.Types.I# ww1 ->
                  case w1 of ww2 { XBarType.Verb ww3 ->
                  XBarType.$w$cshowsPrec23 ww1 ww3 w2 } }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshow :: XBarType.Comp -> XBarType.TenseP -> GHC.Base.String
   {- Arity: 2,
      Strictness: <L,1*U(1*U)><L,1*U(1*U(1*U(U,1*U(1*U))),1*U(U(U),1*U(1*U)))>,
@@ -4169,7 +4154,7 @@ f03d435ec2815854b9543cc49e4f904e
                             ww5
                             ww6
                             (GHC.Types.[] @ GHC.Types.Char) })) })) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshow1 :: XBarType.CompBar -> GHC.Base.String
   {- Arity: 1,
      Strictness: <L,1*U(1*U(1*U),1*U(1*U(1*U(U,1*U(1*U))),1*U(U(U),1*U(1*U))))>,
@@ -4198,8 +4183,62 @@ f03d435ec2815854b9543cc49e4f904e
                                   ww4
                                   ww5
                                   XBarType.$fShowCompP3 })) })) })) -}
-f03d435ec2815854b9543cc49e4f904e
-  $w$cshow2 :: XBarType.Tense -> XBarType.VerbP -> GHC.Base.String
+02124ea1683e70a8b818aacb204bc09d
+  $w$cshow2 ::
+    XBarType.Optional XBarType.Det -> XBarType.NounP -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(1*U)>, Inline: [0],
+     Unfolding: (\ ww :: XBarType.Optional XBarType.Det
+                   ww1 :: XBarType.NounP ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   XBarType.$fShowCompBar10
+                   (XBarType.$fShowCompBar_$s$cshowsPrec
+                      XBarType.$fReadAdjP5
+                      ww
+                      (GHC.Types.:
+                         @ GHC.Types.Char
+                         GHC.Show.showSpace1
+                         (case ww1 of wild { XBarType.NounP b1 ->
+                          GHC.Types.:
+                            @ GHC.Types.Char
+                            GHC.Show.shows9
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               XBarType.$fShowCompBar11
+                               (XBarType.$w$cshowsPrec17 11 b1 XBarType.$fShowCompP3)) })))) -}
+02124ea1683e70a8b818aacb204bc09d
+  $w$cshow3 :: XBarType.DetBar -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(1*U,1*U(1*U))>, Inline: [0],
+     Unfolding: (\ ww :: XBarType.DetBar ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   XBarType.$fShowCompBar7
+                   (case ww of wild { XBarType.DetBar b1 b2 ->
+                    GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.shows9
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         XBarType.$fShowCompBar10
+                         (XBarType.$fShowCompBar_$s$cshowsPrec
+                            XBarType.$fReadAdjP5
+                            b1
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.showSpace1
+                               (case b2 of wild1 { XBarType.NounP b4 ->
+                                GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.shows9
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     XBarType.$fShowCompBar11
+                                     (XBarType.$w$cshowsPrec17
+                                        11
+                                        b4
+                                        XBarType.$fShowDetP2)) })))) })) -}
+fb038bbed18be6b64f9e6f9cf00f0502
+  $w$cshow4 :: XBarType.Tense -> XBarType.VerbP -> GHC.Base.String
   {- Arity: 2, Strictness: <L,1*U(1*U)><L,1*U(1*U)>, Inline: [0],
      Unfolding: (\ ww :: XBarType.Tense ww1 :: XBarType.VerbP ->
                  GHC.Base.++
@@ -4257,7 +4296,7 @@ cdbe2cdae7a9c28b9d2d58892074b61a
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec1 ::
     GHC.Prim.Int# -> XBarType.AdjBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
@@ -4298,7 +4337,7 @@ cdbe2cdae7a9c28b9d2d58892074b61a
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec11 ::
     GHC.Prim.Int# -> XBarType.VerbBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><L,1*U>, Inline: [0],
@@ -4322,11 +4361,11 @@ f03d435ec2815854b9543cc49e4f904e
                            @ GHC.Types.Char
                            XBarType.$fShowCompBar6
                            (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec12 ::
     GHC.Prim.Int# -> XBarType.VerbBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec13 ::
     GHC.Prim.Int# -> XBarType.DetBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><L,1*U(U,1*U(1*U))>, Inline: [0],
@@ -4351,7 +4390,7 @@ f03d435ec2815854b9543cc49e4f904e
                            @ GHC.Types.Char
                            XBarType.$fShowCompBar7
                            (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec14 ::
     GHC.Prim.Int#
     -> XBarType.Optional XBarType.Det
@@ -4424,7 +4463,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec16 ::
     GHC.Prim.Int# -> XBarType.NounBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><L,1*U>, Inline: [0],
@@ -4448,11 +4487,11 @@ f03d435ec2815854b9543cc49e4f904e
                            @ GHC.Types.Char
                            XBarType.$fShowCompBar11
                            (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec17 ::
     GHC.Prim.Int# -> XBarType.NounBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec18 ::
     GHC.Prim.Int# -> XBarType.CompBar -> GHC.Show.ShowS
   {- Arity: 2,
@@ -4516,7 +4555,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec2 ::
     GHC.Prim.Int# -> XBarType.AdjBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><L,1*U>, Inline: [0],
@@ -4577,11 +4616,11 @@ f03d435ec2815854b9543cc49e4f904e
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec21 ::
     GHC.Prim.Int# -> XBarType.PrepBar -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec22 ::
     GHC.Prim.Int#
     -> XBarType.Optional XBarType.AdjP
@@ -4690,7 +4729,7 @@ f03d435ec2815854b9543cc49e4f904e
                               11
                               ww3
                               (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w) })) }) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $w$cshowsPrec5 ::
     GHC.Prim.Int#
     -> XBarType.Optional XBarType.AdvP
@@ -4763,7 +4802,7 @@ f03d435ec2815854b9543cc49e4f904e
                                     @ GHC.Types.Char
                                     GHC.Show.shows6
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))))) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec7 ::
     GHC.Prim.Int# -> XBarType.Comp -> XBarType.TenseP -> GHC.Show.ShowS
   {- Arity: 3,
@@ -4799,7 +4838,7 @@ f03d435ec2815854b9543cc49e4f904e
                         @ GHC.Types.Char
                         GHC.Show.shows9
                         (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec8 ::
     GHC.Prim.Int#
     -> XBarType.DetP -> XBarType.TenseBar -> GHC.Show.ShowS
@@ -4840,7 +4879,7 @@ f03d435ec2815854b9543cc49e4f904e
                                  @ GHC.Types.Char
                                  GHC.Show.showSpace1
                                  (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))))) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $w$cshowsPrec9 ::
     GHC.Prim.Int# -> XBarType.Tense -> XBarType.VerbP -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,U><L,U(U)><L,1*U(1*U)>, Inline: [0],
@@ -4921,321 +4960,15 @@ f03d435ec2815854b9543cc49e4f904e
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   $wa1 ::
     GHC.Prim.Int#
     -> forall b.
        (XBarType.AdjBar -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-f03d435ec2815854b9543cc49e4f904e
+33e73b79582f8d58682eaaecf554e200
   $wa10 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.VerbP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.VerbP -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (GHC.Read.$fReadDouble10
-                                 @ XBarType.VerbBar
-                                 XBarType.$fReadCompBar11
-                                   `cast`
-                                 (Trans
-                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.VerbBar>_R))
-                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.VerbBar>_R)))
-                                 XBarType.$fReadAdjP5)
-                                `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.VerbBar>_R)
-                                @ b
-                                (\ a11 :: XBarType.VerbBar -> w (XBarType.VerbP a11))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar10 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-f03d435ec2815854b9543cc49e4f904e
-  $wa11 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-7c356c671eb8a60eb0712b04868ae12c
-  $wa12 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.Tense -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.Tense -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = GHC.Read.$wa19
-                                @ b
-                                (\ a11 :: GHC.Base.String -> w (XBarType.Tense a11))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar13 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $wa13 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.DetP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.DetP -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (GHC.Read.$fReadDouble10
-                                 @ XBarType.DetBar
-                                 XBarType.$fReadCompBar16
-                                   `cast`
-                                 (Trans
-                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.DetBar>_R))
-                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.DetBar>_R)))
-                                 XBarType.$fReadAdjP5)
-                                `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.DetBar>_R)
-                                @ b
-                                (\ a11 :: XBarType.DetBar -> w (XBarType.DetP a11))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar15 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $wa14 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.DetBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.DetBar -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (XBarType.$fReadCompBar21
-                                 @ XBarType.Det
-                                 XBarType.$fReadDet
-                                 XBarType.$fReadAdjP5)
-                                `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                   <XBarType.Optional XBarType.Det>_R)
-                                @ b
-                                (\ a11 :: XBarType.Optional XBarType.Det ->
-                                 (GHC.Read.$fReadDouble10
-                                    @ XBarType.NounP
-                                    XBarType.$fReadCompBar18
-                                      `cast`
-                                    (Trans
-                                         (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                        <XBarType.NounP>_R))
-                                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                   <XBarType.NounP>_R)))
-                                    XBarType.$fReadAdjP5)
-                                   `cast`
-                                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.NounP>_R)
-                                   @ b
-                                   (\ a12 :: XBarType.NounP -> w (XBarType.DetBar a11 a12)))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar17 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $wa15 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.NounP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.NounP -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (GHC.Read.$fReadDouble10
-                                 @ XBarType.NounBar
-                                 XBarType.$fReadCompBar20
-                                   `cast`
-                                 (Trans
-                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.NounBar>_R))
-                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.NounBar>_R)))
-                                 XBarType.$fReadAdjP5)
-                                `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.NounBar>_R)
-                                @ b
-                                (\ a11 :: XBarType.NounBar -> w (XBarType.NounP a11))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar19 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
-  $wa16 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.NounBar -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-a2df5da8581f4264e89bd095eb23cf16
-  $wa17 ::
     GHC.Prim.Int#
     -> forall b.
        (XBarType.Det -> Text.ParserCombinators.ReadP.P b)
@@ -5281,16 +5014,16 @@ a2df5da8581f4264e89bd095eb23cf16
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-f03d435ec2815854b9543cc49e4f904e
-  $wa18 ::
+02124ea1683e70a8b818aacb204bc09d
+  $wa11 ::
     GHC.Prim.Int#
     -> forall b.
-       (XBarType.CompP -> Text.ParserCombinators.ReadP.P b)
+       (XBarType.DetBar -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
      Unfolding: (\ ww :: GHC.Prim.Int#
                    @ b
-                   w :: XBarType.CompP -> Text.ParserCombinators.ReadP.P b ->
+                   w :: XBarType.DetBar -> Text.ParserCombinators.ReadP.P b ->
                  case GHC.Prim.tagToEnum#
                         @ GHC.Types.Bool
                         (GHC.Prim.<=# ww 10) of wild2 {
@@ -5300,21 +5033,30 @@ f03d435ec2815854b9543cc49e4f904e
                         lvl78 :: Text.ParserCombinators.ReadP.P b
                         = let {
                             lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (GHC.Read.$fReadDouble10
-                                 @ XBarType.CompBar
-                                 XBarType.$fReadCompBar3
-                                   `cast`
-                                 (Trans
-                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.CompBar>_R))
-                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.CompBar>_R)))
+                            = (XBarType.$fReadDetBar8
+                                 @ XBarType.Det
+                                 XBarType.$fReadDet
                                  XBarType.$fReadAdjP5)
                                 `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.CompBar>_R)
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                   <XBarType.Optional XBarType.Det>_R)
                                 @ b
-                                (\ a11 :: XBarType.CompBar -> w (XBarType.CompP a11))
+                                (\ a11 :: XBarType.Optional XBarType.Det ->
+                                 (GHC.Read.$fReadDouble10
+                                    @ XBarType.NounP
+                                    XBarType.$fReadDetBar5
+                                      `cast`
+                                    (Trans
+                                         (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                        <XBarType.NounP>_R))
+                                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                   <XBarType.NounP>_R)))
+                                    XBarType.$fReadAdjP5)
+                                   `cast`
+                                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.NounP>_R)
+                                   @ b
+                                   (\ a12 :: XBarType.NounP -> w (XBarType.DetBar a11 a12)))
                           } in
                           Text.Read.Lex.expect2
                             @ b
@@ -5322,7 +5064,7 @@ f03d435ec2815854b9543cc49e4f904e
                              case a98 of wild {
                                DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
                                Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompP4 of wild1 {
+                               -> case GHC.Base.eqString a11 XBarType.$fReadDetBar4 of wild1 {
                                     GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
                                     GHC.Types.True -> lvl79 } })
                       } in
@@ -5340,8 +5082,133 @@ f03d435ec2815854b9543cc49e4f904e
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-c4ab97a1c22ab1b333e9bdbbc82aa539
-  $wa19 ::
+02124ea1683e70a8b818aacb204bc09d
+  $wa12 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.NounP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   @ b
+                   w :: XBarType.NounP -> Text.ParserCombinators.ReadP.P b ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 10) of wild2 {
+                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                   GHC.Types.True
+                   -> let {
+                        lvl78 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl79 :: Text.ParserCombinators.ReadP.P b
+                            = (GHC.Read.$fReadDouble10
+                                 @ XBarType.NounBar
+                                 XBarType.$fReadDetBar7
+                                   `cast`
+                                 (Trans
+                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                     <XBarType.NounBar>_R))
+                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                <XBarType.NounBar>_R)))
+                                 XBarType.$fReadAdjP5)
+                                `cast`
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.NounBar>_R)
+                                @ b
+                                (\ a11 :: XBarType.NounBar -> w (XBarType.NounP a11))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ a98 :: Text.Read.Lex.Lexeme ->
+                             case a98 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a11
+                               -> case GHC.Base.eqString a11 XBarType.$fReadDetBar6 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl79 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                        = \ w2 :: () -> lvl78
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ a98 :: GHC.Base.String ->
+                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                           `cast`
+                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                           @ b
+                           k) }) -}
+02124ea1683e70a8b818aacb204bc09d
+  $wa13 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.NounBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+02124ea1683e70a8b818aacb204bc09d
+  $wa14 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.DetP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   @ b
+                   w :: XBarType.DetP -> Text.ParserCombinators.ReadP.P b ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 10) of wild2 {
+                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                   GHC.Types.True
+                   -> let {
+                        lvl78 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl79 :: Text.ParserCombinators.ReadP.P b
+                            = (GHC.Read.$fReadDouble10
+                                 @ XBarType.DetBar
+                                 XBarType.$fReadDetBar3
+                                   `cast`
+                                 (Trans
+                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                     <XBarType.DetBar>_R))
+                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                <XBarType.DetBar>_R)))
+                                 XBarType.$fReadAdjP5)
+                                `cast`
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.DetBar>_R)
+                                @ b
+                                (\ a11 :: XBarType.DetBar -> w (XBarType.DetP a11))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ a98 :: Text.Read.Lex.Lexeme ->
+                             case a98 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a11
+                               -> case GHC.Base.eqString a11 XBarType.$fReadDetP4 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl79 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                        = \ w2 :: () -> lvl78
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ a98 :: GHC.Base.String ->
+                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                           `cast`
+                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                           @ b
+                           k) }) -}
+02453c63caafb12e8f01f3a349c80aee
+  $wa15 ::
     GHC.Prim.Int#
     -> forall b.
        (XBarType.Noun -> Text.ParserCombinators.ReadP.P b)
@@ -5387,7 +5254,75 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+9df41d0f1dbfb042dcac92a7e3fb68ee
+  $wa16 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.AdvP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+383bb1838d734b8fa190fbf3542fac26
+  $wa17 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.PrepP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+2ced66c8e6669edb41a872360cd754e3
+  $wa18 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.Prep -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   @ b
+                   w :: XBarType.Prep -> Text.ParserCombinators.ReadP.P b ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 10) of wild2 {
+                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                   GHC.Types.True
+                   -> let {
+                        lvl78 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl79 :: Text.ParserCombinators.ReadP.P b
+                            = GHC.Read.$wa19
+                                @ b
+                                (\ a11 :: GHC.Base.String -> w (XBarType.Prep a11))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ a98 :: Text.Read.Lex.Lexeme ->
+                             case a98 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a11
+                               -> case GHC.Base.eqString a11 XBarType.$fReadPrep4 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl79 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                        = \ w2 :: () -> lvl78
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ a98 :: GHC.Base.String ->
+                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                           `cast`
+                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                           @ b
+                           k) }) -}
+02124ea1683e70a8b818aacb204bc09d
+  $wa19 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.PrepBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+02124ea1683e70a8b818aacb204bc09d
   $wa2 ::
     GHC.Prim.Int#
     -> forall b.
@@ -5446,30 +5381,21 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-245a06576e23f7a556afa3dde8d02c81
+02124ea1683e70a8b818aacb204bc09d
   $wa20 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.AdvP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-21a1d45bc668667249b2d8b8029d2a87
+    ([XBarType.PrepP] -> Text.ParserCombinators.ReadP.P b)
+    -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 1, Strictness: <L,C(U)>, Inline: [0] -}
+1269e92afa0f761c0ceaf60b2b8908d7
   $wa21 ::
     GHC.Prim.Int#
     -> forall b.
-       (XBarType.PrepP -> Text.ParserCombinators.ReadP.P b)
-       -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-8c1d889e39382c3655d129e2aaef7a8d
-  $wa22 ::
-    GHC.Prim.Int#
-    -> forall b.
-       (XBarType.Prep -> Text.ParserCombinators.ReadP.P b)
+       (XBarType.Tense -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
      Unfolding: (\ ww :: GHC.Prim.Int#
                    @ b
-                   w :: XBarType.Prep -> Text.ParserCombinators.ReadP.P b ->
+                   w :: XBarType.Tense -> Text.ParserCombinators.ReadP.P b ->
                  case GHC.Prim.tagToEnum#
                         @ GHC.Types.Bool
                         (GHC.Prim.<=# ww 10) of wild2 {
@@ -5481,7 +5407,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                             lvl79 :: Text.ParserCombinators.ReadP.P b
                             = GHC.Read.$wa19
                                 @ b
-                                (\ a11 :: GHC.Base.String -> w (XBarType.Prep a11))
+                                (\ a11 :: GHC.Base.String -> w (XBarType.Tense a11))
                           } in
                           Text.Read.Lex.expect2
                             @ b
@@ -5489,7 +5415,7 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                              case a98 of wild {
                                DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
                                Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadPrep4 of wild1 {
+                               -> case GHC.Base.eqString a11 XBarType.$fReadTense4 of wild1 {
                                     GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
                                     GHC.Types.True -> lvl79 } })
                       } in
@@ -5507,18 +5433,146 @@ c4ab97a1c22ab1b333e9bdbbc82aa539
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-9c36599f599b1f15a98473bd1aeb6160
+fb038bbed18be6b64f9e6f9cf00f0502
+  $wa22 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   @ b
+                   w :: XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 10) of wild2 {
+                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                   GHC.Types.True
+                   -> let {
+                        lvl78 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl79 :: Text.ParserCombinators.ReadP.P b
+                            = (GHC.Read.$fReadDouble10
+                                 @ XBarType.Tense
+                                 XBarType.$fReadTense3
+                                   `cast`
+                                 (Trans
+                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                     <XBarType.Tense>_R))
+                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                <XBarType.Tense>_R)))
+                                 XBarType.$fReadAdjP5)
+                                `cast`
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.Tense>_R)
+                                @ b
+                                (\ a11 :: XBarType.Tense ->
+                                 (GHC.Read.$fReadDouble10
+                                    @ XBarType.VerbP
+                                    XBarType.$fReadTenseBar5
+                                      `cast`
+                                    (Trans
+                                         (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                        <XBarType.VerbP>_R))
+                                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                   <XBarType.VerbP>_R)))
+                                    XBarType.$fReadAdjP5)
+                                   `cast`
+                                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.VerbP>_R)
+                                   @ b
+                                   (\ a12 :: XBarType.VerbP -> w (XBarType.TenseBar a11 a12)))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ a98 :: Text.Read.Lex.Lexeme ->
+                             case a98 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a11
+                               -> case GHC.Base.eqString a11 XBarType.$fReadTenseBar4 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl79 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                        = \ w2 :: () -> lvl78
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ a98 :: GHC.Base.String ->
+                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                           `cast`
+                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                           @ b
+                           k) }) -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $wa23 ::
     GHC.Prim.Int#
     -> forall b.
-       (XBarType.PrepBar -> Text.ParserCombinators.ReadP.P b)
+       (XBarType.VerbP -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   @ b
+                   w :: XBarType.VerbP -> Text.ParserCombinators.ReadP.P b ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<=# ww 10) of wild2 {
+                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                   GHC.Types.True
+                   -> let {
+                        lvl78 :: Text.ParserCombinators.ReadP.P b
+                        = let {
+                            lvl79 :: Text.ParserCombinators.ReadP.P b
+                            = (GHC.Read.$fReadDouble10
+                                 @ XBarType.VerbBar
+                                 XBarType.$fReadTenseBar7
+                                   `cast`
+                                 (Trans
+                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
+                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
+                                                     <XBarType.VerbBar>_R))
+                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
+                                                <XBarType.VerbBar>_R)))
+                                 XBarType.$fReadAdjP5)
+                                `cast`
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.VerbBar>_R)
+                                @ b
+                                (\ a11 :: XBarType.VerbBar -> w (XBarType.VerbP a11))
+                          } in
+                          Text.Read.Lex.expect2
+                            @ b
+                            (\ a98 :: Text.Read.Lex.Lexeme ->
+                             case a98 of wild {
+                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
+                               Text.Read.Lex.Ident a11
+                               -> case GHC.Base.eqString a11 XBarType.$fReadTenseBar6 of wild1 {
+                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
+                                    GHC.Types.True -> lvl79 } })
+                      } in
+                      let {
+                        k :: () -> Text.ParserCombinators.ReadP.P b
+                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
+                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
+                        = \ w2 :: () -> lvl78
+                      } in
+                      Text.ParserCombinators.ReadP.Look
+                        @ b
+                        (\ a98 :: GHC.Base.String ->
+                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
+                           `cast`
+                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
+                           @ b
+                           k) }) -}
+fb038bbed18be6b64f9e6f9cf00f0502
+  $wa24 ::
+    GHC.Prim.Int#
+    -> forall b.
+       (XBarType.VerbBar -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
-9c36599f599b1f15a98473bd1aeb6160
-  $wa24 ::
-    ([XBarType.PrepP] -> Text.ParserCombinators.ReadP.P b)
-    -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 1, Strictness: <L,C(U)>, Inline: [0] -}
 5bcdc0bf65976e0efbd79945f96ac234
   $wa25 ::
     GHC.Prim.Int#
@@ -5672,7 +5726,7 @@ ba5a5c8a5ee08a1d21e0367a08f8d6f3
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   $wa5 ::
     ([XBarType.AdvP] -> Text.ParserCombinators.ReadP.P b)
     -> Text.ParserCombinators.ReadP.P b
@@ -5724,7 +5778,7 @@ bea2d20556a8dd0cb79e972c0036a427
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $wa7 ::
     GHC.Prim.Int#
     -> forall b.
@@ -5798,90 +5852,23 @@ f03d435ec2815854b9543cc49e4f904e
                          (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
                            @ b
                            k) }) -}
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   $wa8 ::
     GHC.Prim.Int#
     -> forall b.
        (XBarType.TenseP -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
-  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
-     Unfolding: (\ ww :: GHC.Prim.Int#
-                   @ b
-                   w :: XBarType.TenseP -> Text.ParserCombinators.ReadP.P b ->
-                 case GHC.Prim.tagToEnum#
-                        @ GHC.Types.Bool
-                        (GHC.Prim.<=# ww 10) of wild2 {
-                   GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                   GHC.Types.True
-                   -> let {
-                        lvl78 :: Text.ParserCombinators.ReadP.P b
-                        = let {
-                            lvl79 :: Text.ParserCombinators.ReadP.P b
-                            = (GHC.Read.$fReadDouble10
-                                 @ XBarType.DetP
-                                 XBarType.$fReadCompBar14
-                                   `cast`
-                                 (Trans
-                                      (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                       ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.DetP>_R))
-                                      (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.DetP>_R)))
-                                 XBarType.$fReadAdjP5)
-                                `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.DetP>_R)
-                                @ b
-                                (\ a11 :: XBarType.DetP ->
-                                 (GHC.Read.$fReadDouble10
-                                    @ XBarType.TenseBar
-                                    XBarType.$fReadCompBar7
-                                      `cast`
-                                    (Trans
-                                         (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                        <XBarType.TenseBar>_R))
-                                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                   <XBarType.TenseBar>_R)))
-                                    XBarType.$fReadAdjP5)
-                                   `cast`
-                                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.TenseBar>_R)
-                                   @ b
-                                   (\ a12 :: XBarType.TenseBar -> w (XBarType.TenseP a11 a12)))
-                          } in
-                          Text.Read.Lex.expect2
-                            @ b
-                            (\ a98 :: Text.Read.Lex.Lexeme ->
-                             case a98 of wild {
-                               DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
-                               Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar6 of wild1 {
-                                    GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
-                                    GHC.Types.True -> lvl79 } })
-                      } in
-                      let {
-                        k :: () -> Text.ParserCombinators.ReadP.P b
-                          {- Arity: 1, Strictness: <L,A>, Inline: INLINE[0],
-                             Unfolding: InlineRule (1, True, True) (\ w2 :: () -> lvl78) -}
-                        = \ w2 :: () -> lvl78
-                      } in
-                      Text.ParserCombinators.ReadP.Look
-                        @ b
-                        (\ a98 :: GHC.Base.String ->
-                         (Text.ParserCombinators.ReadP.skipSpaces_skip a98)
-                           `cast`
-                         (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <()>_R)
-                           @ b
-                           k) }) -}
-f03d435ec2815854b9543cc49e4f904e
+  {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+fb038bbed18be6b64f9e6f9cf00f0502
   $wa9 ::
     GHC.Prim.Int#
     -> forall b.
-       (XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b)
+       (XBarType.CompP -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0],
      Unfolding: (\ ww :: GHC.Prim.Int#
                    @ b
-                   w :: XBarType.TenseBar -> Text.ParserCombinators.ReadP.P b ->
+                   w :: XBarType.CompP -> Text.ParserCombinators.ReadP.P b ->
                  case GHC.Prim.tagToEnum#
                         @ GHC.Types.Bool
                         (GHC.Prim.<=# ww 10) of wild2 {
@@ -5892,35 +5879,20 @@ f03d435ec2815854b9543cc49e4f904e
                         = let {
                             lvl79 :: Text.ParserCombinators.ReadP.P b
                             = (GHC.Read.$fReadDouble10
-                                 @ XBarType.Tense
-                                 XBarType.$fReadCompBar12
+                                 @ XBarType.CompBar
+                                 XBarType.$fReadCompBar3
                                    `cast`
                                  (Trans
                                       (<Text.ParserCombinators.ReadPrec.Prec>_R
                                        ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                     <XBarType.Tense>_R))
+                                                     <XBarType.CompBar>_R))
                                       (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                <XBarType.Tense>_R)))
+                                                <XBarType.CompBar>_R)))
                                  XBarType.$fReadAdjP5)
                                 `cast`
-                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.Tense>_R)
+                              (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.CompBar>_R)
                                 @ b
-                                (\ a11 :: XBarType.Tense ->
-                                 (GHC.Read.$fReadDouble10
-                                    @ XBarType.VerbP
-                                    XBarType.$fReadCompBar9
-                                      `cast`
-                                    (Trans
-                                         (<Text.ParserCombinators.ReadPrec.Prec>_R
-                                          ->_R Sym (Text.ParserCombinators.ReadP.NTCo:ReadP[0]
-                                                        <XBarType.VerbP>_R))
-                                         (Sym (Text.ParserCombinators.ReadPrec.NTCo:ReadPrec[0]
-                                                   <XBarType.VerbP>_R)))
-                                    XBarType.$fReadAdjP5)
-                                   `cast`
-                                 (Text.ParserCombinators.ReadP.NTCo:ReadP[0] <XBarType.VerbP>_R)
-                                   @ b
-                                   (\ a12 :: XBarType.VerbP -> w (XBarType.TenseBar a11 a12)))
+                                (\ a11 :: XBarType.CompBar -> w (XBarType.CompP a11))
                           } in
                           Text.Read.Lex.expect2
                             @ b
@@ -5928,7 +5900,7 @@ f03d435ec2815854b9543cc49e4f904e
                              case a98 of wild {
                                DEFAULT -> Text.ParserCombinators.ReadP.Fail @ b
                                Text.Read.Lex.Ident a11
-                               -> case GHC.Base.eqString a11 XBarType.$fReadCompBar8 of wild1 {
+                               -> case GHC.Base.eqString a11 XBarType.$fReadCompP4 of wild1 {
                                     GHC.Types.False -> Text.ParserCombinators.ReadP.Fail @ b
                                     GHC.Types.True -> lvl79 } })
                       } in
@@ -5948,71 +5920,71 @@ f03d435ec2815854b9543cc49e4f904e
                            k) }) -}
 2511599010f4679fd1f96a068a337fc9
   data Adj = Adj GHC.Base.String
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data AdjBar
     = AdjBar1 XBarType.AdvP XBarType.AdjBar
     | AdjBar2 XBarType.AdjP XBarType.AdjBar
     | AdjBar3 XBarType.AdjBar (XBarType.Optional XBarType.PrepP)
     | AdjBar4 XBarType.Adj (XBarType.Optional XBarType.PrepP)
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data AdjP = AdjP XBarType.AdjBar
 ba5a5c8a5ee08a1d21e0367a08f8d6f3
   data Adv = Adv GHC.Base.String
 5f5402ea3488a02305311952da350e18
   data AdvBar = AdvBar XBarType.Adv
-2faa469c8fb423c31bc29646e7fcc4f1
+02124ea1683e70a8b818aacb204bc09d
   data AdvP = AdvP (XBarType.Optional XBarType.AdvP) XBarType.AdvBar
     RecFlag: Recursive
 bea2d20556a8dd0cb79e972c0036a427
   data Comp = Comp GHC.Base.String
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   data CompBar = CompBar XBarType.Comp XBarType.TenseP
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   data CompP = CompP XBarType.CompBar
-a2df5da8581f4264e89bd095eb23cf16
+33e73b79582f8d58682eaaecf554e200
   data Det = Det GHC.Base.String
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data DetBar
     = DetBar (XBarType.Optional XBarType.Det) XBarType.NounP
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data DetP = DetP XBarType.DetBar
-c4ab97a1c22ab1b333e9bdbbc82aa539
+02453c63caafb12e8f01f3a349c80aee
   data Noun = Noun GHC.Base.String
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data NounBar
     = NounBar1 XBarType.AdjP XBarType.NounBar
     | NounBar2 XBarType.NounBar XBarType.PrepP
     | NounBar3 XBarType.Noun (XBarType.Optional XBarType.PrepP)
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data NounP = NounP XBarType.NounBar
-f3dc4601f91d8797a18eb5a49e8e6c6b
+02124ea1683e70a8b818aacb204bc09d
   data Optional a = YesOpt a | NoOpt
     Promotable
-8c1d889e39382c3655d129e2aaef7a8d
+2ced66c8e6669edb41a872360cd754e3
   data Prep = Prep GHC.Base.String
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data PrepBar
     = PrepBar1 XBarType.PrepBar (XBarType.Optional XBarType.PrepP)
     | PrepBar2 XBarType.Prep XBarType.DetP
-9c36599f599b1f15a98473bd1aeb6160
+02124ea1683e70a8b818aacb204bc09d
   data PrepP
     = PrepP (XBarType.Optional XBarType.AdjP) XBarType.PrepBar
-7c356c671eb8a60eb0712b04868ae12c
+1269e92afa0f761c0ceaf60b2b8908d7
   data Tense = Tense GHC.Base.String
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   data TenseBar = TenseBar XBarType.Tense XBarType.VerbP
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   data TenseP = TenseP XBarType.DetP XBarType.TenseBar
 5bcdc0bf65976e0efbd79945f96ac234
   data Verb = Verb GHC.Base.String
-f03d435ec2815854b9543cc49e4f904e
+fb038bbed18be6b64f9e6f9cf00f0502
   data VerbBar
     = VerbBar1 XBarType.AdvP XBarType.VerbBar
     | VerbBar2 XBarType.VerbBar XBarType.PrepP
     | VerbBar3 XBarType.VerbBar XBarType.AdvP
     | VerbBar4 XBarType.Verb XBarType.CompP
-    | VerbBar5 XBarType.Verb XBarType.NounP
-f03d435ec2815854b9543cc49e4f904e
+    | VerbBar5 XBarType.Verb XBarType.DetP
+fb038bbed18be6b64f9e6f9cf00f0502
   data VerbP = VerbP XBarType.VerbBar
 instance GHC.Read.Read [XBarType.Adj] = XBarType.$fReadAdj
 instance GHC.Read.Read [XBarType.AdjBar] = XBarType.$fReadAdjBar
