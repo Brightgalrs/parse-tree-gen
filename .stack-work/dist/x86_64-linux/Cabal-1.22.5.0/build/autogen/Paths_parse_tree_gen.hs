@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/bin"
-libdir     = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/lib/x86_64-linux-ghc-7.10.3/parse-tree-gen-0.1.0.0-K73cDAmeQQ4L7MgZKLx6NX"
+libdir     = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/lib/x86_64-linux-ghc-7.10.3/parse-tree-gen-0.1.0.0-Iaj1kxNSeaZ4PQxYHNqcNV"
 datadir    = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/share/x86_64-linux-ghc-7.10.3/parse-tree-gen-0.1.0.0"
 libexecdir = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/libexec"
 sysconfdir = "/home/chaosrobie/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-6.15/7.10.3/etc"

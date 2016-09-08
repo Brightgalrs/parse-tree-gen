@@ -8,7 +8,6 @@ import Data.RVar
 
 main :: IO ()
 main = do
---  inventory <- Sampler.sample (makeConsonantPhonemeInventory 5)
   dat <- loadInputData
   tree <- sampleRVar (makeTenseP dat 6)
 --  print $ parseTenseP tree

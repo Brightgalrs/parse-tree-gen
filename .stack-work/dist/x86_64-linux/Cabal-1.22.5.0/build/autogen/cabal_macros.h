@@ -7,6 +7,34 @@
   (major1) == 4 && (major2) <  8 || \
   (major1) == 4 && (major2) == 8 && (minor) <= 2)
 
+/* package random-extras-0.19 */
+#define VERSION_random_extras "0.19"
+#define MIN_VERSION_random_extras(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  19 || \
+  (major1) == 0 && (major2) == 19 && (minor) <= 0)
+
+/* package random-fu-0.2.7.0 */
+#define VERSION_random_fu "0.2.7.0"
+#define MIN_VERSION_random_fu(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 7)
+
+/* package random-source-0.3.0.6 */
+#define VERSION_random_source "0.3.0.6"
+#define MIN_VERSION_random_source(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 0)
+
+/* package rvar-0.2.0.3 */
+#define VERSION_rvar "0.2.0.3"
+#define MIN_VERSION_rvar(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 0)
+
 /* tool gcc-6.1.1 */
 #define TOOL_VERSION_gcc "6.1.1"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
@@ -63,5 +91,5 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "parse_K73cDAmeQQ4L7MgZKLx6NX"
+#define CURRENT_PACKAGE_KEY "parse_Iaj1kxNSeaZ4PQxYHNqcNV"
 
