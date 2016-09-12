@@ -19,6 +19,7 @@ data InputData = InputData
     , iPrep :: [Prep]
     , iDet  :: [Det]
     , iComp :: [Comp]
+    , iConj :: [Conj]
     }
 
 loadInputData :: IO InputData
@@ -31,6 +32,7 @@ loadInputData  =
         <*> readFeature "raw/prepositions.txt"
         <*> readFeature "raw/determiners.txt"
         <*> readFeature "raw/complementizers.txt"
+        <*> readFeature "raw/conjunctions.txt"
 
 readFeature :: Read a => FilePath -> IO a
 readFeature = fmap read . readFile
@@ -68,6 +70,10 @@ makeComp idata =
 makeTense :: InputData -> RVar Tense
 makeTense idata =
   choice [Tense "-ed"]
+
+makeConj :: InputData -> RVar Conj
+makeConj idata =
+  choice (iConj idata)
 
 --NounBar main
 makeNounBar :: InputData -> Int  -> RVar NounBar
@@ -246,6 +252,12 @@ makeTenseBar idata n =
   TenseBar <$> (makeTense idata) <*> (makeVerbP idata i)
   where i = n-1
 
+--ConjBar
+makeConjBar :: InputData -> Int  -> RVar ConjBar
+makeConjBar idata n =
+  ConjBar <$> (makeConj idata) <*> (makeDetP idata i)
+  where i = n-1
+
 --NounP
 makeNounP :: InputData -> Int  -> RVar NounP
 makeNounP idata n =
@@ -314,8 +326,25 @@ makeCompP idata n =
   CompP <$> (makeCompBar idata i)
   where i = n-1
 
---TenseP
+--TenseP main
 makeTenseP :: InputData -> Int  -> RVar TenseP
-makeTenseP idata n =
-  TenseP <$> (makeDetP idata i) <*> (makeTenseBar idata i)
+makeTenseP idata n
+  | n <= 0    = join $ choice [makeTenseP1 idata 0]
+  | otherwise = join $ choice [makeTenseP1 idata i, makeTenseP2 idata i]
+  where i = n-1
+
+makeTenseP1 :: InputData -> Int  -> RVar TenseP
+makeTenseP1 idata n =
+  TenseP1 <$> (makeDetP idata i) <*> (makeTenseBar idata i)
+  where i = n-1
+
+makeTenseP2 :: InputData -> Int  -> RVar TenseP
+makeTenseP2 idata n =
+  TenseP2 <$> (makeConjP idata i) <*> (makeTenseBar idata i)
+  where i = n-1
+
+--ConjP
+makeConjP :: InputData -> Int  -> RVar ConjP
+makeConjP idata n =
+  ConjP <$> (makeDetP idata i) <*> (makeConjBar idata i)
   where i = n-1

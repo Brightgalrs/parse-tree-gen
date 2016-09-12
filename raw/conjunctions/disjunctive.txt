@@ -1,0 +1,6 @@
+[
+Conj "or",
+Conj "neither",
+Conj "nor",
+Conj "otherwise",
+Conj "else"]

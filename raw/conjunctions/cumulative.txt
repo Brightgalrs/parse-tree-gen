@@ -1,0 +1,3 @@
+[
+Conj "and",
+Conj "as well as"]

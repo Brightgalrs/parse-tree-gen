@@ -1,0 +1,14 @@
+[
+Adv "often",
+Adv "never",
+Adv "always",
+Adv "seldom",
+Adv "rarely",
+Adv "frequently",
+Adv "generally,
+Adv "normally",
+Adv "occasionally",
+Adv "often",
+Adv "regularly",
+Adv "sometimes",
+Adv "usually"]

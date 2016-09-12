@@ -1,0 +1,5 @@
+[
+Adj "four",
+Adj "ten",
+Adj "a few",
+Adj "several"]

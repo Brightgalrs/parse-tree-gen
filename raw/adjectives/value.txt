@@ -1,0 +1,8 @@
+[
+Adj "delicious",
+Adj "charming",
+Adj "beautiful",
+Adj "sexy",
+Adj "creepy",
+Adj "impressive",
+Adj "hilarious"]

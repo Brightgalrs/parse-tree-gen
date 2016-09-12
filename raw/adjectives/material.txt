@@ -1,0 +1,9 @@
+[
+Adj "glass",
+Adj "wooden",
+Adj "stone",
+Adj "cloth",
+Adj "metal",
+Adj "iron",
+Adj "gold",
+Adj "silver"]

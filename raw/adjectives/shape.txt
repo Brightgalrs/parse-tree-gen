@@ -1,0 +1,4 @@
+[
+Adj "square",
+Adj "round",
+Adj "triangular"]

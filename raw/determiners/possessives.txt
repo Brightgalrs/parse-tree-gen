@@ -1,0 +1,8 @@
+[
+Det "my",
+Det "your",
+Det "his",
+Det "her",
+Det "its",
+Det "our",
+Det "their"]

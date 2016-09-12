@@ -1,0 +1,5 @@
+[
+Adj "hot",
+Adj "warm",
+Adj "cool",
+Adj "cold"]

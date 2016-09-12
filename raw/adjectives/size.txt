@@ -1,0 +1,6 @@
+[
+Adj "tall",
+Adj "short",
+Adj "tiny",
+Adj "huge",
+Adj "massive"]

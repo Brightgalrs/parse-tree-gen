@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-08 02:34:55.78929 UTC
+2016-09-10 01:26:14.364318 UTC
 
 interface parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeParseIntoSentence 7103
-  interface hash: 298878a18637082dcb593289ea8a6bf9
-  ABI hash: 183087af8460cc90be877d0037c645dc
+  interface hash: f0a176410cb00c32c2a1c4b83034539f
+  ABI hash: cae19b244df678a70b0668dfda4ee8d0
   export-list hash: d17d6eb66ee221d30f3bedfe4c524c8a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 962af636f8e927040c7daa9c21457292
@@ -47,132 +47,81 @@ family instance modules: base-4.8.2.0:Control.Applicative
 import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
-import  -/  ParseTreeGen ef2dc7121ef181e68e7d2b57f3073b91
+import  -/  ParseTreeGen 488e3041134793ab7ac16118c2354d14
   exports: 16f0cbfbc18df2707df2c6542fa145c4
-import  -/  XBarType 2b495b8df540868f2aed6f3c79e77ea3
-  exports: cdfa8791cd1b5c57acf699a4767e732e
-  Adj 089610700439ad05b501b77ba813ddc6
-  Adj 2511599010f4679fd1f96a068a337fc9
-  AdjBar 02124ea1683e70a8b818aacb204bc09d
-  AdjBar1 3a7e60d8ed7cbd881c23ec0e9b4a9a07
-  AdjBar2 91f72bd2b491a592eddb2aba788350e8
-  AdjBar3 0c925040ad76cc80fd03801411551d4e
-  AdjBar4 088d1b72bbf71c5ba540b7e6959397b5
-  AdjP 08ed5009d431a733ddc014a87c40161b
-  AdjP 02124ea1683e70a8b818aacb204bc09d
-  Adv e8ad1c93c141437b64cb8e04155f2e08
-  Adv ba5a5c8a5ee08a1d21e0367a08f8d6f3
-  AdvBar 77f0cb02dae05fcf2a6de9acb7c0ef73
-  AdvBar 5f5402ea3488a02305311952da350e18
-  AdvP 67b6d3b94b11520b33a07c2c1193bc3a
-  AdvP 02124ea1683e70a8b818aacb204bc09d
-  Comp 1bdb444a0937de3989c8465624c7669a
-  Comp bea2d20556a8dd0cb79e972c0036a427
-  CompBar b0073363e88c5a76772f53e3c89cf54b
-  CompBar fb038bbed18be6b64f9e6f9cf00f0502
-  CompP cd844e1138e0525ee9e6381b1aae2f3c
-  CompP fb038bbed18be6b64f9e6f9cf00f0502
-  Det d017a5a50914b3f2dbf5a36a136cb68f
-  Det 33e73b79582f8d58682eaaecf554e200
-  DetBar 3bad3ec83ea26a278f8628759d952068
-  DetBar 02124ea1683e70a8b818aacb204bc09d
-  DetP 5327110809b948d1dc7cd6691bc55d16
-  DetP 02124ea1683e70a8b818aacb204bc09d
-  NoOpt 99bd8eb129de80de1f2ddc3f781f3410
-  Noun 2084ca2f4952bd24d5d18f6dbdfeec33
-  Noun 02453c63caafb12e8f01f3a349c80aee
-  NounBar 02124ea1683e70a8b818aacb204bc09d
-  NounBar1 c4a64c153c95e9d9dff680977a02b057
-  NounBar2 bb6742ed60e01724fe0e0e8c2ef8f4b9
-  NounBar3 4837f32af06f771f73aa62e4c387f8f8
-  NounP fdf3dfd230c14f24df3192832e537e99
-  NounP 02124ea1683e70a8b818aacb204bc09d
-  Prep 34b0b3f451d16ca1086abdca9abe3d4c
-  Prep 2ced66c8e6669edb41a872360cd754e3
-  PrepBar 02124ea1683e70a8b818aacb204bc09d
-  PrepBar1 f64a9cc128368f296cdcf4ba1c20fc7e
-  PrepBar2 82f8580ec002d575cf86b37523f64738
-  PrepP c3a188d64e6f290ee100336b7d24046d
-  PrepP 02124ea1683e70a8b818aacb204bc09d
-  Tense ea39a47b362169eaaddf050f1569bd18
-  Tense 1269e92afa0f761c0ceaf60b2b8908d7
-  TenseBar 25d2ce099f72a08bb21d1cc621a3b353
-  TenseBar fb038bbed18be6b64f9e6f9cf00f0502
-  TenseP a4b427bf4f041ff8768d8e2ef673e978
-  TenseP fb038bbed18be6b64f9e6f9cf00f0502
-  Verb 66d8d6a18ba8ebf5d6aa6003dad7e1da
-  Verb 5bcdc0bf65976e0efbd79945f96ac234
-  VerbBar fb038bbed18be6b64f9e6f9cf00f0502
-  VerbBar1 cba37aba49b48b65b208d7c75c964881
-  VerbBar2 4a43ebbf43dc3a4c4b479e7c598d4dd2
-  VerbBar3 9fe453d9753a5706faf03776e6291c1a
-  VerbBar4 38d9cf0b8fd5802b8807e0e37ab133dc
-  VerbBar5 2ac1432fb96c2e805df6fdd43306c394
-  VerbP cb282eb81275fef8f88fe800fdb6b1a4
-  VerbP fb038bbed18be6b64f9e6f9cf00f0502
-  YesOpt 38f86c74c48a35bf4c9c11945f04cb04
+import  -/  XBarType 758163c563a402958d735624c4f3e249
+  exports: 9a6f58c0646d3f3249ba5ed9f479e552
+  Adj ec838af3eb6a06521d7e65c7589bf713
+  Adj 81e2b89ae3ded9c727dddfb416822ca4
+  AdjBar daae34c8e6a5d64fdf2e47d704145a41
+  AdjBar1 1c9c5f5fe69ea8ca5b51e3cfde5403b0
+  AdjBar2 7c961ccf1acbf7147424f5ec59e324c6
+  AdjBar3 868ca7a711cefc8e5b7d11444186886e
+  AdjBar4 f6af8ca7f5a5b7f1743a1f016f0fce76
+  AdjP 218d690bd36f6eb99a571fd7017c96b6
+  AdjP daae34c8e6a5d64fdf2e47d704145a41
+  Adv 3c3e9989e0d3a2915b728a5f4aa893e6
+  Adv 5313dbf85de5f50153a0911032dc11c8
+  AdvBar 9cd76d4eabcd1cc791d976d71bc3b0d1
+  AdvBar 69987230c888871bddf1a4d23423f6b9
+  AdvP 080107e2d949a6aaf3703c757fd9cde8
+  AdvP daae34c8e6a5d64fdf2e47d704145a41
+  Comp d941cb01287050e787d127b62aacf978
+  Comp 65e1f9bd1bce4595f705963a06136541
+  CompBar d65ad460581b0c30917dd7ddb417a7e5
+  CompBar 3e0fc170e7b7f803377a33d5beb3e4e7
+  CompP 23213171cb6b41cb698672f6bc19b471
+  CompP 3e0fc170e7b7f803377a33d5beb3e4e7
+  Conj a2ddf84582e5dac83e60fc3a942fd8ea
+  Conj 7124f8563e6ece3f71d22b89782c5f9b
+  ConjBar b3133bdb4102e6ce93d6ab45725ed11c
+  ConjBar 9e91607c5fea5b754ceda5471029cb22
+  ConjP a240fe54107e8c607674751ec54d1d39
+  ConjP 1f5ef3d65fca745f4e70f773e640102a
+  Det d7a6a286b2751de01ac1d27f8b369ecb
+  Det fe0d549108cf7bce62a6d4e68b6213fa
+  DetBar a05b606c35fb7d8ea4ed57d8dd28e864
+  DetBar daae34c8e6a5d64fdf2e47d704145a41
+  DetP 4fc48111d872d352ce3bd182e7361dc1
+  DetP daae34c8e6a5d64fdf2e47d704145a41
+  NoOpt 7ea2cde688f10bc236801a4e6b023fc2
+  Noun 74fb7a191ff05703705a1ce02f596b0f
+  Noun 45436846b25a415f5c0a579077a119b3
+  NounBar daae34c8e6a5d64fdf2e47d704145a41
+  NounBar1 8818c618392d261f2d92c24745265047
+  NounBar2 313ed4b264e2bddbfec5a546270834be
+  NounBar3 ffa963878533f0aeab657f8034c39933
+  NounP 119cb57f33b767f87f07812761b32201
+  NounP daae34c8e6a5d64fdf2e47d704145a41
+  Prep 333bcb3369360bc19a8d1475ca3cfbc2
+  Prep 4c2700393deacbeda46581b2544ccf54
+  PrepBar daae34c8e6a5d64fdf2e47d704145a41
+  PrepBar1 13aa9271ea0f69b473ee7abab6b2c074
+  PrepBar2 36dc4252c242a30096519aff793c061d
+  PrepP 5a498697832aa4005a471306ee67175f
+  PrepP daae34c8e6a5d64fdf2e47d704145a41
+  Tense 6aff49e622b65d7bf35f81d3ad8deb0c
+  Tense 9df32b0968acbe1b183020ea07356353
+  TenseBar 8f41868cb4a7e3322aefb5df5d4dadb7
+  TenseBar 3e0fc170e7b7f803377a33d5beb3e4e7
+  TenseP 3e0fc170e7b7f803377a33d5beb3e4e7
+  TenseP1 6d708ec48fb7f63e8c9b35ec362d9dc7
+  TenseP2 0ed8d780ce21c897e894aa5334e75612
+  Verb 7a86c3f66c05fe671d7888cf86080b43
+  Verb 213929e5e19f84ddf0f4fc3e0db0554e
+  VerbBar 3e0fc170e7b7f803377a33d5beb3e4e7
+  VerbBar1 f1530e53c577d172c66d9a036061260a
+  VerbBar2 c66730068a8359fc9ba363d3ac2574a6
+  VerbBar3 d513aeeb8ac42cc357bb50cc7e582dad
+  VerbBar4 424817bb876dd55a77fcb9175ce123e4
+  VerbBar5 ce669019e662de130570593c467986f4
+  VerbP f5f4261d0c2e601ef1c4dd04c9bf7614
+  VerbP 3e0fc170e7b7f803377a33d5beb3e4e7
+  YesOpt a543208aff2d08410dc78758a9b82ffc
 import  -/  random-extras-0.19@rando_11jAc932BDRD7ydjCrRr4L:Data.Random.Extras 5dc1684f88e3f2655bfb5d7aca60bf5c
 import  -/  rvar-0.2.0.3@rvar_HDSuhGFxwNTDX4EfF6w8WG:Data.RVar 9b7fbdb5f1778e76b8a65f45a17cccb1
-c9b6fc96d5d4fafc1359a7eea18d5c4c
-  $wparseDetP ::
-    XBarType.Optional XBarType.Det -> XBarType.NounP -> GHC.Base.String
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(1*U)>,
-     Inline: [0],
-     Unfolding: (\ ww :: XBarType.Optional XBarType.Det
-                   ww1 :: XBarType.NounP ->
-                 case ww of wild {
-                   XBarType.YesOpt det
-                   -> case det of wild1 { XBarType.Det str ->
-                      GHC.Base.++
-                        @ GHC.Types.Char
-                        str
-                        (GHC.CString.unpackAppendCString#
-                           " "#
-                           (case ww1 of wild2 { XBarType.NounP nounbar ->
-                            ParseTreeParseIntoSentence.parseNounBar nounbar })) }
-                   XBarType.NoOpt
-                   -> case ww1 of wild1 { XBarType.NounP nounbar ->
-                      ParseTreeParseIntoSentence.parseNounBar nounbar } }) -}
-121994e04bf0f22b9bd823026d5bc54d
-  $wparseTenseP ::
-    XBarType.Optional XBarType.Det
-    -> XBarType.NounP -> XBarType.TenseBar -> [GHC.Types.Char]
-  {- Arity: 3, HasNoCafRefs,
-     Strictness: <S,1*U><L,1*U(1*U)><L,1*U(1*U(1*U),1*U(1*U))>,
-     Inline: [0],
-     Unfolding: (\ ww :: XBarType.Optional XBarType.Det
-                   ww1 :: XBarType.NounP
-                   ww2 :: XBarType.TenseBar ->
-                 GHC.Base.++
-                   @ GHC.Types.Char
-                   (ParseTreeParseIntoSentence.$wparseDetP ww ww1)
-                   (GHC.CString.unpackAppendCString#
-                      " "#
-                      (case ww2 of wild { XBarType.TenseBar tense verbp ->
-                       case tense of wild1 { XBarType.Tense str ->
-                       GHC.Base.++
-                         @ GHC.Types.Char
-                         str
-                         (GHC.CString.unpackAppendCString#
-                            " "#
-                            (case verbp of wild2 { XBarType.VerbP verbbar ->
-                             ParseTreeParseIntoSentence.parseVerbBar verbbar })) } }))) -}
-c5aad055089536985a2054fd55dac08e
-  parseNounBar :: XBarType.NounBar -> GHC.Base.String
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-21ef2aec0df5dc07e0f76ec4a5e48282
+89b587d4122686ada1344f9033191205
   parseTenseP :: XBarType.TenseP -> GHC.Base.String
-  {- Arity: 1, HasNoCafRefs,
-     Strictness: <S(S(S(SL))L),U(1*U(1*U(1*U,1*U(1*U))),1*U(1*U(1*U),1*U(1*U)))>,
-     Inline: INLINE[0],
-     Unfolding: InlineRule (1, True, False)
-                (\ w :: XBarType.TenseP ->
-                 case w of ww { XBarType.TenseP ww1 ww2 ->
-                 case ww1 of ww3 { XBarType.DetP ww4 ->
-                 case ww4 of ww5 { XBarType.DetBar ww6 ww7 ->
-                 ParseTreeParseIntoSentence.$wparseTenseP ww6 ww7 ww2 } } }) -}
-8a9ca7b2b7ef98f9d2be2e4fb878e64f
-  parseVerbBar :: XBarType.VerbBar -> GHC.Base.String
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
 vectorised variables:
 vectorised tycons:

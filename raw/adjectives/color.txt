@@ -1,0 +1,12 @@
+[
+Adj "red",
+Adj "orange",
+Adj "yellow",
+Adj "green",
+Adj "blue",
+Adj "purple",
+Adj "black",
+Adj "white",
+Adj "gray",
+Adj "brown",
+Adj "pink"]

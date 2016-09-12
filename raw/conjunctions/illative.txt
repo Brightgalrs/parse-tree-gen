@@ -1,0 +1,3 @@
+[
+Conj "for",
+Conj "so"]

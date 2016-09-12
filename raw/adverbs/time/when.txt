@@ -1,0 +1,7 @@
+[
+Adv "yesterday",
+Adv "tomorrow",
+Adv "today",
+Adv "later",
+Adv "now",
+Adv "last year"]

@@ -1,0 +1,8 @@
+[
+Det "one",
+Det "two",
+Det "three",
+Det "four",
+Det "five",
+Det "ten",
+Det "one hundred"]

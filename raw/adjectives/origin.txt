@@ -1,0 +1,6 @@
+[
+Adj "Swedish",
+Adj "Chinese",
+Adj "American",
+Adj "Victorian",
+Adj "modern"]

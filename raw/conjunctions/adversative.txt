@@ -1,0 +1,7 @@
+[
+Conj "but",
+Conj "still",
+Conj "yet",
+Conj "whereas",
+Conj "while",
+Conj "nevertheless"]

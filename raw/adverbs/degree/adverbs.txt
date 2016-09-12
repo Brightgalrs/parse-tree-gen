@@ -1,0 +1,15 @@
+[
+Adv "extremely",
+Adv "terribly",
+Adv "amazingly",
+Adv "wonderfully",
+Adv "insanely"
+Adv "especially",
+Adv "particularly",
+Adv "uncommonly",
+Adv "unusually",
+Adv "remarkably",
+Adv "quite",
+Adv "pretty",
+Adv "rather",
+Adv "fairly"]

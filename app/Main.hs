@@ -1,17 +1,16 @@
 module Main where
 
 --import PhonologyGen
-import ParseTreeGen
-import ParseTreeParseIntoSentence
-import ParseTreeParseIntoTree
-import Data.Random
-import Data.RVar
+import           Data.Random
+import           Data.RVar
+import           ParseTreeGen
+import           ParseTreeParseIntoSentence
+import           ParseTreeParseIntoTree
+import           System.IO
 
 
 main :: IO ()
 main = do
   dat <- loadInputData
   struct <- sampleRVar (makeTenseP dat 6)
-  putStr $ show $ parseTenseP struct
-  putStr $ "\n"
-  putStr $ parseToTreeTenseP struct 0
+  writeFile "treeoutput.txt" $ (show struct) ++ "\n" ++ (parseTenseP struct) ++ "\n" ++ (parseToTreeTenseP struct 0)

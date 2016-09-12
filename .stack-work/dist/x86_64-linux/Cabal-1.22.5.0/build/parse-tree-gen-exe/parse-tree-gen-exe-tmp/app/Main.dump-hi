@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-09-08 01:54:46.87608 UTC
+2016-09-10 01:26:15.284443 UTC
 
 interface main@main:Main 7103
-  interface hash: 07b158ccdd1e9281a875fb9263b23bb2
-  ABI hash: 0611005cf195356d48e9b2122d98127a
+  interface hash: c5237492e721fe7b31c050bab87cd143
+  ABI hash: 91bdf83eb18be1a26e24315266c32c76
   export-list hash: 506386a07ec19466c3999f6c0db24b82
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 09d4a21fc1d94ed623d7214f309e6bca
@@ -79,27 +79,29 @@ family instance modules: base-4.8.2.0:Control.Applicative
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Primitive
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  parse-tree-gen-0.1.0.0@parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeGen ef2dc7121ef181e68e7d2b57f3073b91
-import  -/  parse-tree-gen-0.1.0.0@parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeParse 63d46f441db8f0a823f4c2f6b6885fee
+import  -/  parse-tree-gen-0.1.0.0@parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeGen 488e3041134793ab7ac16118c2354d14
+import  -/  parse-tree-gen-0.1.0.0@parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeParseIntoSentence cae19b244df678a70b0668dfda4ee8d0
+import  -/  parse-tree-gen-0.1.0.0@parse_Iaj1kxNSeaZ4PQxYHNqcNV:ParseTreeParseIntoTree 3dfe8b41605894b3142ee5483ad681e1
 import  -/  random-fu-0.2.7.0@rando_HO0DW1nA2fDCxZJ62mvJHr:Data.Random 355d6844bb1b3189cb19ec0007f6f130
 import  -/  rvar-0.2.0.3@rvar_HDSuhGFxwNTDX4EfF6w8WG:Data.RVar 9b7fbdb5f1778e76b8a65f45a17cccb1
-cd913264b478e490068bc957e0312154
+b09a31f50ae05eaf7ad7c740270b41f1
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-55dce84a472ae365567060a5897885fc
+df5d96fa94b20d7550b2b1ce57dfc7d7
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  case ParseTreeGen.loadInputData1 s of ds1 { (#,#) ipv ipv1 ->
-                 case ((ParseTreeGen.makeTenseP ipv1 Main.main5)
+                 case ((ParseTreeGen.$wmakeTenseP ipv1 6)
                          `cast`
                        (Trans
                             (Trans
@@ -117,7 +119,7 @@ cd913264b478e490068bc957e0312154
                            `cast`
                          (<XBarType.TenseP>_R
                           ->_R Sym (GHC.Types.NTCo:IO[0] <XBarType.TenseP>_R))
-                         Main.main4
+                         Main.main5
                            `cast`
                          (forall a2.
                           <Control.Monad.Prompt.Lift
@@ -129,38 +131,55 @@ cd913264b478e490068bc957e0312154
                         `cast`
                       (GHC.Types.NTCo:IO[0] <XBarType.TenseP>_R)
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
-                        (GHC.Types.:
-                           @ GHC.Types.Char
-                           GHC.Show.shows6
-                           (GHC.Show.showLitString
-                              (ParseTreeParse.parseTenseP ipv3)
-                              Main.main3))
-                        GHC.Types.False
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
-                        Main.main2
-                        GHC.Types.False
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
-                 GHC.IO.Handle.Text.hPutStr2
-                   GHC.IO.Handle.FD.stdout
-                   (XBarType.$fShowTenseP_$cshow ipv3)
-                   GHC.Types.False
-                   ipv6 } } } }) -}
-2d632b1dcee96ceeb86529445d455bcf
-  main2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
-073569c3fbf24068bb9b5ba9ece36865
-  main3 :: [GHC.Types.Char]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
-                   GHC.Show.shows6
-                   (GHC.Types.[] @ GHC.Types.Char)) -}
-ce857ab6c42f78ca3e93208a2eebc139
-  main4 ::
+                 Control.Exception.Base.bracket1
+                   @ GHC.IO.Handle.Types.Handle
+                   @ ()
+                   @ ()
+                   Main.main3
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <GHC.IO.Handle.Types.Handle>_R))
+                   GHC.IO.Handle.hClose1
+                     `cast`
+                   (<GHC.IO.Handle.Types.Handle>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                   (\ hdl :: GHC.IO.Handle.Types.Handle[OneShot]
+                      eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    GHC.IO.Handle.Text.hPutStr2
+                      hdl
+                      (GHC.Base.++
+                         @ GHC.Types.Char
+                         (XBarType.$w$cshowsPrec8 0 ipv3 (GHC.Types.[] @ GHC.Types.Char))
+                         (GHC.CString.unpackAppendCString#
+                            "\n"#
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               (ParseTreeParseIntoSentence.parseTenseP ipv3)
+                               (GHC.CString.unpackAppendCString#
+                                  "\n"#
+                                  (ParseTreeParseIntoTree.parseToTreeTenseP ipv3 Main.main2)))))
+                      GHC.Types.False
+                      eta)
+                     `cast`
+                   (<GHC.IO.Handle.Types.Handle>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                   ipv2 } }) -}
+9464ac6b1ec928aa0f84fd3cd0bffe0a
+  main2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0) -}
+02d508f27e6d0680549d4594b8a0b2c8
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.IO.Handle.Types.Handle #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.FD.openFile1
+                   Main.main4
+                   GHC.IO.IOMode.WriteMode) -}
+75c88f50cbebec66283b2dd22c751a87
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "treeoutput.txt"#) -}
+a25945fa7a0afa63efc5b98209618021
+  main5 ::
     Control.Monad.Prompt.Lift
       Data.Random.Source.Internal.Prim.Prim
       Data.Functor.Identity.Identity
@@ -189,10 +208,7 @@ ce857ab6c42f78ca3e93208a2eebc139
                         `cast`
                       (GHC.Types.NTCo:IO[0] <XBarType.TenseP>_R)
                         eta }) -}
-9ab31109d4242b06345e208d25f244f5
-  main5 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 6) -}
-c8359e3532c5f8fe337802da83267374
+c799aa152b7bfdfe600104070b255982
   main6 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

@@ -1,0 +1,5 @@
+[
+Adj "old",
+Adj "young",
+Adj "new",
+Adj "14-year-old"]

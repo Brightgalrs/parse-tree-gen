@@ -1,0 +1,5 @@
+[
+Adv "all day",
+Adv "for a year",
+Adv "since 1996",
+Adv "all year"]

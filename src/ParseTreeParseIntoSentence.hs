@@ -10,10 +10,16 @@ import           XBarType
 import           ParseTreeGen
 
 --Parse the tree and output full string
+parseConjP :: ConjP -> String
+parseConjP conjp = str where
+  ConjP detp conjbar = conjp
+  str = parseDetP detp ++ " " ++ parseConjBar conjbar
+
 parseTenseP :: TenseP -> String
-parseTenseP tensep = str where
-  TenseP detp tensebar = tensep
+parseTenseP (TenseP1 detp tensebar) = str where
   str = parseDetP detp ++ " " ++ parseTenseBar tensebar
+parseTenseP (TenseP2 conjp tensebar) = str where
+  str = parseConjP conjp ++ " " ++ parseTenseBar tensebar
 
 parseCompP :: CompP -> String
 parseCompP compp = str where
@@ -53,6 +59,12 @@ parseNounP :: NounP -> String
 parseNounP nounp = str where
   NounP nounbar = nounp
   str = parseNounBar nounbar
+
+
+parseConjBar :: ConjBar -> String
+parseConjBar conjbar = str where
+  ConjBar conj detp = conjbar
+  str = parseConj conj ++ " " ++ parseDetP detp
 
 parseTenseBar :: TenseBar -> String
 parseTenseBar tensebar = str where
@@ -119,6 +131,9 @@ parseNounBar (NounBar3 noun optprepp) = str where
   fooBar (YesOpt prepp) = parseNoun noun ++ " " ++ parsePrepP prepp
   fooBar NoOpt = parseNoun noun
   str = fooBar optprepp
+
+parseConj :: Conj -> String
+parseConj (Conj str) = str
 
 parseTense :: Tense -> String
 parseTense (Tense str) = str

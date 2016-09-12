@@ -1,0 +1,6 @@
+[
+Det "each",
+Det "every",
+Det "all",
+Det "either",
+Det "neither"]
