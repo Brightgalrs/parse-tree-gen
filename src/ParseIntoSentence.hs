@@ -56,10 +56,10 @@ parseAdjP adjp = str where
   AdjP adjbar = adjp
   str = parseAdjBar adjbar
 
-parseVerbP :: VerbP -> String
-parseVerbP verbp = str where
+parseVerbP :: VerbP -> Tense -> String
+parseVerbP verbp tense = str where
   VerbP verbbar = verbp
-  str = parseVerbBar verbbar
+  str = parseVerbBar verbbar tense
 
 parseNounP :: NounP -> String
 parseNounP nounp = str where
@@ -81,7 +81,7 @@ parseConjBar conjbar = str where
 parseTenseBar :: TenseBar -> String
 parseTenseBar tensebar = str where
   TenseBar tense verbp = tensebar
-  str = parseTense tense ++ " " ++ parseVerbP verbp
+  str = parseTenseAux tense ++ " " ++ parseVerbP verbp tense
 
 parseCompBar :: CompBar -> String
 parseCompBar compbar = str where
@@ -122,17 +122,17 @@ parseAdjBar (AdjBar4 adj optprepp) = str where
   fooBar NoOpt = parseAdj adj
   str = fooBar optprepp
 
-parseVerbBar :: VerbBar -> String
-parseVerbBar (VerbBar1 advp verbbar) = str where
-  str = parseAdvP advp ++ " " ++ parseVerbBar verbbar
-parseVerbBar (VerbBar2 verbbar prepp) = str where
-  str = parseVerbBar verbbar ++ " " ++ parsePrepP prepp
-parseVerbBar (VerbBar3 verbbar advp) = str where
-  str = parseVerbBar verbbar ++ " " ++ parseAdvP advp
-parseVerbBar (VerbBar4 verb compp) = str where
-  str = parseVerb verb ++ " " ++ parseCompP compp
-parseVerbBar (VerbBar5 verb detp) = str where
-  str = parseVerb verb ++ " " ++ parseDetP detp
+parseVerbBar :: VerbBar -> Tense -> String
+parseVerbBar (VerbBar1 advp verbbar) tense = str where
+  str = parseAdvP advp ++ " " ++ parseVerbBar verbbar tense
+parseVerbBar (VerbBar2 verbbar prepp) tense = str where
+  str = parseVerbBar verbbar tense ++ " " ++ parsePrepP prepp
+parseVerbBar (VerbBar3 verbbar advp) tense = str where
+  str = parseVerbBar verbbar tense ++ " " ++ parseAdvP advp
+parseVerbBar (VerbBar4 verb compp) tense = str where
+  str = (parseVerb verb) ++ (parseTenseMorph tense) ++ " " ++ parseCompP compp
+parseVerbBar (VerbBar5 verb detp) tense = str where
+  str = (parseVerb verb) ++ (parseTenseMorph tense) ++ " " ++ parseDetP detp
 
 parseNounBar :: NounBar -> String
 parseNounBar (NounBar1 adjp nounbar) = str where
@@ -151,8 +151,11 @@ parseNeg (Neg str) = str
 parseConj :: Conj -> String
 parseConj (Conj str) = str
 
-parseTense :: Tense -> String
-parseTense _ = ""
+parseTenseAux :: Tense -> String
+parseTenseAux (Tense aux morph) = aux
+
+parseTenseMorph :: Tense -> String
+parseTenseMorph (Tense aux morph) = morph
 
 parseComp :: Comp -> String
 parseComp (Comp str) = str

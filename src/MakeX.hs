@@ -40,7 +40,8 @@ makeComp idata =
   choice (iComp idata)
 
 makeTense :: InputData -> RVar Tense
-makeTense idata = choice [SPa, SPr, SF, CPa, CPr, CF, PPa, PPr, PF, PCPa, PCPr, PCF]
+makeTense idata =
+  choice (iTense idata)
 
 makeConj :: InputData -> RVar Conj
 makeConj idata =

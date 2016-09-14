@@ -1,5 +1,13 @@
 [
-Tense "past",
-Tense "present",
-Tense "future",
-Tense "future-in-the-past"]
+(Tense "" ""),
+(Tense "" "ed"),
+(Tense "will" ""),
+(Tense "are" "ing"),
+(Tense "were" "ing"),
+(Tense "will be" "ing"),
+(Tense "have" "ed"),
+(Tense "had" "ed"),
+(Tense "will have" "ed"),
+(Tense "have been" "ing"),
+(Tense "had been" "ing"),
+(Tense "will have been" "ing")]

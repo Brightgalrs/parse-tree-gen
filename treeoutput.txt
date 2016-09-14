@@ -1,5 +1,5 @@
-TenseP2 (ConjP (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "therapy") NoOpt)))) (ConjBar (Conj "and") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "weed wacker") NoOpt)))))) (TenseBar CF (VerbP (VerbBar1 (AdvP NoOpt (AdvBar (Adv "irritably"))) (VerbBar5 (Verb "work") (DetP (DetBar1 (YesOpt (Det "the")) (NounP (NounBar3 (Noun "mood") NoOpt))))))))
-a therapy and a weed wacker  irritably work the mood
+TenseP2 (ConjP (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "karate") NoOpt)))) (ConjBar (Conj "as well as") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "furnace") NoOpt)))))) (TenseBar (Tense "were" "ing") (VerbP (VerbBar3 (VerbBar4 (Verb "leave") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "fund") NoOpt)))) (TenseBar (Tense "have been" "ing") (VerbP (VerbBar4 (Verb "come") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "criminal") NoOpt)))) (TenseBar (Tense "will have been" "ing") (VerbP (VerbBar5 (Verb "want") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "idea") NoOpt))))))))))))))))) (AdvP NoOpt (AdvBar (Adv "tediously"))))))
+a karate as well as a furnace were leaveing if a fund have been comeing if a criminal will have been wanting a idea tediously
 
 TP
 	ConjP
@@ -10,10 +10,10 @@ TP
 				NP
 					N'
 						N
-							therapy
+							karate
 		Conj'
 			Conj
-				and
+				as well as
 			DP
 				D'
 					D
@@ -21,24 +21,64 @@ TP
 					NP
 						N'
 							N
-								weed wacker
+								furnace
 	T'
 		T
-
+			
 		VP
 			V'
+				V'
+					V
+						leave
+					CP
+						C'
+							C
+								if
+							TP
+								DP
+									D'
+										D
+											a
+										NP
+											N'
+												N
+													fund
+								T'
+									T
+										
+									VP
+										V'
+											V
+												come
+											CP
+												C'
+													C
+														if
+													TP
+														DP
+															D'
+																D
+																	a
+																NP
+																	N'
+																		N
+																			criminal
+														T'
+															T
+																
+															VP
+																V'
+																	V
+																		want
+																	DP
+																		D'
+																			D
+																				a
+																			NP
+																				N'
+																					N
+																						idea
 				AdvP
 					Adv'
 						Adv
-							irritably
-				V'
-					V
-						work
-					DP
-						D'
-							D
-								the
-							NP
-								N'
-									N
-										mood
+							tediously

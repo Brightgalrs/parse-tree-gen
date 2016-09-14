@@ -77,7 +77,7 @@ data Comp = Comp String deriving (Show, Read)
 --Tense phrase
 data TenseP = TenseP1 DetP TenseBar | TenseP2 ConjP TenseBar deriving (Show, Read)
 data TenseBar = TenseBar Tense VerbP deriving (Show, Read)
-data Tense = SPa | SPr | SF | CPa | CPr | CF | PPa | PPr | PF | PCPa | PCPr | PCF deriving (Eq, Show, Read, Enum, Bounded)
+data Tense = Tense String String deriving (Show, Read)
 
 --Conjunction phrase
 data ConjP = ConjP DetP ConjBar deriving (Show, Read)

@@ -17,6 +17,7 @@ data InputData = InputData
     , iComp    :: [Comp]
     , iConj    :: [Conj]
     , iPron    :: [Pron]
+    , iTense   :: [Tense]
     }
 
 loadInputData :: IO InputData
@@ -31,6 +32,7 @@ loadInputData  =
         <*> readFeature "raw/conjunctions/complementizers.txt"
         <*> readFeature "raw/conjunctions/cumulative.txt"
         <*> readFeature "raw/nouns/pronouns.txt"
+        <*> readFeature "raw/inflections/tenses.txt"
 
 readFeature :: Read a => FilePath -> IO a
 readFeature = fmap read . readFile
