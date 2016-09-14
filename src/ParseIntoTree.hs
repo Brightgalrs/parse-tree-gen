@@ -1,15 +1,22 @@
-module ParseTreeParseIntoTree
+module ParseIntoTree
 ( parseToTreeTenseP
 ) where
 
 import           Control.Monad
 import           Data.Random.Extras hiding (shuffle)
 import           Data.RVar
-import           ParseTreeGen
+import           MakeXBarXP
 import           Prelude
 import           XBarType
 
 --Parse the tree and output a tree diagram
+-------------------------------------parse XP-----------------------------------
+
+parseToTreeNegP :: NegP -> Int -> String
+parseToTreeNegP negp ntabs = "\n" ++ (replicate ntabs '\t') ++ "NegP" ++ str where
+  NegP negbar = negp
+  str = parseToTreeNegBar negbar (ntabs+1)
+
 parseToTreeConjP :: ConjP -> Int -> String
 parseToTreeConjP conjp ntabs = "\n" ++ (replicate ntabs '\t') ++ "ConjP" ++ str where
   ConjP detp conjbar = conjp
@@ -60,8 +67,15 @@ parseToTreeNounP nounp ntabs = "\n" ++ (replicate ntabs '\t') ++ "NP" ++ str whe
   NounP nounbar = nounp
   str = parseToTreeNounBar nounbar (ntabs+1)
 
+---------------------------------parse Xbar-------------------------------------
+
+parseToTreeNegBar :: NegBar -> Int -> String
+parseToTreeNegBar negbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "Neg'" ++ str where
+  NegBar neg = negbar
+  str = parseToTreeNeg neg (ntabs+1)
+
 parseToTreeConjBar :: ConjBar -> Int -> String
-parseToTreeConjBar conjbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "T'" ++ str where
+parseToTreeConjBar conjbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "Conj'" ++ str where
   ConjBar conj detp = conjbar
   str = parseToTreeConj conj (ntabs+1) ++ parseToTreeDetP detp (ntabs+1)
 
@@ -77,7 +91,7 @@ parseToTreeCompBar compbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "C'" ++ str
 
 parseToTreeDetBar :: DetBar -> Int -> String
 parseToTreeDetBar detbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "D'" ++ str where
-  DetBar optdet nounp = detbar
+  DetBar1 optdet nounp = detbar
   fooBar (YesOpt det) = parseToTreeDet det (ntabs+1) ++ parseToTreeNounP nounp (ntabs+1)
   fooBar NoOpt = parseToTreeNounP nounp (ntabs+1)
   str = fooBar optdet
@@ -131,11 +145,16 @@ parseToTreeNounBar (NounBar3 noun optprepp) ntabs = "\n" ++ (replicate ntabs '\t
   fooBar NoOpt = parseToTreeNoun noun (ntabs+1)
   str = fooBar optprepp
 
+-----------------------------------parse X--------------------------------------
+
+parseToTreeNeg :: Neg -> Int -> String
+parseToTreeNeg (Neg str) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Neg\n" ++ (replicate (ntabs+1) '\t') ++ str
+
 parseToTreeConj :: Conj -> Int -> String
 parseToTreeConj (Conj str) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Conj\n" ++ (replicate (ntabs+1) '\t') ++ str
 
 parseToTreeTense :: Tense -> Int -> String
-parseToTreeTense (Tense str) ntabs = "\n" ++ (replicate ntabs '\t') ++ "T\n" ++ (replicate (ntabs+1) '\t') ++ str
+parseToTreeTense _ ntabs = "\n" ++ (replicate ntabs '\t') ++ "T\n" ++ (replicate (ntabs+1) '\t') ++ ""
 
 parseToTreeComp :: Comp -> Int -> String
 parseToTreeComp (Comp str) ntabs = "\n" ++ (replicate ntabs '\t') ++ "C\n" ++ (replicate (ntabs+1) '\t') ++ str

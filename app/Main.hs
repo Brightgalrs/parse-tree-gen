@@ -3,10 +3,11 @@ module Main where
 --import PhonologyGen
 import           Data.Random
 import           Data.RVar
-import           ParseTreeGen
-import           ParseTreeParseIntoSentence
-import           ParseTreeParseIntoTree
+import           MakeXBarXP
+import           ParseIntoSentence
+import           ParseIntoTree
 import           System.IO
+import           LoadData
 
 
 main :: IO ()

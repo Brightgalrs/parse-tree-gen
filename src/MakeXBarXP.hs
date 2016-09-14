@@ -1,79 +1,14 @@
-module ParseTreeGen
-( makeTenseP
-, loadInputData
-) where
+module MakeXBarXP where
 
 import           Control.Monad
 import           Data.Random.Extras hiding (shuffle)
 import           Data.RVar
+import           LoadData
+import           MakeX
 import           Prelude
 import           XBarType
 
--- Load words from files
-data InputData = InputData
-    {
-      iNoun :: [Noun]
-    , iVerb :: [Verb]
-    , iAdj  :: [Adj]
-    , iAdv  :: [Adv]
-    , iPrep :: [Prep]
-    , iDet  :: [Det]
-    , iComp :: [Comp]
-    , iConj :: [Conj]
-    }
-
-loadInputData :: IO InputData
-loadInputData  =
-    InputData
-        <$> readFeature "raw/nouns.txt"
-        <*> readFeature "raw/verbs.txt"
-        <*> readFeature "raw/adjectives.txt"
-        <*> readFeature "raw/adverbs.txt"
-        <*> readFeature "raw/prepositions.txt"
-        <*> readFeature "raw/determiners.txt"
-        <*> readFeature "raw/complementizers.txt"
-        <*> readFeature "raw/conjunctions.txt"
-
-readFeature :: Read a => FilePath -> IO a
-readFeature = fmap read . readFile
-
---Make random syntax tree
-
-makeNoun :: InputData -> RVar Noun
-makeNoun idata =
-  choice (iNoun idata)
-
-makeVerb :: InputData -> RVar Verb
-makeVerb idata =
-  choice (iVerb idata)
-
-makeAdj :: InputData -> RVar Adj
-makeAdj idata =
-  choice (iAdj idata)
-
-makeAdv :: InputData -> RVar Adv
-makeAdv idata =
-  choice (iAdv idata)
-
-makePrep :: InputData -> RVar Prep
-makePrep idata =
-  choice (iPrep idata)
-
-makeDet :: InputData -> RVar Det
-makeDet idata =
-  choice (iDet idata)
-
-makeComp :: InputData -> RVar Comp
-makeComp idata =
-  choice (iComp idata)
-
-makeTense :: InputData -> RVar Tense
-makeTense idata =
-  choice [Tense "-ed"]
-
-makeConj :: InputData -> RVar Conj
-makeConj idata =
-  choice (iConj idata)
+--Make X'
 
 --NounBar main
 makeNounBar :: InputData -> Int  -> RVar NounBar
@@ -231,13 +166,13 @@ makeDetBar idata n =
 --with optional determiner
 makeDetBar1 :: InputData -> Int  -> RVar DetBar
 makeDetBar1 idata n =
-  DetBar <$> (YesOpt <$> (makeDet idata)) <*> (makeNounP idata i)
+  DetBar1 <$> (YesOpt <$> (makeDet idata)) <*> (makeNounP idata i)
   where i = n-1
 
 --without optional determiner
 makeDetBar2 :: InputData -> Int  -> RVar DetBar
 makeDetBar2 idata n =
-  DetBar (NoOpt) <$> (makeNounP idata i)
+  DetBar1 (NoOpt) <$> (makeNounP idata i)
   where i = n-1
 
 --CompBar
@@ -258,6 +193,14 @@ makeConjBar idata n =
   ConjBar <$> (makeConj idata) <*> (makeDetP idata i)
   where i = n-1
 
+--NegBar
+makeNegBar :: InputData -> Int  -> RVar NegBar
+makeNegBar idata n =
+  NegBar <$> (makeNeg idata)
+  where i = n-1
+
+
+----------------------------Make XP---------------------------------------
 --NounP
 makeNounP :: InputData -> Int  -> RVar NounP
 makeNounP idata n =
@@ -347,4 +290,10 @@ makeTenseP2 idata n =
 makeConjP :: InputData -> Int  -> RVar ConjP
 makeConjP idata n =
   ConjP <$> (makeDetP idata i) <*> (makeConjBar idata i)
+  where i = n-1
+
+--NegP
+makeNegP :: InputData -> Int  -> RVar NegP
+makeNegP idata n =
+  NegP <$> (makeNegBar idata i)
   where i = n-1

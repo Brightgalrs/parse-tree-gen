@@ -27,12 +27,10 @@ module XBarType
 , ConjP(..)
 , ConjBar(..)
 , Conj(..)
-, AgrSP(..)
-, AgrSBar(..)
-, AgrS(..)
-, AgrOP(..)
-, AgrOBar(..)
-, AgrO(..)
+, Pron(..)
+, NegP(..)
+, NegBar(..)
+, Neg(..)
 ) where
 
 -- X-bar theory data
@@ -68,7 +66,7 @@ data Prep = Prep String deriving (Show, Read)
 
 --Determiner phrase
 data DetP = DetP DetBar deriving (Show, Read)
-data DetBar = DetBar1 (Optional Det) NounP | DetBar2 Pron deriving (Show, Read)
+data DetBar = DetBar1 (Optional Det) NounP deriving (Show, Read)
 data Det = Det String deriving (Show, Read)
 
 --Complementizer phrase
@@ -78,43 +76,18 @@ data Comp = Comp String deriving (Show, Read)
 
 --Tense phrase
 data TenseP = TenseP1 DetP TenseBar | TenseP2 ConjP TenseBar deriving (Show, Read)
-data TenseBar = TenseBar Tense AgrSP deriving (Show, Read)
-data Tense = Tense String deriving (Show, Read)
+data TenseBar = TenseBar Tense VerbP deriving (Show, Read)
+data Tense = SPa | SPr | SF | CPa | CPr | CF | PPa | PPr | PF | PCPa | PCPr | PCF deriving (Eq, Show, Read, Enum, Bounded)
 
 --Conjunction phrase
 data ConjP = ConjP DetP ConjBar deriving (Show, Read)
 data ConjBar = ConjBar Conj DetP deriving (Show, Read)
 data Conj = Conj String deriving (Show, Read)
 
---Subject agreement phrase
-data AgrSP = AgrSP AgrSBar deriving (Show, Read)
-data AgrSBar = AgrSBar AgrS VerbP deriving (Show, Read)
-data AgrS = AgrS String deriving (Show, Read)
-
---Object agreement phrase
-data AgrOP = AgrOP AgrOBar deriving (Show, Read)
-data AgrOBar = AgrOBar AgrO TenseP deriving (Show, Read)
-data AgrO = AgrO String deriving (Show, Read)
+--Pronoun
+data Pron = Pron String deriving (Show, Read)
 
 --Negation phrase
 data NegP = NegP NegBar deriving (Show, Read)
 data NegBar = NegBar Neg deriving (Show, Read)
 data Neg = Neg String deriving (Show, Read)
-
---Aspect phrase
-data AspP = AspP AspBar deriving (Show, Read)
-data AspBar = AspBar Asp deriving (Show, Read)
-data Asp = Asp String deriving (Show, Read)
-
---Number phrase
-data NumbP = NumbP NumbBar deriving (Show, Read)
-data NumbBar = NumbBar Numb deriving (Show, Read)
-data Numb = Numb String deriving (Show, Read)
-
---"little vP" - for ditransitive verbs
-data LilVerbP = LilVerbP LilVerbBar deriving (Show, Read)
-data LilVerbBar = LilVerbBar LilVerb deriving (Show, Read)
-data LilVerb = LilVerb String deriving (Show, Read)
-
---Pronoun
-data Pron = Pron String deriving (Show, Read)

@@ -1,4 +1,4 @@
-module ParseTreeParseIntoSentence
+module ParseIntoSentence
 ( parseTenseP
 ) where
 
@@ -7,9 +7,15 @@ import           Data.Random.Extras hiding (shuffle)
 import           Data.RVar
 import           Prelude
 import           XBarType
-import           ParseTreeGen
+import           MakeXBarXP
 
 --Parse the tree and output full string
+-------------------------------------parse XP-----------------------------------
+parseNegP :: NegP -> String
+parseNegP negp = str where
+  NegP negbar = negp
+  str = parseNegBar negbar
+
 parseConjP :: ConjP -> String
 parseConjP conjp = str where
   ConjP detp conjbar = conjp
@@ -60,6 +66,12 @@ parseNounP nounp = str where
   NounP nounbar = nounp
   str = parseNounBar nounbar
 
+----------------------------------parse Xbar------------------------------------
+
+parseNegBar :: NegBar -> String
+parseNegBar negbar = str where
+  NegBar neg = negbar
+  str = parseNeg neg
 
 parseConjBar :: ConjBar -> String
 parseConjBar conjbar = str where
@@ -78,7 +90,7 @@ parseCompBar compbar = str where
 
 parseDetBar :: DetBar -> String
 parseDetBar detbar = str where
-  DetBar optdet nounp = detbar
+  DetBar1 optdet nounp = detbar
   fooBar (YesOpt det) = parseDet det ++ " " ++ parseNounP nounp
   fooBar NoOpt = parseNounP nounp
   str = fooBar optdet
@@ -132,11 +144,15 @@ parseNounBar (NounBar3 noun optprepp) = str where
   fooBar NoOpt = parseNoun noun
   str = fooBar optprepp
 
+-----------------------------------parse X--------------------------------------
+parseNeg :: Neg -> String
+parseNeg (Neg str) = str
+
 parseConj :: Conj -> String
 parseConj (Conj str) = str
 
 parseTense :: Tense -> String
-parseTense (Tense str) = str
+parseTense _ = ""
 
 parseComp :: Comp -> String
 parseComp (Comp str) = str
