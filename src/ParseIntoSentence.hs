@@ -39,10 +39,10 @@ parseDetP detp = str where
 
 parsePrepP :: PrepP -> String
 parsePrepP prepp = str where
-  PrepP optadjp prepbar = prepp
-  fooBar (YesOpt adjp) = parseAdjP adjp ++ " " ++ parsePrepBar prepbar
+  PrepP optadvp prepbar = prepp
+  fooBar (YesOpt advp) = parseAdvP advp ++ " " ++ parsePrepBar prepbar
   fooBar NoOpt = parsePrepBar prepbar
-  str = fooBar optadjp
+  str = fooBar optadvp
 
 parseAdvP :: AdvP -> String
 parseAdvP advp = str where
@@ -53,13 +53,17 @@ parseAdvP advp = str where
 
 parseAdjP :: AdjP -> String
 parseAdjP adjp = str where
-  AdjP adjbar = adjp
-  str = parseAdjBar adjbar
+  AdjP optadvp adjbar = adjp
+  fooBar (YesOpt advp) = parseAdvP advp ++ " " ++ parseAdjBar adjbar
+  fooBar NoOpt = parseAdjBar adjbar
+  str = fooBar optadvp
 
 parseVerbP :: VerbP -> Tense -> String
 parseVerbP verbp tense = str where
-  VerbP verbbar = verbp
-  str = parseVerbBar verbbar tense
+  VerbP optneg verbbar = verbp
+  fooBar (YesOpt negp) = parseNegP negp ++ " " ++ parseVerbBar verbbar tense
+  fooBar NoOpt = parseVerbBar verbbar tense
+  str = fooBar optneg
 
 parseNounP :: NounP -> String
 parseNounP nounp = str where
@@ -96,10 +100,8 @@ parseDetBar detbar = str where
   str = fooBar optdet
 
 parsePrepBar :: PrepBar -> String
-parsePrepBar (PrepBar1 prepbar optprepp) = str where
-  fooBar (YesOpt prepp) = parsePrepBar prepbar ++ " " ++ parsePrepP prepp
-  fooBar NoOpt = parsePrepBar prepbar
-  str = fooBar optprepp
+parsePrepBar (PrepBar1 prepbar prepp) = str where
+  str = parsePrepBar prepbar ++ " " ++ parsePrepP prepp
 parsePrepBar (PrepBar2 prep detp) = str where
   str = parsePrep prep ++ " " ++ parseDetP detp
 
@@ -109,15 +111,11 @@ parseAdvBar advbar = str where
   str = parseAdv adv
 
 parseAdjBar :: AdjBar -> String
-parseAdjBar (AdjBar1 advp adjbar) = str where
-  str = parseAdvP advp ++ " " ++ parseAdjBar adjbar
-parseAdjBar (AdjBar2 adjp adjbar) = str where
+parseAdjBar (AdjBar1 adjp adjbar) = str where
   str = parseAdjP adjp ++ " " ++ parseAdjBar adjbar
-parseAdjBar (AdjBar3 adjbar optprepp) = str where
-  fooBar (YesOpt prepp) = parseAdjBar adjbar ++ " " ++ parsePrepP prepp
-  fooBar NoOpt = parseAdjBar adjbar
-  str = fooBar optprepp
-parseAdjBar (AdjBar4 adj optprepp) = str where
+parseAdjBar (AdjBar2 adjbar prepp) = str where
+  str = parseAdjBar adjbar ++ " " ++ parsePrepP prepp
+parseAdjBar (AdjBar3 adj optprepp) = str where
   fooBar (YesOpt prepp) = parseAdj adj ++ " " ++ parsePrepP prepp
   fooBar NoOpt = parseAdj adj
   str = fooBar optprepp

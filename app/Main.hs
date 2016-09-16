@@ -13,5 +13,10 @@ import           LoadData
 main :: IO ()
 main = do
   dat <- loadInputData
-  struct <- sampleRVar (makeTenseP dat 6)
+  --(cpl, ppl, ajl, avl)
+  --cpl: number of compliment phrases allowed (in a direct line)
+  --ppl: number of prep phrases
+  --ajl: number of adj phrases
+  --avl: number of adv phrases
+  struct <- sampleRVar (makeTenseP dat (1,1,1,1))
   writeFile "treeoutput.txt" $ (show struct) ++ "\n" ++ (parseTenseP struct) ++ "\n" ++ (parseToTreeTenseP struct 0)

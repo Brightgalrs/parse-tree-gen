@@ -40,10 +40,10 @@ parseToTreeDetP detp ntabs = "\n" ++ (replicate ntabs '\t') ++ "DP" ++ str where
 
 parseToTreePrepP :: PrepP -> Int -> String
 parseToTreePrepP prepp ntabs = "\n" ++ (replicate ntabs '\t') ++ "PP" ++ str where
-  PrepP optadjp prepbar = prepp
-  fooBar (YesOpt adjp) = parseToTreeAdjP adjp (ntabs+1) ++ parseToTreePrepBar prepbar (ntabs+1)
+  PrepP optadvp prepbar = prepp
+  fooBar (YesOpt advp) = parseToTreeAdvP advp (ntabs+1) ++ parseToTreePrepBar prepbar (ntabs+1)
   fooBar NoOpt = parseToTreePrepBar prepbar (ntabs+1)
-  str = fooBar optadjp
+  str = fooBar optadvp
 
 parseToTreeAdvP :: AdvP -> Int -> String
 parseToTreeAdvP advp ntabs = "\n" ++ (replicate ntabs '\t') ++ "AdvP" ++ str where
@@ -54,13 +54,17 @@ parseToTreeAdvP advp ntabs = "\n" ++ (replicate ntabs '\t') ++ "AdvP" ++ str whe
 
 parseToTreeAdjP :: AdjP -> Int -> String
 parseToTreeAdjP adjp ntabs = "\n" ++ (replicate ntabs '\t') ++ "AdjP" ++ str where
-  AdjP adjbar = adjp
-  str = parseToTreeAdjBar adjbar (ntabs+1)
+  AdjP optadvp adjbar = adjp
+  fooBar (YesOpt advp) = parseToTreeAdvP advp (ntabs+1) ++ parseToTreeAdjBar adjbar (ntabs+1)
+  fooBar NoOpt = parseToTreeAdjBar adjbar (ntabs+1)
+  str = fooBar optadvp
 
 parseToTreeVerbP :: VerbP -> Int -> String
 parseToTreeVerbP verbp ntabs = "\n" ++ (replicate ntabs '\t') ++ "VP" ++ str where
-  VerbP verbbar = verbp
-  str = parseToTreeVerbBar verbbar (ntabs+1)
+  VerbP optnegp verbbar = verbp
+  fooBar (YesOpt negp) = parseToTreeNegP negp (ntabs+1) ++ parseToTreeVerbBar verbbar (ntabs+1)
+  fooBar NoOpt = parseToTreeVerbBar verbbar (ntabs+1)
+  str = fooBar optnegp
 
 parseToTreeNounP :: NounP -> Int -> String
 parseToTreeNounP nounp ntabs = "\n" ++ (replicate ntabs '\t') ++ "NP" ++ str where
@@ -97,10 +101,8 @@ parseToTreeDetBar detbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "D'" ++ str w
   str = fooBar optdet
 
 parseToTreePrepBar :: PrepBar -> Int -> String
-parseToTreePrepBar (PrepBar1 prepbar optprepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "P'" ++ str where
-  fooBar (YesOpt prepp) = parseToTreePrepBar prepbar (ntabs+1) ++ parseToTreePrepP prepp (ntabs+1)
-  fooBar NoOpt = parseToTreePrepBar prepbar (ntabs+1)
-  str = fooBar optprepp
+parseToTreePrepBar (PrepBar1 prepbar prepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "P'" ++ str where
+  str = parseToTreePrepBar prepbar (ntabs+1) ++ parseToTreePrepP prepp (ntabs+1)
 parseToTreePrepBar (PrepBar2 prep detp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "P'" ++ str where
   str = parseToTreePrep prep (ntabs+1) ++ parseToTreeDetP detp (ntabs+1)
 
@@ -110,15 +112,11 @@ parseToTreeAdvBar advbar ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adv'" ++ str
   str = parseToTreeAdv adv (ntabs+1)
 
 parseToTreeAdjBar :: AdjBar -> Int -> String
-parseToTreeAdjBar (AdjBar1 advp adjbar) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
-  str = parseToTreeAdvP advp (ntabs+1) ++ parseToTreeAdjBar adjbar (ntabs+1)
-parseToTreeAdjBar (AdjBar2 adjp adjbar) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
+parseToTreeAdjBar (AdjBar1 adjp adjbar) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
   str = parseToTreeAdjP adjp (ntabs+1) ++ parseToTreeAdjBar adjbar (ntabs+1)
-parseToTreeAdjBar (AdjBar3 adjbar optprepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
-  fooBar (YesOpt prepp) = parseToTreeAdjBar adjbar (ntabs+1) ++ parseToTreePrepP prepp (ntabs+1)
-  fooBar NoOpt = parseToTreeAdjBar adjbar (ntabs+1)
-  str = fooBar optprepp
-parseToTreeAdjBar (AdjBar4 adj optprepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
+parseToTreeAdjBar (AdjBar2 adjbar prepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
+  str = parseToTreeAdjBar adjbar (ntabs+1) ++ parseToTreePrepP prepp (ntabs+1)
+parseToTreeAdjBar (AdjBar3 adj optprepp) ntabs = "\n" ++ (replicate ntabs '\t') ++ "Adj'" ++ str where
   fooBar (YesOpt prepp) = parseToTreeAdj adj (ntabs+1) ++ parseToTreePrepP prepp (ntabs+1)
   fooBar NoOpt = parseToTreeAdj adj (ntabs+1)
   str = fooBar optprepp

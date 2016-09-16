@@ -1,0 +1,11 @@
+[
+Prep "at",
+Prep "for",
+Prep "on",
+Prep "to",
+Prep "in",
+Prep "into",
+Prep "onto",
+Prep "between",
+Prep "towards",
+Prep "through"]

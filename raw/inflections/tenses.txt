@@ -1,7 +1,8 @@
 [
-(Tense "" ""),
+(Tense "" "s"),
 (Tense "" "ed"),
 (Tense "will" ""),
+(Tense "is going to" ""),
 (Tense "are" "ing"),
 (Tense "were" "ing"),
 (Tense "will be" "ing"),
@@ -10,4 +11,10 @@
 (Tense "will have" "ed"),
 (Tense "have been" "ing"),
 (Tense "had been" "ing"),
-(Tense "will have been" "ing")]
+(Tense "will have been" "ing"),
+(Tense "would be" "ing"),
+(Tense "would have been" "ing"),
+(Tense "used to" ""),
+(Tense "would always" ""),
+(Tense "was going to" ""),
+]

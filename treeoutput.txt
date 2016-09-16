@@ -1,5 +1,5 @@
-TenseP2 (ConjP (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "karate") NoOpt)))) (ConjBar (Conj "as well as") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "furnace") NoOpt)))))) (TenseBar (Tense "were" "ing") (VerbP (VerbBar3 (VerbBar4 (Verb "leave") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "fund") NoOpt)))) (TenseBar (Tense "have been" "ing") (VerbP (VerbBar4 (Verb "come") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "criminal") NoOpt)))) (TenseBar (Tense "will have been" "ing") (VerbP (VerbBar5 (Verb "want") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "idea") NoOpt))))))))))))))))) (AdvP NoOpt (AdvBar (Adv "tediously"))))))
-a karate as well as a furnace were leaveing if a fund have been comeing if a criminal will have been wanting a idea tediously
+TenseP2 (ConjP (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "tank") NoOpt)))) (ConjBar (Conj "and") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar1 (AdjP (YesOpt (AdvP NoOpt (AdvBar (Adv "nervously")))) (AdjBar3 (Adj "tiny") (YesOpt (PrepP NoOpt (PrepBar2 (Prep "from") (DetP (DetBar1 (YesOpt (Det "the")) (NounP (NounBar3 (Noun "idea") NoOpt))))))))) (NounBar3 (Noun "idea") NoOpt))))))) (TenseBar (Tense "" "ed") (VerbP (YesOpt (NegP (NegBar (Neg "do not")))) (VerbBar2 (VerbBar1 (AdvP NoOpt (AdvBar (Adv "always"))) (VerbBar4 (Verb "feel") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "multi-billionaire") NoOpt)))) (TenseBar (Tense "have" "ed") (VerbP NoOpt (VerbBar5 (Verb "want") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar1 (AdjP NoOpt (AdjBar3 (Adj "tiny") NoOpt)) (NounBar3 (Noun "idea") NoOpt))))))))))))) (PrepP NoOpt (PrepBar2 (Prep "like") (DetP (DetBar1 (YesOpt (Det "the")) (NounP (NounBar3 (Noun "toaster") NoOpt)))))))))
+a tank and a nervously tiny from the idea idea  do not always feeled if a multi-billionaire have wanted a tiny idea like the toaster
 
 TP
 	ConjP
@@ -10,75 +10,98 @@ TP
 				NP
 					N'
 						N
-							karate
+							tank
 		Conj'
 			Conj
-				as well as
+				and
 			DP
 				D'
 					D
 						a
 					NP
 						N'
-							N
-								furnace
+							AdjP
+								AdvP
+									Adv'
+										Adv
+											nervously
+								Adj'
+									Adj
+										tiny
+									PP
+										P'
+											P
+												from
+											DP
+												D'
+													D
+														the
+													NP
+														N'
+															N
+																idea
+							N'
+								N
+									idea
 	T'
 		T
 			
 		VP
+			NegP
+				Neg'
+					Neg
+						do not
 			V'
 				V'
-					V
-						leave
-					CP
-						C'
-							C
-								if
-							TP
-								DP
-									D'
-										D
-											a
-										NP
-											N'
-												N
-													fund
-								T'
-									T
-										
-									VP
-										V'
-											V
-												come
-											CP
-												C'
-													C
-														if
-													TP
-														DP
-															D'
-																D
-																	a
-																NP
-																	N'
-																		N
-																			criminal
-														T'
-															T
-																
-															VP
-																V'
-																	V
-																		want
-																	DP
-																		D'
-																			D
-																				a
-																			NP
-																				N'
-																					N
-																						idea
-				AdvP
-					Adv'
-						Adv
-							tediously
+					AdvP
+						Adv'
+							Adv
+								always
+					V'
+						V
+							feel
+						CP
+							C'
+								C
+									if
+								TP
+									DP
+										D'
+											D
+												a
+											NP
+												N'
+													N
+														multi-billionaire
+									T'
+										T
+											
+										VP
+											V'
+												V
+													want
+												DP
+													D'
+														D
+															a
+														NP
+															N'
+																AdjP
+																	Adj'
+																		Adj
+																			tiny
+																N'
+																	N
+																		idea
+				PP
+					P'
+						P
+							like
+						DP
+							D'
+								D
+									the
+								NP
+									N'
+										N
+											toaster

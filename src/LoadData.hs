@@ -27,7 +27,7 @@ loadInputData  =
         <*> readFeature "raw/verbs/transitive.txt"
         <*> readFeature "raw/adjectives/size.txt"
         <*> readFeature "raw/adverbs/generic.txt"
-        <*> readFeature "raw/prepositions.txt"
+        <*> readFeature "raw/prepositions/generic.txt"
         <*> readFeature "raw/determiners/articles.txt"
         <*> readFeature "raw/conjunctions/complementizers.txt"
         <*> readFeature "raw/conjunctions/cumulative.txt"

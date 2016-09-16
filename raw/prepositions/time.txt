@@ -1,0 +1,17 @@
+[
+Prep "after",
+Prep "around",
+Prep "at",
+Prep "before",
+Prep "between",
+Prep "during",
+Prep "from",
+Prep "on",
+Prep "until",
+Prep "at",
+Prep "in",
+Prep "from",
+Prep "since",
+Prep "for",
+Prep "during",
+Prep "within"]

@@ -1,0 +1,6 @@
+[
+Prep "by",
+Prep "on",
+Prep "in",
+Prep "like",
+Prep "as"]

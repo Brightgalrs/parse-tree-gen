@@ -1,0 +1,12 @@
+[
+Adv "absolutely",
+Adv "completely",
+Adv "fully",
+Adv "somewhat",
+Adv "just",
+Adv "barely",
+Adv "hardly",
+Adv "scarcely",
+Adv "almost",
+Adv "practically",
+Adv "virtually"]
