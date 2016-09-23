@@ -8,62 +8,94 @@ import           MakeX
 import           Prelude
 import           XBarType
 
+--Make X'module MakeXBarXP where
+
+import           Control.Monad
+import           Data.Random.Extras hiding (shuffle)
+import           Data.RVar
+import           LoadData
+import           MakeX
+import           Prelude
+import           XBarType
+
 --Make X'
 
 --NounBar main
 makeNounBar :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
 makeNounBar idata limits = join $ choice pickfrom where
-  foop ppl | ppl > 0 = [ makeNounBar2 idata (cpl, ppl-1, ajl, avl, conj)
-                      , makeNounBar31 idata (cpl, ppl-1, ajl, avl, conj)
-                      ]
-           | otherwise = []
-  fooj ajl | ajl > 0 = [ makeNounBar1 idata (cpl, ppl, ajl-1, avl, conj)
-                      ]
-           | otherwise = []
-  (cpl, ppl, ajl, avl, conj) = limits
-  pickfrom = foop ppl ++ fooj ajl ++ [makeNounBar32 idata limits]
+  foop | ppl > 0 = [ makeNounBar2 idata (cpl, ppl-1, ajl, avl, cjl)
+                   , makeNounBar4 idata (cpl, ppl-1, ajl, avl, cjl)
+                   ]
+       | otherwise = []
+  fooj | ajl > 0 = [ makeNounBar1 idata (cpl, ppl, ajl-1, avl, cjl)
+                   ]
+       | otherwise = []
+  fooc | cjl > 0 = [ makeNounBar5 idata (cpl, ppl, ajl, avl, cjl-1)
+                   ]
+       | otherwise = []
+  fojc | ajl > 0 && cjl > 0 = [ makeNounBar2 idata (cpl, ppl, ajl-1, avl, cjl-1)
+                              ]
+       | otherwise = []
+  fopc | ppl > 0 && cjl > 0 = [ makeNounBar2 idata (cpl, ppl, ajl-1, avl, cjl-1)
+                              ]
+       | otherwise = []
+  (cpl, ppl, ajl, avl, cjl) = limits
+  pickfrom = foop ++ fooj ++ fooc ++ fojc ++ fopc ++ [makeNounBar6 idata limits]
 
 --AdjP + NounBar
 makeNounBar1 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
 makeNounBar1 idata limits =
   NounBar1 <$> (makeAdjP idata limits) <*> (makeNounBar idata limits)
 
---NounBar + PrepP
 makeNounBar2 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
 makeNounBar2 idata limits =
-  NounBar2 <$> (makeNounBar idata limits) <*> (makePrepP idata limits)
+  NounBar2 <$> (makeConjP idata limits (makeAdjP idata limits)) <*> (makeNounBar idata limits)
 
---Noun with optional PrepP
-makeNounBar31 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
-makeNounBar31 idata limits =
-  NounBar3 <$> (makeNoun idata) <*> (YesOpt <$> (makePrepP idata limits))
+--NounBar + PrepP
+makeNounBar3 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
+makeNounBar3 idata limits =
+  NounBar3 <$> (makeNounBar idata limits) <*> (makePrepP idata limits)
 
---Noun without optional PrepP
-makeNounBar32 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
-makeNounBar32 idata limits = do
-  foo <- (makeNoun idata)
-  return (NounBar3 foo (NoOpt))
+--Noun with PrepP
+makeNounBar4 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
+makeNounBar4 idata limits =
+  NounBar4 <$> (makeNoun idata) <*> (makePrepP idata limits)
+
+--Noun with two PrepP
+makeNounBar5 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
+makeNounBar5 idata limits =
+  NounBar5 <$> (makeNoun idata) <*> (makeConjP idata limits (makePrepP idata limits))
+
+--Just Noun
+makeNounBar6 :: InputData -> (Int,Int,Int,Int,Int) -> RVar NounBar
+makeNounBar6 idata limits =
+  NounBar6 <$> (makeNoun idata)
 
 --VerbBar main
 makeVerbBar :: InputData -> (Int,Int,Int,Int,Int) -> RVar VerbBar
 makeVerbBar idata limits = join $ choice pickfrom where
-  fooc cpl | cpl > 0 = [ makeVerbBar4 idata (cpl-1, ppl, ajl, avl)
+  fooc cpl | cpl > 0 = [ makeVerbBar4 idata (cpl-1, ppl, ajl, avl, cjl)
                 ]
           | otherwise = []
-  foop ppl | ppl > 0 = [ makeVerbBar2 idata (cpl, ppl-1, ajl, avl)
+  foop ppl | ppl > 0 = [ makeVerbBar2 idata (cpl, ppl-1, ajl, avl, cjl)
                 ]
            | otherwise = []
-  foov avl | avl > 0 = [ makeVerbBar1 idata (cpl, ppl, ajl, avl-1)
-                , makeVerbBar3 idata (cpl, ppl, ajl, avl-1)
+  foov avl | avl > 0 = [ makeVerbBar1 idata (cpl, ppl, ajl, avl-1, cjl)
+                , makeVerbBar3 idata (cpl, ppl, ajl, avl-1, cjl)
                 ]
           | otherwise = []
-  (cpl, ppl, ajl, avl, conj) = limits
+  (cpl, ppl, ajl, avl, cjl) = limits
   pickfrom = fooc cpl ++ foop ppl ++ foov avl ++ [makeVerbBar5 idata limits]
 
 --AdvP + VerbBar
 makeVerbBar1 :: InputData -> (Int,Int,Int,Int,Int) -> RVar VerbBar
 makeVerbBar1 idata limits =
   VerbBar1 <$> (makeAdvP idata limits) <*> (makeVerbBar idata limits)
+
+--Two AdvP + VerbBar
+makeVerbBar2 :: InputData -> (Int,Int,Int,Int,Int) -> RVar VerbBar
+makeVerbBar2 idata limits =
+  VerbBar2 <$> (makeAdvP idata limits) <*> (makeVerbBar idata limits)
 
 --VerbBar + PrepP
 makeVerbBar2 :: InputData -> (Int,Int,Int,Int,Int) -> RVar VerbBar
@@ -294,9 +326,9 @@ makeTenseP2 idata limits =
   TenseP2 <$> (makeConjP idata limits) <*> (makeTenseBar idata limits)
 
 --ConjP
-makeConjP :: InputData -> (Int,Int,Int,Int,Int) -> RVar (ConjP a)
+makeConjP :: InputData -> (Int,Int,Int,Int,Int) -> RVar a -> RVar (ConjP a)
 makeConjP idata limits phrase =
-  ConjP <$> (phrase) <*> (makeConjBar idata limits phrase) --does passing an RVar duplicate its value or not? test that
+  ConjP <$> phrase <*> (makeConjBar idata limits phrase)
 
 --NegP
 makeNegP :: InputData -> (Int,Int,Int,Int,Int) -> RVar NegP
