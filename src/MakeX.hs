@@ -43,12 +43,16 @@ makeTense :: InputData -> RVar Tense
 makeTense idata =
   choice (iTense idata)
 
-makeConj :: InputData -> RVar Conj
-makeConj idata =
-  choice (iConj idata)
+makeConjCum :: InputData -> RVar Conj
+makeConjCum idata =
+  choice (iConjCum idata)
+
+makeConjSub :: InputData -> RVar Conj
+makeConjSub idata =
+  choice (iConjSub idata)
 
 makeNeg :: InputData -> RVar Neg
-makeNeg idata = return $ Neg "do not"
+makeNeg idata = return $ Neg "not"
 
 makePron :: InputData -> RVar Pron
 makePron idata =

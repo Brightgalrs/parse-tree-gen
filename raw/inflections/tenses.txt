@@ -16,5 +16,4 @@
 (Tense "would have been" "ing"),
 (Tense "used to" ""),
 (Tense "would always" ""),
-(Tense "was going to" ""),
-]
+(Tense "was going to" "")]

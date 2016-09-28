@@ -1,37 +1,39 @@
-TenseP2 (ConjP (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "tank") NoOpt)))) (ConjBar (Conj "and") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar1 (AdjP (YesOpt (AdvP NoOpt (AdvBar (Adv "nervously")))) (AdjBar3 (Adj "tiny") (YesOpt (PrepP NoOpt (PrepBar2 (Prep "from") (DetP (DetBar1 (YesOpt (Det "the")) (NounP (NounBar3 (Noun "idea") NoOpt))))))))) (NounBar3 (Noun "idea") NoOpt))))))) (TenseBar (Tense "" "ed") (VerbP (YesOpt (NegP (NegBar (Neg "do not")))) (VerbBar2 (VerbBar1 (AdvP NoOpt (AdvBar (Adv "always"))) (VerbBar4 (Verb "feel") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar3 (Noun "multi-billionaire") NoOpt)))) (TenseBar (Tense "have" "ed") (VerbP NoOpt (VerbBar5 (Verb "want") (DetP (DetBar1 (YesOpt (Det "a")) (NounP (NounBar1 (AdjP NoOpt (AdjBar3 (Adj "tiny") NoOpt)) (NounBar3 (Noun "idea") NoOpt))))))))))))) (PrepP NoOpt (PrepBar2 (Prep "like") (DetP (DetBar1 (YesOpt (Det "the")) (NounP (NounBar3 (Noun "toaster") NoOpt)))))))))
-a tank and a nervously tiny from the idea idea  do not always feeled if a multi-billionaire have wanted a tiny idea like the toaster
+Sentence2 (ConjP8 (TenseP1 (DetP (DetBar1 (Det "a") (NounP (NounBar6 (Noun "mood"))))) (TenseBar1 (Tense "will" "") (VerbP (YesOpt (NegP (NegBar (Neg "not")))) (VerbBar1 (AdvP NoOpt (AdvBar (Adv "roughly"))) (VerbBar5 (VerbBar7 (Verb "see") (CompP (CompBar (Comp "if") (TenseP1 (DetP (DetBar1 (Det "the") (NounP (NounBar6 (Noun "tank"))))) (TenseBar1 (Tense "would be" "ing") (VerbP (YesOpt (NegP (NegBar (Neg "not")))) (VerbBar9 (Verb "make") (DetP (DetBar1 (Det "the") (NounP (NounBar1 (AdjP NoOpt (AdjBar4 (Adj "tiny") NoOpt)) (NounBar6 (Noun "criminal"))))))))))))) (PrepP NoOpt (PrepBar2 (Prep "at") (DetP (DetBar1 (Det "the") (NounP (NounBar1 (AdjP NoOpt (AdjBar4 (Adj "huge") NoOpt)) (NounBar6 (Noun "wish"))))))))))))) (ConjBar8 (Conj2 "than") (TenseP1 (DetP (DetBar1 (Det "the") (NounP (NounBar6 (Noun "agency"))))) (TenseBar1 (Tense "had" "ed") (VerbP (YesOpt (NegP (NegBar (Neg "not")))) (VerbBar3 (VerbBar9 (Verb "try") (DetP (DetBar1 (Det "the") (NounP (NounBar4 (Noun "legend") (PrepP (YesOpt (AdvP NoOpt (AdvBar (Adv "technically")))) (PrepBar2 (Prep "after") (DetP (DetBar1 (Det "a") (NounP (NounBar6 (Noun "toaster")))))))))))) (AdvP NoOpt (AdvBar (Adv "irritably")))))))))
+a mood will not roughly see if the tank would be not making the tiny criminal at the huge wish than the agency had not tryed the legend technically after a toaster irritably
 
-TP
+Sentence
 	ConjP
-		DP
-			D'
-				D
-					a
-				NP
-					N'
-						N
-							tank
-		Conj'
-			Conj
-				and
+		TP
 			DP
 				D'
 					D
 						a
 					NP
 						N'
-							AdjP
-								AdvP
-									Adv'
-										Adv
-											nervously
-								Adj'
-									Adj
-										tiny
-									PP
-										P'
-											P
-												from
+							N
+								mood
+			T'
+				T
+					(will ___)
+				VP
+					NegP
+						Neg'
+							Neg
+								not
+					V'
+						AdvP
+							Adv'
+								Adv
+									roughly
+						V'
+							V'
+								V
+									see
+								CP
+									C'
+										C
+											if
+										TP
 											DP
 												D'
 													D
@@ -39,69 +41,97 @@ TP
 													NP
 														N'
 															N
-																idea
-							N'
-								N
-									idea
-	T'
-		T
-			
-		VP
-			NegP
-				Neg'
-					Neg
-						do not
-			V'
-				V'
-					AdvP
-						Adv'
-							Adv
-								always
-					V'
-						V
-							feel
-						CP
-							C'
-								C
-									if
-								TP
+																tank
+											T'
+												T
+													(would be ___ing)
+												VP
+													NegP
+														Neg'
+															Neg
+																not
+													V'
+														V
+															make
+														DP
+															D'
+																D
+																	the
+																NP
+																	N'
+																		AdjP
+																			Adj'
+																				Adj
+																					tiny
+																		N'
+																			N
+																				criminal
+							PP
+								P'
+									P
+										at
 									DP
 										D'
 											D
-												a
+												the
 											NP
 												N'
-													N
-														multi-billionaire
-									T'
-										T
-											
-										VP
-											V'
-												V
-													want
-												DP
-													D'
-														D
-															a
-														NP
-															N'
-																AdjP
-																	Adj'
-																		Adj
-																			tiny
-																N'
-																	N
-																		idea
-				PP
-					P'
-						P
-							like
-						DP
-							D'
-								D
-									the
-								NP
-									N'
-										N
-											toaster
+													AdjP
+														Adj'
+															Adj
+																huge
+													N'
+														N
+															wish
+		Conj'
+			Conj
+				than
+			TP
+				DP
+					D'
+						D
+							the
+						NP
+							N'
+								N
+									agency
+				T'
+					T
+						(had ___ed)
+					VP
+						NegP
+							Neg'
+								Neg
+									not
+						V'
+							V'
+								V
+									try
+								DP
+									D'
+										D
+											the
+										NP
+											N'
+												N
+													legend
+												PP
+													AdvP
+														Adv'
+															Adv
+																technically
+													P'
+														P
+															after
+														DP
+															D'
+																D
+																	a
+																NP
+																	N'
+																		N
+																			toaster
+							AdvP
+								Adv'
+									Adv
+										irritably

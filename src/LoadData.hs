@@ -15,7 +15,8 @@ data InputData = InputData
     , iPrep    :: [Prep]
     , iDet     :: [Det]
     , iComp    :: [Comp]
-    , iConj    :: [Conj]
+    , iConjCum :: [Conj]
+    , iConjSub :: [Conj]
     , iPron    :: [Pron]
     , iTense   :: [Tense]
     }
@@ -31,10 +32,9 @@ loadInputData  =
         <*> readFeature "raw/determiners/articles.txt"
         <*> readFeature "raw/conjunctions/complementizers.txt"
         <*> readFeature "raw/conjunctions/cumulative.txt"
+        <*> readFeature "raw/conjunctions/subordinating.txt"
         <*> readFeature "raw/nouns/pronouns.txt"
         <*> readFeature "raw/inflections/tenses.txt"
 
 readFeature :: Read a => FilePath -> IO a
 readFeature = fmap read . readFile
-
---Make random syntax tree
