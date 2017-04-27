@@ -2,23 +2,21 @@ module LoadData where
 
 import           Control.Monad
 import           Prelude
-import           XBarType
+import           XBarType2
 
 
 -- Load words from files
+-- Load data
 data InputData = InputData
     {
-      iNoun    :: [Noun]
-    , iVerb    :: [Verb]
-    , iAdj     :: [Adj]
-    , iAdv     :: [Adv]
-    , iPrep    :: [Prep]
-    , iDet     :: [Det]
-    , iComp    :: [Comp]
-    , iConjCum :: [Conj]
-    , iConjSub :: [Conj]
-    , iPron    :: [Pron]
-    , iTense   :: [Tense]
+      iNoun    :: [String]
+    , iVerb    :: [String]
+    , iAdj     :: [String]
+    , iAdv     :: [String]
+    , iPrep    :: [String]
+    , iDet     :: [String]
+    , iComp    :: [String]
+    , iInfl    :: [(String,String)]
     }
 
 loadInputData :: IO InputData
@@ -31,9 +29,6 @@ loadInputData  =
         <*> readFeature "raw/prepositions/generic.txt"
         <*> readFeature "raw/determiners/articles.txt"
         <*> readFeature "raw/conjunctions/complementizers.txt"
-        <*> readFeature "raw/conjunctions/cumulative.txt"
-        <*> readFeature "raw/conjunctions/subordinating.txt"
-        <*> readFeature "raw/nouns/pronouns.txt"
         <*> readFeature "raw/inflections/tenses.txt"
 
 readFeature :: Read a => FilePath -> IO a

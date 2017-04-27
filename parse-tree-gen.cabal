@@ -15,12 +15,9 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     ParseIntoSentence
-                     , ParseIntoTree
-                     , LoadData
-                     , MakeX
-                     , MakeXPXBar
-                     , XBarType
+  exposed-modules:     LoadData
+                     , MakeXBar2
+                     , XBarType2
   build-depends:       base >= 4.7 && < 5
                      , rvar -any
                      , random-fu -any
