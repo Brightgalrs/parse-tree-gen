@@ -53,9 +53,11 @@ main = do
                 ]
 
   let num = [ LexItem [Minus T, C] ""
-            , LexItem [Minus LV, Nom, T] ""
+            , LexItem [Minus LV, Nom, Sing, T] "-s"
+            , LexItem [Minus LV, Nom, Pl, T] ""
+            , LexItem [N, Minus Sing] "pig"
+            , LexItem [N, Minus Pl] "pigs"
             , LexItem [Minus N, D, Minus Nom] "the"
-            , LexItem [N] "pigs"
             , LexItem [Minus V, Minus D, LV] ""
             , LexItem [V] "sleep"
             ]
