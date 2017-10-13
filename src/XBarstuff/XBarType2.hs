@@ -57,27 +57,30 @@ instance ShowSen (Head LexCat) where
 -- show tree
 class ShowTree a where
   showtree :: a -> String
-  showtree_ :: Int -> a -> String
+  showtree_ :: String -> String -> a -> String
 
 instance Show a => ShowTree (Phrase a) where
-  showtree = showtree_ 0
-  showtree_ ntab (XP t i p b) = "\n" ++ replicate ntab '\t' ++ show t ++ "P" ++ case i of Ini -> showtree_ (ntab+1) p ++ showtree_ (ntab+1) b
-                                                                                          Fin -> showtree_ (ntab+1) b ++ showtree_ (ntab+1) p
-  showtree_ _ XPNull = ""
+  showtree = showtree_ " " " "
+  showtree_ pad char (XP t Ini p b) = "\n" ++ init pad ++ char ++ show t ++ "P" ++ showtree_ (pad++"|") "├" p ++ showtree_ (pad++" ") "└" b
+  showtree_ pad char (XP t Fin XPNull b) = "\n" ++ init pad ++ char ++ show t ++ "P" ++ showtree_ (pad++" ") "└" b
+  showtree_ pad char (XP t Fin p b) = "\n" ++ init pad ++ char ++ show t ++ "P" ++ showtree_ (pad++"│") "├" b ++ showtree_ (pad++" ") "└" p
+  showtree_ _ _ XPNull = ""
 
 instance Show a => ShowTree (Bar a) where
-  showtree = showtree_ 0
-  showtree_ ntab (XBar1 t i p b) = "\n" ++ replicate ntab '\t' ++ show t ++ "\'" ++ case i of Ini -> showtree_ (ntab+1) p ++ showtree_ (ntab+1) b
-                                                                                              Fin -> showtree_ (ntab+1) b ++ showtree_ (ntab+1) p
-  showtree_ ntab (XBar2 t i h p) = "\n" ++ replicate ntab '\t' ++ show t ++ "\'" ++ case i of Ini -> showtree_ (ntab+1) h ++ showtree_ (ntab+1) p
-                                                                                              Fin -> showtree_ (ntab+1) p ++ showtree_ (ntab+1) h
+  showtree = showtree_ " " " "
+  showtree_ pad char (XBar1 t Ini p b) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++"│") "├" p ++ showtree_ (pad++" ") "└" b
+  showtree_ pad char (XBar1 t Fin XPNull b) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++" ") "└" b
+  showtree_ pad char (XBar1 t Fin p b) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++"│") "├" b ++ showtree_ (pad++" ") "└" p
+  showtree_ pad char (XBar2 t Ini h XPNull) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++" ") "└" h
+  showtree_ pad char (XBar2 t Ini h p) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++"│") "├" h ++ showtree_ (pad++" ") "└" p
+  showtree_ pad char (XBar2 t Fin h p) = "\n" ++ init pad ++ char ++ show t ++ "\'" ++ showtree_ (pad++"│") "├" p ++ showtree_ (pad++" ") "└" h
 
 instance Show a => ShowTree (Head a) where
-  showtree = showtree_ 0
+  showtree = showtree_ " " " "
 
-  showtree_ ntab (Head t "") = "\n" ++ replicate ntab '\t' ++ show t ++ "\n" ++ replicate (ntab+1) '\t' ++ "∅"
-  showtree_ ntab (Head t s) = "\n" ++ replicate ntab '\t' ++ show t ++ "\n" ++ replicate (ntab+1) '\t' ++ s
-  showtree_ ntab (HInfl t (aux, ten)) = "\n" ++ replicate ntab '\t' ++ show t ++ "\n" ++ replicate (ntab+1) '\t' ++ aux ++ " (-" ++ ten ++ ")"
+  showtree_ pad char (Head t "") = "\n" ++ init pad ++ char ++ show t ++ "\n" ++ pad ++ "└∅"
+  showtree_ pad char (Head t s) = "\n" ++ init pad ++ char ++ show t ++ "\n" ++ pad ++ "└" ++ s
+  showtree_ pad char (HInfl t (aux, ten)) = "\n" ++ init pad ++ char ++ show t ++ "\n" ++ pad ++ "└" ++ aux ++ " (-" ++ ten ++ ")"
 
 
 -- category limits

@@ -1,78 +1,258 @@
-a agency would have been geting if the multi-billionaire will be not feeling a crater hungrily without a tall multi-billionaire 
 
+Mary t divorce John 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└D
+  | └Mary
+  └LV
+   ├LV
+   |├LV
+   |└t
+   └V
+    ├V
+    |└divorce
+    └D
+     └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}}
 
-CompP
-	Comp'
-		Comp
-			∅
-		InflP
-			DetP
-				Det'
-					Det
-						a
-					NounP
-						Noun'
-							Noun
-								agency
-			Infl'
-				Infl
-					would have been (-ing)
-				VerbP
-					Verb'
-						Verb'
-							Verb
-								get
-							CompP
-								Comp'
-									Comp
-										if
-									InflP
-										DetP
-											Det'
-												Det
-													the
-												NounP
-													Noun'
-														Noun
-															multi-billionaire
-										Infl'
-											Infl
-												will be (-ing)
-											NegP
-												Neg'
-													Neg
-														not
-													VerbP
-														Verb'
-															Verb'
-																Verb
-																	feel
-																DetP
-																	Det'
-																		Det
-																			a
-																		NounP
-																			Noun'
-																				Noun
-																					crater
-															AdvP
-																Adv'
-																	Adv
-																		hungrily
-						PrepP
-							Prep'
-								Prep
-									without
-								DetP
-									Det'
-										Det
-											a
-										NounP
-											Noun'
-												AdjP
-													Adj'
-														Adj
-															tall
-												Noun'
-													Noun
-														multi-billionaire
+t divorce John Mary 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└t
+  └LV
+   ├LV
+   |├LV
+   |└V
+   | ├V
+   | |└divorce
+   | └D
+   |  └John
+   └D
+    └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+
+John t divorce Mary 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└D
+  | └John
+  └LV
+   ├LV
+   |├LV
+   |└t
+   └V
+    ├V
+    |└divorce
+    └D
+     └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}}
+
+t divorce Mary John 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└t
+  └LV
+   ├LV
+   |├LV
+   |└V
+   | ├V
+   | |└divorce
+   | └D
+   |  └Mary
+   └D
+    └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+
+t Mary divorce John 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└t
+  | └D
+  |  └Mary
+  └V
+   ├V
+   |└divorce
+   └D
+    └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+
+t divorce Mary John 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└t
+  | └V
+  |  ├V
+  |  |└divorce
+  |  └D
+  |   └Mary
+  └D
+   └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}
+
+t John divorce Mary 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└t
+  | └D
+  |  └John
+  └V
+   ├V
+   |└divorce
+   └D
+    └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+
+t divorce John Mary 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└t
+  | └V
+  |  ├V
+  |  |└divorce
+  |  └D
+  |   └John
+  └D
+   └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}
+
+<CRASH>
+ C
+ ├C
+ └T
+  ├T
+  └LV
+   ├LV
+   |├LV
+   |└D
+   | └Mary
+   └V
+    ├V
+    |└divorce
+    └D
+     └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}}
+
+Mary t divorce John 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└D
+  | | └Mary
+  | └t
+  └V
+   ├V
+   |└divorce
+   └D
+    └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Trace}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+
+<CRASH>
+ C
+ ├C
+ └T
+  ├T
+  └LV
+   ├LV
+   |├LV
+   |└D
+   | └John
+   └V
+    ├V
+    |└divorce
+    └D
+     └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}}
+
+John t divorce Mary 
+ C
+ ├C
+ └T
+  ├T
+  |├T
+  |└LV
+  | ├LV
+  | |├LV
+  | |└D
+  | | └John
+  | └t
+  └V
+   ├V
+   |└divorce
+   └D
+    └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Trace}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+
+<CRASH>
+ C
+ ├C
+ └T
+  ├T
+  └LV
+   ├LV
+   |├LV
+   |└V
+   | ├V
+   | |└divorce
+   | └D
+   |  └Mary
+   └D
+    └John
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+
+<CRASH>
+ C
+ ├C
+ └T
+  ├T
+  └LV
+   ├LV
+   |├LV
+   |└V
+   | ├V
+   | |└divorce
+   | └D
+   |  └John
+   └D
+    └Mary
+Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}

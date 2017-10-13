@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/bin"
-libdir     = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/parse-tree-gen-0.1.0.0-2VuIzmP2WRiFBnZFoZtOiU"
-dynlibdir  = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2"
-datadir    = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/share/x86_64-linux-ghc-8.0.2/parse-tree-gen-0.1.0.0"
-libexecdir = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/libexec"
-sysconfdir = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/etc"
+bindir     = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/bin"
+libdir     = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/lib/x86_64-linux-ghc-8.0.2/parse-tree-gen-0.1.0.0-6Uk1flcVQO4KPpD0Gl00uh"
+dynlibdir  = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/lib/x86_64-linux-ghc-8.0.2"
+datadir    = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/share/x86_64-linux-ghc-8.0.2/parse-tree-gen-0.1.0.0"
+libexecdir = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/libexec"
+sysconfdir = "/home/robert/Documents/parse-tree-gen/.stack-work/install/x86_64-linux/lts-9.6/8.0.2/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "parse_tree_gen_bindir") (\_ -> return bindir)

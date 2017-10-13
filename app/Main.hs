@@ -1,67 +1,56 @@
 module Main where
 
-import           Data.Random
-import           Data.RVar
-import           System.IO
-import           Data.List
+import System.IO
+import Data.List
 
 import Min
---import           MakeXBar2
---import           XBarType2
---import           LoadData
-{-
-main :: IO ()
-main = do
-  dat <- loadInputData
-  -- number of phrases allowed in any line down the tree
-  let lims = CatLimit { nullL = 100
-                      , compL = 1
-                      , inflL = 100
-                      , verbL = 100
-                      , detL = 100
-                      , nounL = 100
-                      , prepL = 1
-                      , adjL = 1
-                      , advL = 1
-                      , negL = 100
-                      , quanL = 100
-                      , agrL = 100
-                      }
-
-  struct_ <- sampleRVar (makeXP dat lims Infl)
-  let struct = XP Comp Ini XPNull (XBar2 Comp Ini (Head Comp "") struct_)
-  writeFile "treeoutput.txt" $ showsen struct ++ "\n\n" ++ showtree struct
--}
+import MinData
 
 main :: IO ()
 main = do
-  let lexicon = [ LexItem [Minus N, D] "the"
-                , LexItem [Minus N, D, Minus Nom] "the"
-                , LexItem [Minus N, D, Minus WH] "which"
-                , LexItem [Minus N, D, Minus Nom, Minus WH] "which"
-                , LexItem [Minus D, Minus D, D] "\'s"
-                , LexItem [N] "pigs"
-                , LexItem [V] "sleep"
-                , LexItem [Minus D, V] "kiss"
-                , LexItem [Minus D, Minus D, V] "owe"
-                , LexItem [Minus C, Minus D, V] "tell"
-                , LexItem [Minus V, Minus D, LV] "" --v
-                , LexItem [Minus LV, Nom, T] "" --tense?
-                , LexItem [Minus T, C] "that"
-                , LexItem [Minus T, C] "" -- sentence
-                , LexItem [Minus T, WH, C] "" -- interrogative sentence
+{-  let lexicon = [ LexItem [Equal N, D] noPhi "the"
+                , LexItem [Equal N, D, Minus Nom] noPhi "the"
+                , LexItem [Equal N, D, Minus WH] noPhi "which"
+                , LexItem [Equal N, D, Minus Nom, Minus WH] noPhi "which"
+                , LexItem [Equal D, Equal D, D] noPhi "\'s"
+                , LexItem [N] noPhi "pigs"
+                , LexItem [V] noPhi "sleep"
+                , LexItem [Equal D, V] noPhi "kiss"
+                , LexItem [Equal D, Equal D, V] noPhi "owe"
+                , LexItem [Equal C, Equal D, V] noPhi "tell"
+                , LexItem [Equal V, Equal D, LV] noPhi "" --v
+                , LexItem [Equal LV, Nom, T] noPhi "" --tense?
+                , LexItem [Equal T, C] noPhi "that"
+                , LexItem [Equal T, C] noPhi "" -- sentence
+                , LexItem [Equal T, WH, C] noPhi "" -- interrogative sentence
                 ]
 
-  let num = [ LexItem [Minus T, C] ""
-            , LexItem [Minus LV, Nom, Sing, T] "-s"
-            , LexItem [Minus LV, Nom, Pl, T] ""
-            , LexItem [N, Minus Sing] "pig"
-            , LexItem [N, Minus Pl] "pigs"
-            , LexItem [Minus N, D, Minus Nom] "the"
-            , LexItem [Minus V, Minus D, LV] ""
-            , LexItem [V] "sleep"
+  let num = [ LexItem [Equal T, C] noPhi ""
+            , LexItem [Equal LV, Nom, T] noPhi ""
+            , LexItem [Equal N, D, Minus Nom] noPhi "the"
+            , LexItem [N] noPhi "pigs"
+            , LexItem [Equal V, Equal D, LV] noPhi ""
+            , LexItem [Equal D, Acc, V] noPhi "kiss"
+            --, LexItem [Equal N, ] noPhi "" -- null determiner for "John"
+            , LexItem [D, Minus Acc] noPhi "John"
             ]
-  let objs = derive num []
-  let out = map spellout objs
+-}
+-- Feature Uninterp Case Weak
+-- , Feature Interp Case Weak
 
-  putStr $ intercalate "\n" out ++ "\n"
+  let num2 = [ LexItem [Feature Interp C Weak, Feature Uninterp T Weak] NoPhi  "" -- C
+             , LexItem [Feature Interp T Weak, Feature Uninterp LV Weak, Feature Uninterp D Weak] NoPhi  "" -- T
+             , LexItem [Feature Interp LV Weak, Feature Uninterp V Weak, Feature Uninterp D Weak] NoPhi  "" -- Little v
+             , LexItem [Feature Interp V Weak, Feature Uninterp D Weak] NoPhi  "divorce"
+             , LexItem [Feature Interp D Weak] NoPhi  "Mary"
+             , LexItem [Feature Interp D Weak] NoPhi  "John"
+             ]
+
+  let num3 = [ LexItem [Feature Uninterp T Weak, Feature Interp C Weak] NoPhi  "C"
+             , LexItem [Feature Uninterp V Weak, Feature Interp T Weak] NoPhi  "T"
+             , LexItem [Feature Uninterp N Weak, Feature Interp V Weak] NoPhi  "V"
+             , LexItem [Feature Interp N Weak] NoPhi  "N"
+             ]
+
+  let objs = derive num2 []
+  writeFile "treeoutput.txt" (intercalate "\n" (map (\x -> "\n" ++ spellout x ++ showtree x ++ "\n" ++ show x) objs))

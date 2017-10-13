@@ -49,12 +49,12 @@
   (major1) == 3 && (major2) <  1 || \
   (major1) == 3 && (major2) == 1 && (minor) <= 6)
 
-/* tool cpphs-1.20.3 */
-#define TOOL_VERSION_cpphs "1.20.3"
+/* tool cpphs-1.20.8 */
+#define TOOL_VERSION_cpphs "1.20.8"
 #define MIN_TOOL_VERSION_cpphs(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  20 || \
-  (major1) == 1 && (major2) == 20 && (minor) <= 3)
+  (major1) == 1 && (major2) == 20 && (minor) <= 8)
 
 /* tool gcc-5.4.0 */
 #define TOOL_VERSION_gcc "5.4.0"
@@ -84,12 +84,12 @@
   (major1) == 2 && (major2) <  17 || \
   (major1) == 2 && (major2) == 17 && (minor) <= 3)
 
-/* tool happy-1.19.5 */
-#define TOOL_VERSION_happy "1.19.5"
+/* tool happy-1.19.7 */
+#define TOOL_VERSION_happy "1.19.7"
 #define MIN_TOOL_VERSION_happy(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  19 || \
-  (major1) == 1 && (major2) == 19 && (minor) <= 5)
+  (major1) == 1 && (major2) == 19 && (minor) <= 7)
 
 /* tool hpc-0.67 */
 #define TOOL_VERSION_hpc "0.67"
@@ -126,7 +126,7 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "parse-tree-gen-0.1.0.0-2VuIzmP2WRiFBnZFoZtOiU"
+#define CURRENT_COMPONENT_ID "parse-tree-gen-0.1.0.0-6Uk1flcVQO4KPpD0Gl00uh"
 
-#define CURRENT_PACKAGE_KEY "parse-tree-gen-0.1.0.0-2VuIzmP2WRiFBnZFoZtOiU"
+#define CURRENT_PACKAGE_KEY "parse-tree-gen-0.1.0.0-6Uk1flcVQO4KPpD0Gl00uh"
 
