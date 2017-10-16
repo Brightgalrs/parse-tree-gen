@@ -35,22 +35,22 @@ main = do
             , LexItem [D, Minus Acc] noPhi "John"
             ]
 -}
--- Feature Uninterp Case Weak
--- , Feature Interp Case Weak
+-- UFeature Case
+-- , IFeature Case
 
-  let num2 = [ LexItem [Feature Interp C Weak, Feature Uninterp T Weak] NoPhi  "" -- C
-             , LexItem [Feature Interp T Weak, Feature Uninterp LV Weak, Feature Uninterp D Weak] NoPhi  "" -- T
-             , LexItem [Feature Interp LV Weak, Feature Uninterp V Weak, Feature Uninterp D Weak] NoPhi  "" -- Little v
-             , LexItem [Feature Interp V Weak, Feature Uninterp D Weak] NoPhi  "divorce"
-             , LexItem [Feature Interp D Weak] NoPhi  "Mary"
-             , LexItem [Feature Interp D Weak] NoPhi  "John"
+  let num2 = [ LexItem [IFeature C, UFeature T] "" -- C
+             , LexItem [IFeature T, UFeature LV, UFeature D] "" -- T
+             , LexItem [IFeature LV, UFeature V, UFeature D] "" -- Little v
+             , LexItem [IFeature V, UFeature D] "divorce"
+             , LexItem [IFeature D] "Mary"
+             , LexItem [IFeature D] "John"
              ]
 
-  let num3 = [ LexItem [Feature Uninterp T Weak, Feature Interp C Weak] NoPhi  "C"
-             , LexItem [Feature Uninterp V Weak, Feature Interp T Weak] NoPhi  "T"
-             , LexItem [Feature Uninterp N Weak, Feature Interp V Weak] NoPhi  "V"
-             , LexItem [Feature Interp N Weak] NoPhi  "N"
+  let num3 = [ LexItem [UFeature T, IFeature C] "C"
+             , LexItem [UFeature V, IFeature T] "T"
+             , LexItem [UFeature N, IFeature V] "V"
+             , LexItem [IFeature N] "N"
              ]
 
   let objs = derive num2 []
-  writeFile "treeoutput.txt" (intercalate "\n" (map (\x -> "\n" ++ spellout x ++ showtree x ++ "\n" ++ show x) objs))
+  writeFile "treeoutput.txt" (intercalate "\n" (map (\x -> "\n" ++ linearize x ++ showtree x ++ "\n" ++ show x) objs))

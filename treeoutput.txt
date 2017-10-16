@@ -1,258 +1,304 @@
 
-Mary t divorce John 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└D
+Mary t divorce John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[D]
   | └Mary
-  └LV
-   ├LV
-   |├LV
-   |└t
-   └V
-    ├V
+  └[v]
+   ├[v]
+   |├[v]
+   |└t (divorce)
+   └[V]
+    ├[V]
     |└divorce
-    └D
+    └[D]
      └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = LexItem {feats = [D], str = "Mary"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}}
 
-t divorce John Mary 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└t
-  └LV
-   ├LV
-   |├LV
-   |└V
-   | ├V
+Mary t divorce John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[D]
+  | └Mary
+  └[v]
+   ├[v]
+   |├[v]
+   |└t (John)
+   └[V]
+    ├[V]
+    |└divorce
+    └[D]
+     └John
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = LexItem {feats = [D], str = "Mary"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [D], string = "John"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}}
+
+t divorce John Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└t (Mary)
+  └[v]
+   ├[v]
+   |├[v]
+   |└[V]
+   | ├[V]
    | |└divorce
-   | └D
+   | └[D]
    |  └John
-   └D
+   └[D]
     └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Trace {feats = [D], string = "Mary"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}, right = LexItem {feats = [D], str = "Mary"}}}}
 
-John t divorce Mary 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└D
+John t divorce Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[D]
   | └John
-  └LV
-   ├LV
-   |├LV
-   |└t
-   └V
-    ├V
+  └[v]
+   ├[v]
+   |├[v]
+   |└t (divorce)
+   └[V]
+    ├[V]
     |└divorce
-    └D
+    └[D]
      └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = LexItem {feats = [D], str = "John"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}}
 
-t divorce Mary John 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└t
-  └LV
-   ├LV
-   |├LV
-   |└V
-   | ├V
+John t divorce Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[D]
+  | └John
+  └[v]
+   ├[v]
+   |├[v]
+   |└t (Mary)
+   └[V]
+    ├[V]
+    |└divorce
+    └[D]
+     └Mary
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = LexItem {feats = [D], str = "John"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [D], string = "Mary"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}}
+
+t divorce Mary John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└t (John)
+  └[v]
+   ├[v]
+   |├[v]
+   |└[V]
+   | ├[V]
    | |└divorce
-   | └D
+   | └[D]
    |  └Mary
-   └D
+   └[D]
     └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Trace {feats = [D], string = "John"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}, right = LexItem {feats = [D], str = "John"}}}}
 
-t Mary divorce John 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└t
-  | └D
+t Mary divorce John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (divorce)
+  | └[D]
   |  └Mary
-  └V
-   ├V
+  └[V]
+   ├[V]
    |└divorce
-   └D
+   └[D]
     └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = LexItem {feats = [D], str = "Mary"}}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}
 
-t divorce Mary John 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└t
-  | └V
-  |  ├V
+t divorce Mary John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (divorce)
+  | └[V]
+  |  ├[V]
   |  |└divorce
-  |  └D
+  |  └[D]
   |   └Mary
-  └D
+  └[D]
    └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}, right = LexItem {feats = [D], str = "John"}}}
 
-t John divorce Mary 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└t
-  | └D
+t John divorce Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (divorce)
+  | └[D]
   |  └John
-  └V
-   ├V
+  └[V]
+   ├[V]
    |└divorce
-   └D
+   └[D]
     └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = LexItem {feats = [D], str = "John"}}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}
 
-t divorce John Mary 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└t
-  | └V
-  |  ├V
+t divorce John Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (divorce)
+  | └[V]
+  |  ├[V]
   |  |└divorce
-  |  └D
+  |  └[D]
   |   └John
-  └D
+  └[D]
    └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Trace}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [V,uD], string = "divorce"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}, right = LexItem {feats = [D], str = "Mary"}}}
 
-<CRASH>
- C
- ├C
- └T
-  ├T
-  └LV
-   ├LV
-   |├LV
-   |└D
-   | └Mary
-   └V
-    ├V
-    |└divorce
-    └D
-     └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}}
-
-Mary t divorce John 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└D
+Mary t divorce John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└[D]
   | | └Mary
-  | └t
-  └V
-   ├V
+  | └t (divorce)
+  └[V]
+   ├[V]
    |└divorce
-   └D
+   └[D]
     └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}, right = Trace}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = LexItem {feats = [D], str = "Mary"}}, right = Trace {feats = [V,uD], string = "divorce"}}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}
 
-<CRASH>
- C
- ├C
- └T
-  ├T
-  └LV
-   ├LV
-   |├LV
-   |└D
-   | └John
-   └V
-    ├V
-    |└divorce
-    └D
-     └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}}
+t divorce Mary John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (Mary)
+  | └[V]
+  |  ├[V]
+  |  |└divorce
+  |  └[D]
+  |   └Mary
+  └[D]
+   └John
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [D], string = "Mary"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}, right = LexItem {feats = [D], str = "John"}}}
 
-John t divorce Mary 
- C
- ├C
- └T
-  ├T
-  |├T
-  |└LV
-  | ├LV
-  | |├LV
-  | |└D
+John t divorce Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└[D]
   | | └John
-  | └t
-  └V
-   ├V
+  | └t (divorce)
+  └[V]
+   ├[V]
    |└divorce
-   └D
+   └[D]
     └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T], phis = NoPhi, left = Branch {feats = [T], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}, right = Trace}}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = LexItem {feats = [D], str = "John"}}, right = Trace {feats = [V,uD], string = "divorce"}}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}}
 
-<CRASH>
- C
- ├C
- └T
-  ├T
-  └LV
-   ├LV
-   |├LV
-   |└V
-   | ├V
+t divorce John Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└[v]
+  | ├[v]
+  | |├[v]
+  | |└t (John)
+  | └[V]
+  |  ├[V]
+  |  |└divorce
+  |  └[D]
+  |   └John
+  └[D]
+   └Mary
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Trace {feats = [D], string = "John"}}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}}, right = LexItem {feats = [D], str = "Mary"}}}
+
+t divorce Mary John
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└t (<CRASH>)
+  └[v]
+   ├[v]
+   |├[v]
+   |└[V]
+   | ├[V]
    | |└divorce
-   | └D
+   | └[D]
    |  └Mary
-   └D
+   └[D]
     └John
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Trace {feats = [v,uD], string = "<CRASH>"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "Mary"}}}, right = LexItem {feats = [D], str = "John"}}}}
 
-<CRASH>
- C
- ├C
- └T
-  ├T
-  └LV
-   ├LV
-   |├LV
-   |└V
-   | ├V
+t divorce John Mary
+ [C]
+ ├[C]
+ └[T]
+  ├[T]
+  |├[T]
+  |└t (<CRASH>)
+  └[v]
+   ├[v]
+   |├[v]
+   |└[V]
+   | ├[V]
    | |└divorce
-   | └D
+   | └[D]
    |  └John
-   └D
+   └[D]
     └Mary
-Branch {feats = [C], phis = NoPhi, left = LexItem {feats = [C], phis = NoPhi, str = ""}, right = Branch {feats = [T,uD], phis = NoPhi, left = LexItem {feats = [T], phis = NoPhi, str = ""}, right = Branch {feats = [LV], phis = NoPhi, left = Branch {feats = [LV], phis = NoPhi, left = LexItem {feats = [LV], phis = NoPhi, str = ""}, right = Branch {feats = [V], phis = NoPhi, left = LexItem {feats = [V], phis = NoPhi, str = "divorce"}, right = LexItem {feats = [D], phis = NoPhi, str = "John"}}}, right = LexItem {feats = [D], phis = NoPhi, str = "Mary"}}}}
+Branch {feats = [C], left = LexItem {feats = [C], str = ""}, right = Branch {feats = [T], left = Branch {feats = [T], left = LexItem {feats = [T], str = ""}, right = Trace {feats = [v,uD], string = "<CRASH>"}}, right = Branch {feats = [v], left = Branch {feats = [v], left = LexItem {feats = [v], str = ""}, right = Branch {feats = [V], left = LexItem {feats = [V], str = "divorce"}, right = LexItem {feats = [D], str = "John"}}}, right = LexItem {feats = [D], str = "Mary"}}}}

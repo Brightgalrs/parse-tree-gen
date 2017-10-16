@@ -3,10 +3,7 @@ module MinData
 , Workspace
 , SyntaxObj(..)
 , Feature(..)
-, Interpretable(..)
 , Category(..)
-, Stength(..)
-, Phi(..)
 , Number(..)
 , Gender(..)
 , Person(..)
@@ -14,17 +11,16 @@ module MinData
 ) where
 
 type Numeration = [SyntaxObj]
-
 type Workspace = [SyntaxObj]
 
 data SyntaxObj = Crash
-               | Trace
                | LexItem { feats :: [Feature]
-                         , phis :: Phi
                          , str :: String
                          }
+               | Trace { feats ::  [Feature]
+                       , string :: String
+                       }
                | Branch { feats :: [Feature]
-                        , phis :: Phi
                         , left :: SyntaxObj
                         , right :: SyntaxObj
                         } deriving (Eq, Show)
@@ -36,39 +32,53 @@ class ShowTree a where
 
 instance ShowTree SyntaxObj where
   showtree = showtree_ " " " "
-  showtree_ pad char (Branch fs _ left right) = "\n" ++ init pad ++ char ++ show (head $ filter ((Interp == ).interp) fs) ++ showtree_ (pad++"|") "├" left ++ showtree_ (pad++" ") "└" right
-  showtree_ pad char (LexItem fs _ "") = "\n" ++ init pad ++ char ++ show (head $ filter ((Interp == ).interp) fs)
-  showtree_ pad char (LexItem fs _ s) = "\n" ++ init pad ++ char ++ show (head $ filter ((Interp == ).interp) fs) ++ "\n" ++ pad ++ "└" ++ s
-  showtree_ pad char Trace = "\n" ++ init pad ++ char ++ "t"
+  showtree_ pad char (Branch fs left right) = "\n" ++ init pad ++ char ++ show fs ++ showtree_ (pad++"|") "├" left ++ showtree_ (pad++" ") "└" right
+  showtree_ pad char (LexItem fs "") = "\n" ++ init pad ++ char ++ show fs
+  showtree_ pad char (LexItem fs s) = "\n" ++ init pad ++ char ++ show fs ++ "\n" ++ pad ++ "└" ++ s
+  showtree_ pad char (Trace _ s) = "\n" ++ init pad ++ char ++ "t (" ++ s ++ ")"
   showtree_ pad char Crash = "\n" ++ init pad ++ char ++ "<CRASH>"
 
 -- features
-data Feature = Feature { interp :: Interpretable
-                       , category :: Category
-                       , strength :: Stength
-                       } deriving (Eq)
-data Interpretable = Uninterp | Interp deriving (Eq)
-data Category = D | N | V | P | C | T | LV | Case deriving (Show, Eq)
-data Stength = Weak | Strong deriving (Eq)
+data Feature = UFeature {category :: Category}
+             | IFeature {category :: Category} deriving (Eq)
 
 instance Show Feature where
-  show (Feature i c s) = show i ++ show c ++ show s
-instance Show Interpretable where
-  show Uninterp = "u"
-  show Interp = ""
-instance Show Stength where
-  show Strong = "*"
-  show Weak = ""
+  show (UFeature c) = "u" ++ show c
+  show (IFeature c) = show c
 
+data Category = D | N | V | P | C | T | LV | Case Case
+              | Phi { num :: Number
+                    , per :: Person
+                    , gen :: Gender
+                    } deriving (Eq)
 
--- phi features?
-data Phi = Phi { num :: Number
-               , gen :: Gender
-               , per :: Person
-               }
-         | NoPhi deriving (Show, Eq)
-data Number = Num | Pl | Sing deriving (Show, Eq)
-data Gender = Gen | Mas | Fem deriving (Show, Eq)
-data Person = Per | First | Second | Third deriving (Show, Eq)
+instance Show Category where
+  show (Phi UNum UPer UGen) = "φ:__"
+  show (Phi n p g) = "φ:" ++ unwords [show n, show p, show g]
+  show (Case c) = "Case:" ++ show c
+  show D = "D"
+  show N = "N"
+  show V = "V"
+  show P = "P"
+  show C = "C"
+  show T = "T"
+  show LV = "v"
 
---data Direct = L | R deriving (Show, Eq)
+data Number = UNum | Pl | Sg deriving (Show, Eq)
+
+data Person = UPer | First | Second | Third deriving (Eq)
+instance Show Person where
+  show UPer = ""
+  show First = "1"
+  show Second = "2"
+  show Third = "3"
+
+data Gender = UGen | Masc | Fem deriving (Show, Eq)
+
+data Case   = UCase | Nom | Acc | Gen | Dat deriving (Eq)
+instance Show Case where
+  show UCase = "__"
+  show Nom = "Nom"
+  show Acc = "Acc"
+  show Gen = "Gen"
+  show Dat = "Dat"
